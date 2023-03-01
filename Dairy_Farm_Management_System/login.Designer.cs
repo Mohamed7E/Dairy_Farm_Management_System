@@ -31,6 +31,9 @@ namespace Dairy_Farm_Management_System
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(login));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -38,11 +41,8 @@ namespace Dairy_Farm_Management_System
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -58,6 +58,39 @@ namespace Dairy_Farm_Management_System
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(337, 781);
             this.panel1.TabIndex = 0;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Urdu Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label7.Location = new System.Drawing.Point(72, 413);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(224, 53);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "Professionalism";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Urdu Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(72, 311);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(203, 53);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "Echo Friendly ";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Urdu Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(72, 214);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(171, 53);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Nice Qualit";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label1
             // 
@@ -105,7 +138,7 @@ namespace Dairy_Farm_Management_System
             this.textBox1.Location = new System.Drawing.Point(352, 400);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(357, 34);
+            this.textBox1.Size = new System.Drawing.Size(357, 43);
             this.textBox1.TabIndex = 7;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -115,7 +148,7 @@ namespace Dairy_Farm_Management_System
             this.textBox2.Location = new System.Drawing.Point(352, 500);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(357, 34);
+            this.textBox2.Size = new System.Drawing.Size(357, 46);
             this.textBox2.TabIndex = 8;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
@@ -132,17 +165,6 @@ namespace Dairy_Farm_Management_System
             this.comboBox1.TabIndex = 9;
             this.comboBox1.Text = "Select Role";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Urdu Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(72, 214);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(171, 53);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "Nice Qualit";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // button1
             // 
@@ -167,28 +189,6 @@ namespace Dairy_Farm_Management_System
             this.label5.Text = "Reset";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Urdu Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(72, 311);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(203, 53);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "Echo Friendly ";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Urdu Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(72, 413);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(224, 53);
-            this.label7.TabIndex = 12;
-            this.label7.Text = "Professionalism";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
-            // 
             // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 41F);
@@ -208,7 +208,7 @@ namespace Dairy_Farm_Management_System
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.Margin = new System.Windows.Forms.Padding(7);
             this.Name = "login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "login";
