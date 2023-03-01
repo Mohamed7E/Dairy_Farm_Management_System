@@ -357,6 +357,7 @@ namespace Dairy_Farm_Management_System
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(247, 54);
             this.panel7.TabIndex = 28;
+            this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
             // 
             // pictureBox5
             // 
@@ -386,6 +387,7 @@ namespace Dairy_Farm_Management_System
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(247, 54);
             this.panel8.TabIndex = 27;
+            this.panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.panel8_Paint);
             // 
             // pictureBox6
             // 
@@ -415,6 +417,7 @@ namespace Dairy_Farm_Management_System
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(247, 54);
             this.panel9.TabIndex = 26;
+            this.panel9.Paint += new System.Windows.Forms.PaintEventHandler(this.panel9_Paint);
             // 
             // pictureBox7
             // 
@@ -444,6 +447,7 @@ namespace Dairy_Farm_Management_System
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(247, 54);
             this.panel5.TabIndex = 25;
+            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
             // pictureBox3
             // 
@@ -473,6 +477,7 @@ namespace Dairy_Farm_Management_System
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(247, 54);
             this.panel6.TabIndex = 24;
+            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
             // pictureBox4
             // 
@@ -524,6 +529,7 @@ namespace Dairy_Farm_Management_System
             this.label12.Size = new System.Drawing.Size(130, 23);
             this.label12.TabIndex = 1;
             this.label12.Text = "Milk Production";
+            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // panel3
             // 
@@ -534,6 +540,7 @@ namespace Dairy_Farm_Management_System
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(247, 54);
             this.panel3.TabIndex = 0;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // pictureBox1
             // 
@@ -584,10 +591,11 @@ namespace Dairy_Farm_Management_System
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.Margin = new System.Windows.Forms.Padding(7);
             this.Name = "Milkproduction";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Milkproduction";
+            this.Load += new System.EventHandler(this.Milkproduction_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
