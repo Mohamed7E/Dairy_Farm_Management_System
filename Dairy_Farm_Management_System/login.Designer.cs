@@ -40,6 +40,9 @@ namespace Dairy_Farm_Management_System
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -47,6 +50,8 @@ namespace Dairy_Farm_Management_System
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -57,10 +62,10 @@ namespace Dairy_Farm_Management_System
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Urdu Typesetting", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(315, 9);
+            this.label1.Font = new System.Drawing.Font("Urdu Typesetting", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(365, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(501, 82);
+            this.label1.Size = new System.Drawing.Size(397, 65);
             this.label1.TabIndex = 4;
             this.label1.Text = "Dairy Farm Managmant";
             // 
@@ -116,31 +121,73 @@ namespace Dairy_Farm_Management_System
             // 
             // comboBox1
             // 
+            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(439, 275);
+            this.comboBox1.Items.AddRange(new object[] {
+            "Admin",
+            "Employee"});
+            this.comboBox1.Location = new System.Drawing.Point(404, 264);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(151, 49);
+            this.comboBox1.Size = new System.Drawing.Size(295, 45);
             this.comboBox1.TabIndex = 9;
+            this.comboBox1.Text = "Select Role";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Urdu Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(10, 201);
+            this.label4.Location = new System.Drawing.Point(72, 214);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(324, 53);
+            this.label4.Size = new System.Drawing.Size(171, 53);
             this.label4.TabIndex = 10;
-            this.label4.Text = "Dairy Farm Managmant";
+            this.label4.Text = "Nice Qualit";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(439, 571);
+            this.button1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.Location = new System.Drawing.Point(419, 571);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(174, 52);
+            this.button1.Size = new System.Drawing.Size(216, 55);
             this.button1.TabIndex = 10;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Text = "Login";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Urdu Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(477, 647);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(94, 53);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "Reset";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Urdu Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(72, 311);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(203, 53);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "Echo Friendly ";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Urdu Typesetting", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label7.Location = new System.Drawing.Point(72, 413);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(224, 53);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "Professionalism";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // login
             // 
@@ -149,6 +196,7 @@ namespace Dairy_Farm_Management_System
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(797, 781);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.textBox2);
@@ -185,5 +233,8 @@ namespace Dairy_Farm_Management_System
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
     }
 }
