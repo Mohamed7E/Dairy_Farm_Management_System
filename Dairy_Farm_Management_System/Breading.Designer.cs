@@ -188,18 +188,18 @@ namespace Dairy_Farm_Management_System
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(271, 220);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(216, 46);
+            this.label9.Size = new System.Drawing.Size(256, 46);
             this.label9.TabIndex = 42;
-            this.label9.Text = "Date Of Birth";
+            this.label9.Text = "Pregnancy Date";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(1171, 220);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(130, 46);
+            this.label8.Size = new System.Drawing.Size(155, 46);
             this.label8.TabIndex = 40;
-            this.label8.Text = "Pasture";
+            this.label8.Text = "Cow Age";
             // 
             // textBox7
             // 
@@ -214,27 +214,28 @@ namespace Dairy_Farm_Management_System
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(567, 93);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(126, 46);
+            this.label7.Size = new System.Drawing.Size(187, 46);
             this.label7.TabIndex = 38;
-            this.label7.Text = "Ear Tag";
+            this.label7.Text = "Breed Date";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(1171, 93);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(106, 46);
+            this.label6.Size = new System.Drawing.Size(184, 46);
             this.label6.TabIndex = 36;
-            this.label6.Text = "Bread";
+            this.label6.Text = "Cow Name";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(872, 102);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(101, 46);
+            this.label5.Size = new System.Drawing.Size(114, 46);
             this.label5.TabIndex = 34;
-            this.label5.Text = "Color";
+            this.label5.Text = "Cowld";
             // 
             // textBox4
             // 
@@ -247,20 +248,21 @@ namespace Dairy_Farm_Management_System
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(567, 220);
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(589, 204);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 46);
+            this.label4.Size = new System.Drawing.Size(194, 76);
             this.label4.TabIndex = 32;
-            this.label4.Text = "Age";
+            this.label4.Text = "Expected Date\r\n   to Calve";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(872, 220);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(226, 46);
+            this.label3.Size = new System.Drawing.Size(192, 46);
             this.label3.TabIndex = 30;
-            this.label3.Text = "Weigt at Birth";
+            this.label3.Text = "Date Caved";
             // 
             // dateTimePicker1
             // 
@@ -599,9 +601,9 @@ namespace Dairy_Farm_Management_System
             this.label20.AutoSize = true;
             this.label20.Location = new System.Drawing.Point(708, 352);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(130, 46);
+            this.label20.Size = new System.Drawing.Size(146, 46);
             this.label20.TabIndex = 54;
-            this.label20.Text = "Pasture";
+            this.label20.Text = "Remarks";
             // 
             // textBox1
             // 
