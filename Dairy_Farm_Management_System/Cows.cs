@@ -74,5 +74,15 @@ namespace Dairy_Farm_Management_System
         {
 
         }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Cows_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
