@@ -38,8 +38,8 @@ namespace Dairy_Farm_Management_System
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.UserName = new System.Windows.Forms.TextBox();
+            this.Password = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -120,7 +120,7 @@ namespace Dairy_Farm_Management_System
             this.label2.Font = new System.Drawing.Font("Urdu Typesetting", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(343, 437);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(162, 60);
+            this.label2.Size = new System.Drawing.Size(159, 58);
             this.label2.TabIndex = 5;
             this.label2.Text = "Password";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -131,30 +131,30 @@ namespace Dairy_Farm_Management_System
             this.label3.Font = new System.Drawing.Font("Urdu Typesetting", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(343, 337);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(175, 60);
+            this.label3.Size = new System.Drawing.Size(172, 58);
             this.label3.TabIndex = 6;
             this.label3.Text = "User name";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // textBox1
+            // UserName
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(352, 400);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(357, 43);
-            this.textBox1.TabIndex = 7;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.UserName.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.UserName.Location = new System.Drawing.Point(352, 400);
+            this.UserName.Multiline = true;
+            this.UserName.Name = "UserName";
+            this.UserName.Size = new System.Drawing.Size(357, 43);
+            this.UserName.TabIndex = 7;
+            this.UserName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox2
+            // Password
             // 
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(352, 500);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(357, 46);
-            this.textBox2.TabIndex = 8;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.Password.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Password.Location = new System.Drawing.Point(352, 500);
+            this.Password.Multiline = true;
+            this.Password.Name = "Password";
+            this.Password.Size = new System.Drawing.Size(357, 46);
+            this.Password.TabIndex = 8;
+            this.Password.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // comboBox1
             // 
@@ -203,8 +203,8 @@ namespace Dairy_Farm_Management_System
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Password);
+            this.Controls.Add(this.UserName);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -232,8 +232,8 @@ namespace Dairy_Farm_Management_System
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox UserName;
+        private System.Windows.Forms.TextBox Password;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button1;
