@@ -106,7 +106,7 @@ namespace Dairy_Farm_Management_System
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(605, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(110, 46);
+            this.label1.Size = new System.Drawing.Size(107, 45);
             this.label1.TabIndex = 0;
             this.label1.Text = "DFSM";
             // 
@@ -169,7 +169,7 @@ namespace Dairy_Farm_Management_System
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(762, 545);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(159, 46);
+            this.label10.Size = new System.Drawing.Size(155, 45);
             this.label10.TabIndex = 26;
             this.label10.Text = "Cows List";
             // 
@@ -188,7 +188,7 @@ namespace Dairy_Farm_Management_System
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(271, 220);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(256, 46);
+            this.label9.Size = new System.Drawing.Size(248, 45);
             this.label9.TabIndex = 42;
             this.label9.Text = "Pregnancy Date";
             // 
@@ -197,7 +197,7 @@ namespace Dairy_Farm_Management_System
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(1171, 220);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(155, 46);
+            this.label8.Size = new System.Drawing.Size(149, 45);
             this.label8.TabIndex = 40;
             this.label8.Text = "Cow Age";
             // 
@@ -214,7 +214,7 @@ namespace Dairy_Farm_Management_System
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(567, 93);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(187, 46);
+            this.label7.Size = new System.Drawing.Size(180, 45);
             this.label7.TabIndex = 38;
             this.label7.Text = "Breed Date";
             this.label7.Click += new System.EventHandler(this.label7_Click);
@@ -224,7 +224,7 @@ namespace Dairy_Farm_Management_System
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(1171, 93);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(184, 46);
+            this.label6.Size = new System.Drawing.Size(179, 45);
             this.label6.TabIndex = 36;
             this.label6.Text = "Cow Name";
             // 
@@ -233,7 +233,7 @@ namespace Dairy_Farm_Management_System
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(872, 102);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(114, 46);
+            this.label5.Size = new System.Drawing.Size(110, 45);
             this.label5.TabIndex = 34;
             this.label5.Text = "Cowld";
             // 
@@ -260,7 +260,7 @@ namespace Dairy_Farm_Management_System
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(872, 220);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(192, 46);
+            this.label3.Size = new System.Drawing.Size(186, 45);
             this.label3.TabIndex = 30;
             this.label3.Text = "Date Caved";
             // 
@@ -282,7 +282,7 @@ namespace Dairy_Farm_Management_System
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(271, 102);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(167, 46);
+            this.label2.Size = new System.Drawing.Size(162, 45);
             this.label2.TabIndex = 25;
             this.label2.Text = "Heal Date";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -319,7 +319,7 @@ namespace Dairy_Farm_Management_System
             this.label18.AutoSize = true;
             this.label18.Location = new System.Drawing.Point(117, 77);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(110, 46);
+            this.label18.Size = new System.Drawing.Size(107, 45);
             this.label18.TabIndex = 30;
             this.label18.Text = "DFSM";
             // 
@@ -362,6 +362,7 @@ namespace Dairy_Farm_Management_System
             this.label15.Size = new System.Drawing.Size(93, 23);
             this.label15.TabIndex = 1;
             this.label15.Text = "Dashboard";
+            this.label15.Click += new System.EventHandler(this.label15_Click);
             // 
             // panel8
             // 
@@ -392,6 +393,7 @@ namespace Dairy_Farm_Management_System
             this.label16.Size = new System.Drawing.Size(68, 23);
             this.label16.TabIndex = 1;
             this.label16.Text = "Finance";
+            this.label16.Click += new System.EventHandler(this.label16_Click);
             // 
             // panel9
             // 
@@ -422,6 +424,7 @@ namespace Dairy_Farm_Management_System
             this.label17.Size = new System.Drawing.Size(84, 23);
             this.label17.TabIndex = 1;
             this.label17.Text = "Milk Sales";
+            this.label17.Click += new System.EventHandler(this.label17_Click);
             // 
             // panel5
             // 
@@ -453,6 +456,7 @@ namespace Dairy_Farm_Management_System
             this.label13.Size = new System.Drawing.Size(78, 23);
             this.label13.TabIndex = 1;
             this.label13.Text = "Breading";
+            this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // panel6
             // 
@@ -483,6 +487,7 @@ namespace Dairy_Farm_Management_System
             this.label14.Size = new System.Drawing.Size(60, 23);
             this.label14.TabIndex = 1;
             this.label14.Text = "Health";
+            this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
             // panel4
             // 
@@ -513,6 +518,7 @@ namespace Dairy_Farm_Management_System
             this.label12.Size = new System.Drawing.Size(130, 23);
             this.label12.TabIndex = 1;
             this.label12.Text = "Milk Production";
+            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // panel3
             // 
@@ -540,9 +546,10 @@ namespace Dairy_Farm_Management_System
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(107, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(100, 46);
+            this.label11.Size = new System.Drawing.Size(97, 45);
             this.label11.TabIndex = 1;
             this.label11.Text = "Cows";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // dateTimePicker2
             // 
@@ -608,7 +615,7 @@ namespace Dairy_Farm_Management_System
             this.label20.AutoSize = true;
             this.label20.Location = new System.Drawing.Point(708, 352);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(146, 46);
+            this.label20.Size = new System.Drawing.Size(142, 45);
             this.label20.TabIndex = 54;
             this.label20.Text = "Remarks";
             // 

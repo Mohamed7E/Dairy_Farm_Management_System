@@ -130,6 +130,7 @@ namespace Dairy_Farm_Management_System
             this.label16.Size = new System.Drawing.Size(68, 23);
             this.label16.TabIndex = 1;
             this.label16.Text = "Finance";
+            this.label16.Click += new System.EventHandler(this.label16_Click);
             // 
             // panel9
             // 
@@ -282,7 +283,7 @@ namespace Dairy_Farm_Management_System
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(107, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(100, 46);
+            this.label11.Size = new System.Drawing.Size(97, 45);
             this.label11.TabIndex = 1;
             this.label11.Text = "Cows";
             this.label11.Click += new System.EventHandler(this.label11_Click);
@@ -371,13 +372,14 @@ namespace Dairy_Farm_Management_System
             this.label15.Size = new System.Drawing.Size(93, 23);
             this.label15.TabIndex = 1;
             this.label15.Text = "Dashboard";
+            this.label15.Click += new System.EventHandler(this.label15_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(605, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(110, 46);
+            this.label1.Size = new System.Drawing.Size(107, 45);
             this.label1.TabIndex = 0;
             this.label1.Text = "DFSM";
             // 
@@ -386,7 +388,7 @@ namespace Dairy_Farm_Management_System
             this.label20.AutoSize = true;
             this.label20.Location = new System.Drawing.Point(706, 307);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(146, 46);
+            this.label20.Size = new System.Drawing.Size(142, 45);
             this.label20.TabIndex = 81;
             this.label20.Text = "Remarks";
             // 
@@ -449,7 +451,7 @@ namespace Dairy_Farm_Management_System
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(760, 500);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(159, 46);
+            this.label10.Size = new System.Drawing.Size(155, 45);
             this.label10.TabIndex = 58;
             this.label10.Text = "Cows List";
             // 
@@ -468,7 +470,7 @@ namespace Dairy_Farm_Management_System
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(269, 175);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(256, 46);
+            this.label9.Size = new System.Drawing.Size(248, 45);
             this.label9.TabIndex = 69;
             this.label9.Text = "Pregnancy Date";
             // 
@@ -477,7 +479,7 @@ namespace Dairy_Farm_Management_System
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(1169, 175);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(155, 46);
+            this.label8.Size = new System.Drawing.Size(149, 45);
             this.label8.TabIndex = 67;
             this.label8.Text = "Cow Age";
             // 
@@ -494,7 +496,7 @@ namespace Dairy_Farm_Management_System
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(565, 48);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(187, 46);
+            this.label7.Size = new System.Drawing.Size(180, 45);
             this.label7.TabIndex = 66;
             this.label7.Text = "Breed Date";
             // 
@@ -503,7 +505,7 @@ namespace Dairy_Farm_Management_System
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(870, 57);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(114, 46);
+            this.label5.Size = new System.Drawing.Size(110, 45);
             this.label5.TabIndex = 63;
             this.label5.Text = "Cowld";
             // 
@@ -530,7 +532,7 @@ namespace Dairy_Farm_Management_System
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(870, 175);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(192, 46);
+            this.label3.Size = new System.Drawing.Size(186, 45);
             this.label3.TabIndex = 61;
             this.label3.Text = "Date Caved";
             // 
@@ -551,7 +553,7 @@ namespace Dairy_Farm_Management_System
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(269, 57);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(167, 46);
+            this.label2.Size = new System.Drawing.Size(162, 45);
             this.label2.TabIndex = 57;
             this.label2.Text = "Heal Date";
             // 
@@ -587,7 +589,7 @@ namespace Dairy_Farm_Management_System
             this.label18.AutoSize = true;
             this.label18.Location = new System.Drawing.Point(117, 77);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(110, 46);
+            this.label18.Size = new System.Drawing.Size(107, 45);
             this.label18.TabIndex = 30;
             this.label18.Text = "DFSM";
             // 
@@ -617,7 +619,7 @@ namespace Dairy_Farm_Management_System
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(1169, 48);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(184, 46);
+            this.label6.Size = new System.Drawing.Size(179, 45);
             this.label6.TabIndex = 65;
             this.label6.Text = "Cow Name";
             // 
@@ -655,7 +657,7 @@ namespace Dairy_Farm_Management_System
             this.Controls.Add(this.label6);
             this.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.Margin = new System.Windows.Forms.Padding(7);
             this.Name = "DashBoard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DashBoard";

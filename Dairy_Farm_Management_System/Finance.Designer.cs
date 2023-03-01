@@ -131,6 +131,7 @@ namespace Dairy_Farm_Management_System
             this.label16.Size = new System.Drawing.Size(68, 23);
             this.label16.TabIndex = 1;
             this.label16.Text = "Finance";
+            this.label16.Click += new System.EventHandler(this.label16_Click);
             // 
             // panel9
             // 
@@ -161,6 +162,7 @@ namespace Dairy_Farm_Management_System
             this.label17.Size = new System.Drawing.Size(84, 23);
             this.label17.TabIndex = 1;
             this.label17.Text = "Milk Sales";
+            this.label17.Click += new System.EventHandler(this.label17_Click);
             // 
             // panel5
             // 
@@ -192,6 +194,7 @@ namespace Dairy_Farm_Management_System
             this.label13.Size = new System.Drawing.Size(78, 23);
             this.label13.TabIndex = 1;
             this.label13.Text = "Breading";
+            this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // panel6
             // 
@@ -222,6 +225,7 @@ namespace Dairy_Farm_Management_System
             this.label14.Size = new System.Drawing.Size(60, 23);
             this.label14.TabIndex = 1;
             this.label14.Text = "Health";
+            this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
             // panel8
             // 
@@ -253,6 +257,7 @@ namespace Dairy_Farm_Management_System
             this.label12.Size = new System.Drawing.Size(130, 23);
             this.label12.TabIndex = 1;
             this.label12.Text = "Milk Production";
+            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // panel3
             // 
@@ -283,6 +288,7 @@ namespace Dairy_Farm_Management_System
             this.label11.Size = new System.Drawing.Size(100, 46);
             this.label11.TabIndex = 1;
             this.label11.Text = "Cows";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // panel4
             // 
@@ -303,6 +309,7 @@ namespace Dairy_Farm_Management_System
             this.label15.Size = new System.Drawing.Size(93, 23);
             this.label15.TabIndex = 1;
             this.label15.Text = "Dashboard";
+            this.label15.Click += new System.EventHandler(this.label15_Click);
             // 
             // label1
             // 
