@@ -101,6 +101,7 @@ namespace Dairy_Farm_Management_System
             this.label1.Size = new System.Drawing.Size(397, 65);
             this.label1.TabIndex = 4;
             this.label1.Text = "Dairy Farm Managmant";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox1
             // 
@@ -111,6 +112,7 @@ namespace Dairy_Farm_Management_System
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label2
             // 
@@ -121,6 +123,7 @@ namespace Dairy_Farm_Management_System
             this.label2.Size = new System.Drawing.Size(162, 60);
             this.label2.TabIndex = 5;
             this.label2.Text = "Password";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -131,6 +134,7 @@ namespace Dairy_Farm_Management_System
             this.label3.Size = new System.Drawing.Size(175, 60);
             this.label3.TabIndex = 6;
             this.label3.Text = "User name";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // textBox1
             // 
