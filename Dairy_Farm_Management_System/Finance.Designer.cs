@@ -58,18 +58,20 @@ namespace Dairy_Farm_Management_System
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.label21 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
+            this.dateTimePicker5 = new System.Windows.Forms.DateTimePicker();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.dateTimePicker5 = new System.Windows.Forms.DateTimePicker();
-            this.button4 = new System.Windows.Forms.Button();
+            this.label21 = new System.Windows.Forms.Label();
+            this.panel11 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.button1 = new System.Windows.Forms.Button();
+            this.label20 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -79,8 +81,6 @@ namespace Dairy_Farm_Management_System
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.label20 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel9.SuspendLayout();
@@ -140,6 +140,7 @@ namespace Dairy_Farm_Management_System
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(247, 54);
             this.panel9.TabIndex = 26;
+            this.panel9.Paint += new System.Windows.Forms.PaintEventHandler(this.panel9_Paint);
             // 
             // pictureBox7
             // 
@@ -200,6 +201,7 @@ namespace Dairy_Farm_Management_System
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(247, 54);
             this.panel6.TabIndex = 24;
+            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
             // pictureBox4
             // 
@@ -230,6 +232,7 @@ namespace Dairy_Farm_Management_System
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(247, 54);
             this.panel8.TabIndex = 27;
+            this.panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.panel8_Paint);
             // 
             // pictureBox2
             // 
@@ -260,6 +263,7 @@ namespace Dairy_Farm_Management_System
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(247, 54);
             this.panel3.TabIndex = 0;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // pictureBox1
             // 
@@ -288,6 +292,7 @@ namespace Dairy_Farm_Management_System
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(247, 54);
             this.panel4.TabIndex = 23;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // label15
             // 
@@ -373,6 +378,7 @@ namespace Dairy_Farm_Management_System
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(247, 54);
             this.panel7.TabIndex = 28;
+            this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
             // 
             // panel10
             // 
@@ -393,23 +399,29 @@ namespace Dairy_Farm_Management_System
             this.panel10.TabIndex = 83;
             this.panel10.Paint += new System.Windows.Forms.PaintEventHandler(this.panel10_Paint);
             // 
-            // panel11
+            // button4
             // 
-            this.panel11.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel11.Location = new System.Drawing.Point(491, 42);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(693, 330);
-            this.panel11.TabIndex = 0;
+            this.button4.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button4.Location = new System.Drawing.Point(59, 337);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(139, 46);
+            this.button4.TabIndex = 93;
+            this.button4.Text = "Save";
+            this.button4.UseVisualStyleBackColor = false;
             // 
-            // label21
+            // dateTimePicker5
             // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label21.Location = new System.Drawing.Point(719, 0);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(228, 41);
-            this.label21.TabIndex = 84;
-            this.label21.Text = "Expenditure List";
+            this.dateTimePicker5.CalendarFont = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dateTimePicker5.CustomFormat = "yyyy-MM-dd";
+            this.dateTimePicker5.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dateTimePicker5.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker5.Location = new System.Drawing.Point(12, 102);
+            this.dateTimePicker5.Margin = new System.Windows.Forms.Padding(4);
+            this.dateTimePicker5.Name = "dateTimePicker5";
+            this.dateTimePicker5.Size = new System.Drawing.Size(276, 40);
+            this.dateTimePicker5.TabIndex = 92;
             // 
             // comboBox1
             // 
@@ -468,29 +480,23 @@ namespace Dairy_Farm_Management_System
             this.label3.TabIndex = 85;
             this.label3.Text = "Date";
             // 
-            // dateTimePicker5
+            // label21
             // 
-            this.dateTimePicker5.CalendarFont = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePicker5.CustomFormat = "yyyy-MM-dd";
-            this.dateTimePicker5.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePicker5.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker5.Location = new System.Drawing.Point(12, 102);
-            this.dateTimePicker5.Margin = new System.Windows.Forms.Padding(4);
-            this.dateTimePicker5.Name = "dateTimePicker5";
-            this.dateTimePicker5.Size = new System.Drawing.Size(276, 40);
-            this.dateTimePicker5.TabIndex = 92;
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label21.Location = new System.Drawing.Point(719, 0);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(228, 41);
+            this.label21.TabIndex = 84;
+            this.label21.Text = "Expenditure List";
             // 
-            // button4
+            // panel11
             // 
-            this.button4.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button4.Location = new System.Drawing.Point(59, 337);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(139, 46);
-            this.button4.TabIndex = 93;
-            this.button4.Text = "Save";
-            this.button4.UseVisualStyleBackColor = false;
+            this.panel11.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel11.Location = new System.Drawing.Point(491, 42);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(693, 330);
+            this.panel11.TabIndex = 0;
             // 
             // panel12
             // 
@@ -513,6 +519,18 @@ namespace Dairy_Farm_Management_System
             this.panel12.TabIndex = 84;
             this.panel12.Paint += new System.Windows.Forms.PaintEventHandler(this.panel12_Paint);
             // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.CalendarFont = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dateTimePicker2.CustomFormat = "yyyy-MM-dd";
+            this.dateTimePicker2.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker2.Location = new System.Drawing.Point(719, 55);
+            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(4);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(276, 40);
+            this.dateTimePicker2.TabIndex = 94;
+            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
@@ -524,6 +542,16 @@ namespace Dairy_Farm_Management_System
             this.button1.TabIndex = 93;
             this.button1.Text = "Save";
             this.button1.UseVisualStyleBackColor = false;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label20.Location = new System.Drawing.Point(633, 55);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(79, 38);
+            this.label20.TabIndex = 93;
+            this.label20.Text = "Filter";
             // 
             // dateTimePicker1
             // 
@@ -612,28 +640,6 @@ namespace Dairy_Farm_Management_System
             this.panel13.Size = new System.Drawing.Size(693, 295);
             this.panel13.TabIndex = 0;
             // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.CalendarFont = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePicker2.CustomFormat = "yyyy-MM-dd";
-            this.dateTimePicker2.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker2.Location = new System.Drawing.Point(719, 55);
-            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(4);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(276, 40);
-            this.dateTimePicker2.TabIndex = 94;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label20.Location = new System.Drawing.Point(633, 55);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(79, 38);
-            this.label20.TabIndex = 93;
-            this.label20.Text = "Filter";
-            // 
             // Finance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(18F, 45F);
@@ -646,7 +652,7 @@ namespace Dairy_Farm_Management_System
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.Margin = new System.Windows.Forms.Padding(7);
             this.Name = "Finance";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Finance";
