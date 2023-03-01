@@ -34,5 +34,10 @@ namespace Dairy_Farm_Management_System
         {
 
         }
+
+        private void CowHealth_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
