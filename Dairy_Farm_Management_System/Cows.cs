@@ -11,11 +11,12 @@ namespace Dairy_Farm_Management_System
 {
     public partial class Cows : Form
     {
+        function Con;
         public Cows()
         {
             InitializeComponent();
         }
-        SqlConnection
+        
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
@@ -148,7 +149,20 @@ namespace Dairy_Farm_Management_System
 
         private void SaveBtu_Click(object sender, EventArgs e)
         {
-
+            if(CowNameTb.Text==""|| EarTagTb.Text==""|| ColorTb.Text==""|| BreadTb.Text==""|| AgeTb.Text==""|| WeigtatBirthTb.Text==""|| PastureTb.Text=="")
+            {
+                MessageBox.Show("missing informatiom");
+            }
+            else
+            {
+                try
+                {
+                   
+                }catch(Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
     }
 }
