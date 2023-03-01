@@ -585,6 +585,7 @@ namespace Dairy_Farm_Management_System
             this.dateTimePicker5.Name = "dateTimePicker5";
             this.dateTimePicker5.Size = new System.Drawing.Size(276, 40);
             this.dateTimePicker5.TabIndex = 52;
+            this.dateTimePicker5.ValueChanged += new System.EventHandler(this.dateTimePicker5_ValueChanged);
             // 
             // comboBox1
             // 
