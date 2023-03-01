@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Dairy_Farm_Management_System
 {
@@ -14,7 +15,7 @@ namespace Dairy_Farm_Management_System
         {
             InitializeComponent();
         }
-
+        SqlConnection
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
@@ -143,6 +144,11 @@ namespace Dairy_Farm_Management_System
             MilkSales Ob = new MilkSales();
             Ob.Show();
             this.Hide();
+        }
+
+        private void SaveBtu_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -56,28 +56,28 @@ namespace Dairy_Farm_Management_System
             this.label11 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.CowNameTb = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.DateOfBirthTb = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.WeigtatBirthTb = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.AgeTb = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.BreadTb = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.ColorTb = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.EarTagTb = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.PastureTb = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.CowsList = new System.Windows.Forms.DataGridView();
             this.label10 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.UpdateBtu = new System.Windows.Forms.Button();
+            this.SaveBtu = new System.Windows.Forms.Button();
+            this.EditBtu = new System.Windows.Forms.Button();
+            this.DeleteBtu = new System.Windows.Forms.Button();
             this.label19 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -96,7 +96,7 @@ namespace Dairy_Farm_Management_System
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CowsList)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -376,13 +376,13 @@ namespace Dairy_Farm_Management_System
             this.label1.Text = "DFSM";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBox1
+            // CowNameTb
             // 
-            this.textBox1.Location = new System.Drawing.Point(275, 151);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(276, 40);
-            this.textBox1.TabIndex = 2;
+            this.CowNameTb.Location = new System.Drawing.Point(275, 151);
+            this.CowNameTb.Multiline = true;
+            this.CowNameTb.Name = "CowNameTb";
+            this.CowNameTb.Size = new System.Drawing.Size(276, 40);
+            this.CowNameTb.TabIndex = 2;
             // 
             // label2
             // 
@@ -394,17 +394,17 @@ namespace Dairy_Farm_Management_System
             this.label2.Text = "Cow Name";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // dateTimePicker1
+            // DateOfBirthTb
             // 
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePicker1.CustomFormat = "yyyy-MM-dd";
-            this.dateTimePicker1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(275, 282);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(276, 40);
-            this.dateTimePicker1.TabIndex = 2;
+            this.DateOfBirthTb.CalendarFont = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DateOfBirthTb.CustomFormat = "yyyy-MM-dd";
+            this.DateOfBirthTb.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DateOfBirthTb.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.DateOfBirthTb.Location = new System.Drawing.Point(275, 282);
+            this.DateOfBirthTb.Margin = new System.Windows.Forms.Padding(4);
+            this.DateOfBirthTb.Name = "DateOfBirthTb";
+            this.DateOfBirthTb.Size = new System.Drawing.Size(276, 40);
+            this.DateOfBirthTb.TabIndex = 2;
             // 
             // label3
             // 
@@ -415,13 +415,13 @@ namespace Dairy_Farm_Management_System
             this.label3.TabIndex = 3;
             this.label3.Text = "Weigt at Birth";
             // 
-            // textBox2
+            // WeigtatBirthTb
             // 
-            this.textBox2.Location = new System.Drawing.Point(876, 282);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(276, 40);
-            this.textBox2.TabIndex = 4;
+            this.WeigtatBirthTb.Location = new System.Drawing.Point(876, 282);
+            this.WeigtatBirthTb.Multiline = true;
+            this.WeigtatBirthTb.Name = "WeigtatBirthTb";
+            this.WeigtatBirthTb.Size = new System.Drawing.Size(276, 40);
+            this.WeigtatBirthTb.TabIndex = 4;
             // 
             // label4
             // 
@@ -432,13 +432,13 @@ namespace Dairy_Farm_Management_System
             this.label4.TabIndex = 5;
             this.label4.Text = "Age";
             // 
-            // textBox3
+            // AgeTb
             // 
-            this.textBox3.Location = new System.Drawing.Point(571, 282);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(276, 40);
-            this.textBox3.TabIndex = 6;
+            this.AgeTb.Location = new System.Drawing.Point(571, 282);
+            this.AgeTb.Multiline = true;
+            this.AgeTb.Name = "AgeTb";
+            this.AgeTb.Size = new System.Drawing.Size(276, 40);
+            this.AgeTb.TabIndex = 6;
             // 
             // label5
             // 
@@ -449,13 +449,13 @@ namespace Dairy_Farm_Management_System
             this.label5.TabIndex = 7;
             this.label5.Text = "Color";
             // 
-            // textBox4
+            // BreadTb
             // 
-            this.textBox4.Location = new System.Drawing.Point(1175, 151);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(276, 40);
-            this.textBox4.TabIndex = 8;
+            this.BreadTb.Location = new System.Drawing.Point(1175, 151);
+            this.BreadTb.Multiline = true;
+            this.BreadTb.Name = "BreadTb";
+            this.BreadTb.Size = new System.Drawing.Size(276, 40);
+            this.BreadTb.TabIndex = 8;
             // 
             // label6
             // 
@@ -466,13 +466,13 @@ namespace Dairy_Farm_Management_System
             this.label6.TabIndex = 9;
             this.label6.Text = "Bread";
             // 
-            // textBox5
+            // ColorTb
             // 
-            this.textBox5.Location = new System.Drawing.Point(876, 151);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(276, 40);
-            this.textBox5.TabIndex = 10;
+            this.ColorTb.Location = new System.Drawing.Point(876, 151);
+            this.ColorTb.Multiline = true;
+            this.ColorTb.Name = "ColorTb";
+            this.ColorTb.Size = new System.Drawing.Size(276, 40);
+            this.ColorTb.TabIndex = 10;
             // 
             // label7
             // 
@@ -483,13 +483,13 @@ namespace Dairy_Farm_Management_System
             this.label7.TabIndex = 11;
             this.label7.Text = "Ear Tag";
             // 
-            // textBox6
+            // EarTagTb
             // 
-            this.textBox6.Location = new System.Drawing.Point(571, 151);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(276, 40);
-            this.textBox6.TabIndex = 12;
+            this.EarTagTb.Location = new System.Drawing.Point(571, 151);
+            this.EarTagTb.Multiline = true;
+            this.EarTagTb.Name = "EarTagTb";
+            this.EarTagTb.Size = new System.Drawing.Size(276, 40);
+            this.EarTagTb.TabIndex = 12;
             // 
             // label8
             // 
@@ -500,13 +500,13 @@ namespace Dairy_Farm_Management_System
             this.label8.TabIndex = 13;
             this.label8.Text = "Pasture";
             // 
-            // textBox7
+            // PastureTb
             // 
-            this.textBox7.Location = new System.Drawing.Point(1175, 282);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(276, 40);
-            this.textBox7.TabIndex = 14;
+            this.PastureTb.Location = new System.Drawing.Point(1175, 282);
+            this.PastureTb.Multiline = true;
+            this.PastureTb.Name = "PastureTb";
+            this.PastureTb.Size = new System.Drawing.Size(276, 40);
+            this.PastureTb.TabIndex = 14;
             // 
             // label9
             // 
@@ -517,15 +517,15 @@ namespace Dairy_Farm_Management_System
             this.label9.TabIndex = 15;
             this.label9.Text = "Date Of Birth";
             // 
-            // dataGridView1
+            // CowsList
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(275, 505);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(1176, 323);
-            this.dataGridView1.TabIndex = 16;
+            this.CowsList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.CowsList.Location = new System.Drawing.Point(275, 505);
+            this.CowsList.Name = "CowsList";
+            this.CowsList.RowHeadersWidth = 51;
+            this.CowsList.RowTemplate.Height = 29;
+            this.CowsList.Size = new System.Drawing.Size(1176, 323);
+            this.CowsList.TabIndex = 16;
             // 
             // label10
             // 
@@ -536,49 +536,50 @@ namespace Dairy_Farm_Management_System
             this.label10.TabIndex = 1;
             this.label10.Text = "Cows List";
             // 
-            // button3
+            // UpdateBtu
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.Location = new System.Drawing.Point(1175, 361);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(216, 55);
-            this.button3.TabIndex = 19;
-            this.button3.Text = "Up";
-            this.button3.UseVisualStyleBackColor = false;
+            this.UpdateBtu.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.UpdateBtu.FlatAppearance.BorderSize = 0;
+            this.UpdateBtu.Location = new System.Drawing.Point(1175, 361);
+            this.UpdateBtu.Name = "UpdateBtu";
+            this.UpdateBtu.Size = new System.Drawing.Size(216, 55);
+            this.UpdateBtu.TabIndex = 19;
+            this.UpdateBtu.Text = "Up";
+            this.UpdateBtu.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // SaveBtu
             // 
-            this.button4.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.Location = new System.Drawing.Point(275, 361);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(216, 55);
-            this.button4.TabIndex = 20;
-            this.button4.Text = "Save";
-            this.button4.UseVisualStyleBackColor = false;
+            this.SaveBtu.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.SaveBtu.FlatAppearance.BorderSize = 0;
+            this.SaveBtu.Location = new System.Drawing.Point(275, 361);
+            this.SaveBtu.Name = "SaveBtu";
+            this.SaveBtu.Size = new System.Drawing.Size(216, 55);
+            this.SaveBtu.TabIndex = 20;
+            this.SaveBtu.Text = "Save";
+            this.SaveBtu.UseVisualStyleBackColor = false;
+            this.SaveBtu.Click += new System.EventHandler(this.SaveBtu_Click);
             // 
-            // button1
+            // EditBtu
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.Location = new System.Drawing.Point(571, 361);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(216, 55);
-            this.button1.TabIndex = 21;
-            this.button1.Text = "Edit";
-            this.button1.UseVisualStyleBackColor = false;
+            this.EditBtu.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.EditBtu.FlatAppearance.BorderSize = 0;
+            this.EditBtu.Location = new System.Drawing.Point(571, 361);
+            this.EditBtu.Name = "EditBtu";
+            this.EditBtu.Size = new System.Drawing.Size(216, 55);
+            this.EditBtu.TabIndex = 21;
+            this.EditBtu.Text = "Edit";
+            this.EditBtu.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // DeleteBtu
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.Location = new System.Drawing.Point(876, 361);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(216, 55);
-            this.button2.TabIndex = 22;
-            this.button2.Text = "Delete";
-            this.button2.UseVisualStyleBackColor = false;
+            this.DeleteBtu.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.DeleteBtu.FlatAppearance.BorderSize = 0;
+            this.DeleteBtu.Location = new System.Drawing.Point(876, 361);
+            this.DeleteBtu.Name = "DeleteBtu";
+            this.DeleteBtu.Size = new System.Drawing.Size(216, 55);
+            this.DeleteBtu.TabIndex = 22;
+            this.DeleteBtu.Text = "Delete";
+            this.DeleteBtu.UseVisualStyleBackColor = false;
             // 
             // label19
             // 
@@ -596,28 +597,28 @@ namespace Dairy_Farm_Management_System
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1476, 840);
             this.Controls.Add(this.label19);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.DeleteBtu);
+            this.Controls.Add(this.EditBtu);
+            this.Controls.Add(this.SaveBtu);
+            this.Controls.Add(this.UpdateBtu);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.CowsList);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.PastureTb);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.EarTagTb);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.ColorTb);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.BreadTb);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.AgeTb);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.WeigtatBirthTb);
+            this.Controls.Add(this.DateOfBirthTb);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.CowNameTb);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -653,7 +654,7 @@ namespace Dairy_Farm_Management_System
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CowsList)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -664,30 +665,30 @@ namespace Dairy_Farm_Management_System
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox CowNameTb;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker DateOfBirthTb;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox WeigtatBirthTb;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox AgeTb;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox BreadTb;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox ColorTb;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox EarTagTb;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox PastureTb;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView CowsList;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button UpdateBtu;
+        private System.Windows.Forms.Button SaveBtu;
+        private System.Windows.Forms.Button EditBtu;
+        private System.Windows.Forms.Button DeleteBtu;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label13;
