@@ -166,11 +166,11 @@ namespace Dairy_Farm_Management_System
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label19.Location = new System.Drawing.Point(735, 77);
+            this.label19.Location = new System.Drawing.Point(768, 71);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(155, 31);
+            this.label19.Size = new System.Drawing.Size(116, 31);
             this.label19.TabIndex = 94;
-            this.label19.Text = "Health Report";
+            this.label19.Text = "Milk Sales\r\n";
             // 
             // panel7
             // 
@@ -204,15 +204,16 @@ namespace Dairy_Farm_Management_System
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(869, 102);
+            this.label5.Location = new System.Drawing.Point(1108, 102);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(199, 46);
             this.label5.TabIndex = 82;
             this.label5.Text = "client Name";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(1168, 151);
+            this.textBox4.Location = new System.Drawing.Point(268, 273);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(276, 40);
@@ -221,11 +222,11 @@ namespace Dairy_Farm_Management_System
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(759, 215);
+            this.label4.Location = new System.Drawing.Point(689, 215);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(288, 46);
+            this.label4.Size = new System.Drawing.Size(149, 46);
             this.label4.TabIndex = 80;
-            this.label4.Text = "Cost of Treatment";
+            this.label4.Text = "Quantity";
             // 
             // panel9
             // 
@@ -260,15 +261,15 @@ namespace Dairy_Farm_Management_System
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(1168, 93);
+            this.label6.Location = new System.Drawing.Point(268, 215);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(177, 46);
+            this.label6.Size = new System.Drawing.Size(205, 46);
             this.label6.TabIndex = 84;
-            this.label6.Text = "Noon Milk";
+            this.label6.Text = "client Phone";
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(869, 151);
+            this.textBox5.Location = new System.Drawing.Point(1108, 151);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(276, 40);
@@ -352,9 +353,9 @@ namespace Dairy_Farm_Management_System
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(759, 442);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(228, 46);
+            this.label10.Size = new System.Drawing.Size(205, 46);
             this.label10.TabIndex = 75;
-            this.label10.Text = "Health Report";
+            this.label10.Text = "Sales Report";
             // 
             // dataGridView1
             // 
@@ -379,7 +380,7 @@ namespace Dairy_Farm_Management_System
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(564, 102);
+            this.label7.Location = new System.Drawing.Point(687, 102);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(93, 46);
             this.label7.TabIndex = 86;
@@ -387,7 +388,7 @@ namespace Dairy_Farm_Management_System
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(564, 151);
+            this.textBox6.Location = new System.Drawing.Point(689, 158);
             this.textBox6.Multiline = true;
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(276, 40);
@@ -405,7 +406,7 @@ namespace Dairy_Farm_Management_System
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(759, 277);
+            this.textBox3.Location = new System.Drawing.Point(689, 277);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(276, 40);
@@ -416,9 +417,9 @@ namespace Dairy_Farm_Management_System
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(1108, 212);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(172, 46);
+            this.label3.Size = new System.Drawing.Size(92, 46);
             this.label3.TabIndex = 78;
-            this.label3.Text = "Treatment";
+            this.label3.Text = "Total";
             // 
             // textBox2
             // 
@@ -568,6 +569,7 @@ namespace Dairy_Farm_Management_System
             this.Name = "MilkSales";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MilkSales";
+            this.Load += new System.EventHandler(this.MilkSales_Load_1);
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
