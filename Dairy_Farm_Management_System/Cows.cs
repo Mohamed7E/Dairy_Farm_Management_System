@@ -77,12 +77,56 @@ namespace Dairy_Farm_Management_System
 
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
-
+            Cows Ob = new Cows();
+            Ob.Show();
+            this.Hide();
         }
 
         private void Cows_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+           Milkproduction Ob = new Milkproduction();
+            Ob.Show();
+            this.Hide();
+        }
+
+        private void panel6_Paint(object sender, PaintEventArgs e)
+        {
+            CowHealth Ob = new CowHealth();
+            Ob.Show();
+            this.Hide();
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+            Breading Ob = new Breading();
+            Ob.Show();
+            this.Hide();
+        }
+
+        private void panel9_Paint(object sender, PaintEventArgs e)
+        {
+           MilkSales Ob = new MilkSales();
+            Ob.Show();
+            this.Hide();
+        }
+
+        private void panel8_Paint(object sender, PaintEventArgs e)
+        {
+            Finance Ob = new Finance();
+            Ob.Show();
+            this.Hide();
+        }
+
+        private void panel7_Paint(object sender, PaintEventArgs e)
+        {
+            DashBoard Ob = new DashBoard();
+            Ob.Show();
+            this.Hide();
         }
     }
 }
