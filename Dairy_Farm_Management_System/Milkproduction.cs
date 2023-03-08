@@ -126,6 +126,15 @@ namespace Dairy_Farm_Management_System
 
 
         }
+        private void populate()
+        {
+            con.Open();
+            string query = "select * from MilkSalesTbl";
+            SqlDataAdapter sda = new SqlDataAdapter(query, con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            
+
+        }
         private void button4_Click(object sender, EventArgs e)
         {
 
