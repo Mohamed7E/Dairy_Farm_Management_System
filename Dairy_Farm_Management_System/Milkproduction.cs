@@ -117,6 +117,12 @@ namespace Dairy_Farm_Management_System
             SqlDataAdapter Rdr;
             Rdr = cmd.ExecuteReader();
             DataTable dt = new DataTable();
+            dt.Columns.Add("CowId", typeof(int));
+            dt.Load(Rdr);
+            CowIdCb.ValueMember = "CowId";
+            CowIdCb.DateSource = dt;
+            con.Close();
+
 
         }
         private void button4_Click(object sender, EventArgs e)
