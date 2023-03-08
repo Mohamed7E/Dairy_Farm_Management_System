@@ -132,7 +132,10 @@ namespace Dairy_Farm_Management_System
             string query = "select * from MilkSalesTbl";
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
             SqlCommandBuilder builder = new SqlCommandBuilder(sda);
-            
+            var ds = new DataSet();
+            sda.Fill(ds);
+            Dailylist.DataSource = ds.Tables[0];
+            con.Close();
 
         }
         private void button4_Click(object sender, EventArgs e)

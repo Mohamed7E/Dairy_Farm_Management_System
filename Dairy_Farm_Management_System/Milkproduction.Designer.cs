@@ -37,7 +37,7 @@ namespace Dairy_Farm_Management_System
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Dailylist = new System.Windows.Forms.DataGridView();
             this.label9 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.Cownametb = new System.Windows.Forms.TextBox();
@@ -77,7 +77,7 @@ namespace Dairy_Farm_Management_System
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label11 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dailylist)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -170,15 +170,15 @@ namespace Dairy_Farm_Management_System
             this.label10.TabIndex = 26;
             this.label10.Text = "Daily Milk";
             // 
-            // dataGridView1
+            // Dailylist
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(271, 505);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(1176, 323);
-            this.dataGridView1.TabIndex = 43;
+            this.Dailylist.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Dailylist.Location = new System.Drawing.Point(271, 505);
+            this.Dailylist.Name = "Dailylist";
+            this.Dailylist.RowHeadersWidth = 51;
+            this.Dailylist.RowTemplate.Height = 29;
+            this.Dailylist.Size = new System.Drawing.Size(1176, 323);
+            this.Dailylist.TabIndex = 43;
             // 
             // label9
             // 
@@ -579,7 +579,7 @@ namespace Dairy_Farm_Management_System
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.Dailylist);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.Cownametb);
@@ -603,7 +603,7 @@ namespace Dairy_Farm_Management_System
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Milkproduction";
             this.Load += new System.EventHandler(this.Milkproduction_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dailylist)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -644,7 +644,7 @@ namespace Dairy_Farm_Management_System
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView Dailylist;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox Cownametb;
