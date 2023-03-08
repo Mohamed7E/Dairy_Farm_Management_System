@@ -218,6 +218,11 @@ namespace Dairy_Farm_Management_System
             CowIdCb.Text = Dailylist.SelectedRows[0].Cells[1].Value.ToString();
             Cownametb.Text = Dailylist.SelectedRows[0].Cells[1].Value.ToString();
             Amt.Text = Dailylist.SelectedRows[0].Cells[1].Value.ToString();
+            Noontb.Text = Dailylist.SelectedRows[0].Cells[1].Value.ToString();
+            PmTb.Text = Dailylist.SelectedRows[0].Cells[1].Value.ToString();
+            TotalTb.Text = Dailylist.SelectedRows[0].Cells[1].Value.ToString();
+            data.Text = Dailylist.SelectedRows[0].Cells[1].Value.ToString();
+            
 
         }
     }
