@@ -228,7 +228,12 @@ namespace Dairy_Farm_Management_System
         private void Breedlist_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
-        
-    }
+            HealDate.Text = Breedlist.SelectedRows[0].Cells[1].Value.ToString();
+            BreedDate.Text = Breedlist.SelectedRows[0].Cells[2].Value.ToString();
+            CowIdCb.SelectedValue = Breedlist.SelectedRows[0].Cells[3].Value.ToString();
+            pregDate.Text = Breedlist.SelectedRows[0].Cells[5].Value.ToString();
+           
+
+        }
     }
 }
