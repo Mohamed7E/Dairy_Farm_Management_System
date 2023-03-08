@@ -201,6 +201,7 @@ namespace Dairy_Farm_Management_System
             // 
             // Cownametb
             // 
+            this.Cownametb.Enabled = false;
             this.Cownametb.Location = new System.Drawing.Point(567, 151);
             this.Cownametb.Name = "Cownametb";
             this.Cownametb.Size = new System.Drawing.Size(276, 51);
@@ -254,6 +255,7 @@ namespace Dairy_Farm_Management_System
             this.PmTb.Name = "PmTb";
             this.PmTb.Size = new System.Drawing.Size(276, 51);
             this.PmTb.TabIndex = 33;
+            this.PmTb.MouseUp += new System.Windows.Forms.MouseEventHandler(this.PmTb_MouseUp);
             // 
             // label3
             // 
