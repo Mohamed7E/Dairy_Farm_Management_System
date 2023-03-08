@@ -255,6 +255,7 @@ namespace Dairy_Farm_Management_System
             this.PmTb.Name = "PmTb";
             this.PmTb.Size = new System.Drawing.Size(276, 51);
             this.PmTb.TabIndex = 33;
+            this.PmTb.TextChanged += new System.EventHandler(this.PmTb_TextChanged);
             this.PmTb.MouseUp += new System.Windows.Forms.MouseEventHandler(this.PmTb_MouseUp);
             // 
             // label3

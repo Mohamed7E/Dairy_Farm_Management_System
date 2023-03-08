@@ -204,8 +204,13 @@ namespace Dairy_Farm_Management_System
 
         private void PmTb_MouseUp(object sender, MouseEventArgs e)
         {
-            int total = Convert.ToInt32(Amt.Text) + Convert.ToInt32(PmTb.Text) + Convert.ToInt32(PmTb.Text);
-            TotalTb.Text = "" + total;
+        }
+
+        private void PmTb_TextChanged(object sender, EventArgs e)
+        {
+                int total = Convert.ToInt32(Amt.Text) + Convert.ToInt32(PmTb.Text) + Convert.ToInt32(Noontb.Text);
+                TotalTb.Text = "" + total;
+            
         }
     }
 }
