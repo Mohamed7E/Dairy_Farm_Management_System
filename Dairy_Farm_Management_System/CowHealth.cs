@@ -248,9 +248,28 @@ namespace Dairy_Farm_Management_System
         {
             if (key == 0)
             {
-                MessageBox.Show("select  Milk data ");
+                MessageBox.Show("select  product to be  deleted");
             }
-            
+            else
+            {
+                try
+                {
+                    con.Open();
+                    string Query = "delete from HealthTbl where RepId=" + key + ";";
+                    SqlCommand cmd = new SqlCommand(Query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Report Delete successdully");
+                    con.Close();
+                    populate();
+                    Clear();
+
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
     }
 }
