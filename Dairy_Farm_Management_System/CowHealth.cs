@@ -280,7 +280,26 @@ namespace Dairy_Farm_Management_System
             {
                 MessageBox.Show("missing informatiom");
             }
-           
+            else
+            {
+                try
+                {
+                    con.Open();
+                    string Query = "update HealthTbl set CowId="+CowIdCb.SelectedValue.ToString()+",cowname='"+CowNAmeTb.Text+"',RepDate='"+data.Value.Date+"'Event='"+EventTb.Text +"','" + DiagnosisTb.Text + "','" + TreatmentTb.Text + "','" + CostTb.Text + "','" + VetNameTb.Text + "'where RepId=" +key+";";
+                    SqlCommand cmd = new SqlCommand(Query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Product  Update successdully");
+                    con.Close();
+                    populate();
+                    Clear();
+
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
     }
 }
