@@ -152,6 +152,10 @@ namespace Dairy_Farm_Management_System
         {
             con.Open();
             string query = "select * from CowTbl";
+            SqlDataAdapter sda = new SqlDataAdapter(query, con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+
         }
         int age = 0;
         private void SaveBtu_Click(object sender, EventArgs e)
