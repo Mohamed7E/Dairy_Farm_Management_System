@@ -125,6 +125,21 @@ namespace Dairy_Farm_Management_System
             this.Hide();
         }
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\learn\learn C#\Dairy_Farm_Management_System\data_MOHAMED_EBRAHIM.mdf;Integrated Security=True;Connect Timeout=30");
+        private void FillCowId()
+        {
+            con.Open();
+            SqlCommand cmd = new SqlCommand("select CowId from HealthTbl ", con);
+            SqlDataAdapter Rdr;
+            Rdr = cmd.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Columns.Add("CowId", typeof(int));
+            dt.Load(Rdr);
+            CowIdCb.ValueMember = "CowId";
+            CowIdCb.DateSource = dt;
+            con.Close();
+
+
+        }
        
         private void button4_Click(object sender, EventArgs e)
         {
