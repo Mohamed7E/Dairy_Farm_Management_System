@@ -148,6 +148,10 @@ namespace Dairy_Farm_Management_System
             this.Hide();
         }
 
+        private void populate()
+        {
+
+        }
         int age = 0;
         private void SaveBtu_Click(object sender, EventArgs e)
         {
@@ -160,7 +164,7 @@ namespace Dairy_Farm_Management_System
                 try
                 {
                     con.Open();
-                    string Query = "inster into CowTbl values ( '" + CowNameTb.Text + "','" + EarTagTb.Text + "','" + ColorTb.Text + "','" + BreadTb.Text + "','" + AgeTb.Text + "','" + WeigtatBirthTb.Text + "','" + PastureTb.Text + "')";
+                    string Query = "inster into CowTbl values ( '" + CowNameTb.Text + "','" + EarTagTb.Text + "','" + ColorTb.Text + "','" + BreadTb.Text + "','" + age + "','" + WeigtatBirthTb.Text + "','" + PastureTb.Text + "')";
                     SqlCommand cmd = new SqlCommand( Query,con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Cow Saved successdully");
@@ -176,7 +180,7 @@ namespace Dairy_Farm_Management_System
         private void DateOfBirthTb_ValueChanged(object sender, EventArgs e)
         {
             age = Convert.ToInt32((DateTime.Today.Date-DateOfBirthTb.Value.Date).Days)/365;
-            MessageBox.Show("" + age);
+          
         }
 
         private void DateOfBirthTb_MouseLeave(object sender, EventArgs e)
