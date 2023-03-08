@@ -170,6 +170,7 @@ namespace Dairy_Farm_Management_System
             WeigtatBirthTb.Text = "";
             AgeTb.Text = "";
             PastureTb.Text = "";
+            key = 0;
 
         }
         int age = 0;
