@@ -276,7 +276,22 @@ namespace Dairy_Farm_Management_System
             {
                 MessageBox.Show("missing informatiom");
             }
-           
+            else
+            {
+                try
+                {
+                    con.Open();
+                    string Query = "update CowTbl set CowName ='" + CowNameTb.Text + "',EarTag='" + EarTagTb.Text + "',Color='" + ColorTb.Text + "',Bread='" + BreadTb.Text + "',Age='" + age + "',WeigtAtBirth='" + WeigtatBirthTb.Text + "',Pasture='" + PastureTb.Text + "')";
+                    SqlCommand cmd = new SqlCommand(Query, con);
+                    
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+
         }
     }
 }
