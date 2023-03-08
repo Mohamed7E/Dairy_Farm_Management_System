@@ -157,7 +157,7 @@ namespace Dairy_Farm_Management_System
             SqlCommandBuilder builder = new SqlCommandBuilder(sda);
             var ds = new DataSet();
             sda.Fill(ds);
-            CowsList.DataSource = ds.Tables[0];
+            CowsList1.DataSource = ds.Tables[0];
             con.Close();
 
         }
@@ -216,6 +216,19 @@ namespace Dairy_Farm_Management_System
         private void UpdateBtu_Click(object sender, EventArgs e)
         {
             Clear();
+        }
+
+        private void CowsList1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+            CowNameTb.Text = CowsList1.SelectedRows[0].Cells[1].Value.ToString();
+            EarTagTb.Text = CowsList1.SelectedRows[0].Cells[2].Value.ToString();
+            ColorTb.Text = CowsList1.SelectedRows[0].Cells[3].Value.ToString();
+            BreadTb.Text = CowsList1.SelectedRows[0].Cells[4].Value.ToString();
+            AgeTb.Text = CowsList1.SelectedRows[0].Cells[5].Value.ToString();
+            WeigtatBirthTb.Text = CowsList1.SelectedRows[0].Cells[6].Value.ToString();
+            PastureTb.Text = CowsList1.SelectedRows[0].Cells[7].Value.ToString();
+            
         }
     }
 }

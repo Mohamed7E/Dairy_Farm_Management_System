@@ -72,13 +72,13 @@ namespace Dairy_Farm_Management_System
             this.label8 = new System.Windows.Forms.Label();
             this.PastureTb = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.CowsList = new System.Windows.Forms.DataGridView();
             this.label10 = new System.Windows.Forms.Label();
             this.UpdateBtu = new System.Windows.Forms.Button();
             this.SaveBtu = new System.Windows.Forms.Button();
             this.EditBtu = new System.Windows.Forms.Button();
             this.DeleteBtu = new System.Windows.Forms.Button();
             this.label19 = new System.Windows.Forms.Label();
+            this.CowsList1 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panel7.SuspendLayout();
@@ -96,7 +96,7 @@ namespace Dairy_Farm_Management_System
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.CowsList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CowsList1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -520,22 +520,10 @@ namespace Dairy_Farm_Management_System
             this.label9.TabIndex = 15;
             this.label9.Text = "Date Of Birth";
             // 
-            // CowsList
-            // 
-            this.CowsList.BackgroundColor = System.Drawing.Color.SlateGray;
-            this.CowsList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.CowsList.Location = new System.Drawing.Point(295, 522);
-            this.CowsList.Name = "CowsList";
-            this.CowsList.RowHeadersWidth = 51;
-            this.CowsList.RowTemplate.Height = 29;
-            this.CowsList.Size = new System.Drawing.Size(1156, 306);
-            this.CowsList.StandardTab = true;
-            this.CowsList.TabIndex = 25;
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(767, 456);
+            this.label10.Location = new System.Drawing.Point(771, 427);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(155, 45);
             this.label10.TabIndex = 1;
@@ -597,18 +585,29 @@ namespace Dairy_Farm_Management_System
             this.label19.TabIndex = 23;
             this.label19.Text = "Manage Cows";
             // 
+            // CowsList1
+            // 
+            this.CowsList1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.CowsList1.Location = new System.Drawing.Point(298, 493);
+            this.CowsList1.Name = "CowsList1";
+            this.CowsList1.RowHeadersWidth = 51;
+            this.CowsList1.RowTemplate.Height = 29;
+            this.CowsList1.Size = new System.Drawing.Size(1153, 323);
+            this.CowsList1.TabIndex = 44;
+            this.CowsList1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.CowsList1_CellContentClick);
+            // 
             // Cows
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(18F, 45F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1476, 840);
+            this.Controls.Add(this.CowsList1);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.DeleteBtu);
             this.Controls.Add(this.EditBtu);
             this.Controls.Add(this.SaveBtu);
             this.Controls.Add(this.UpdateBtu);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.CowsList);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.PastureTb);
@@ -660,7 +659,7 @@ namespace Dairy_Farm_Management_System
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.CowsList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CowsList1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -687,7 +686,6 @@ namespace Dairy_Farm_Management_System
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox PastureTb;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.DataGridView CowsList;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label11;
@@ -717,5 +715,6 @@ namespace Dairy_Farm_Management_System
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.DataGridView CowsList1;
     }
 }
