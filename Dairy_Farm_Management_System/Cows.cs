@@ -150,7 +150,8 @@ namespace Dairy_Farm_Management_System
 
         private void populate()
         {
-
+            con.Open();
+            string query = "select * from CowTbl";
         }
         int age = 0;
         private void SaveBtu_Click(object sender, EventArgs e)
