@@ -169,6 +169,15 @@ namespace Dairy_Farm_Management_System
             con.Close();
 
         }
+        private void Clear()
+        {
+            CowNAmeTb.Text = "";
+            EventTb.Text = "";
+            DiagnosisTb.Text = "";
+            TreatmentTb.Text = "";
+            CostTb.Text = "";
+            VetNameTb.Text = "";
+        }
         private void button4_Click(object sender, EventArgs e)
         {
             if (CowIdCb.SelectedIndex == -1 || CowNAmeTb.Text == "" || EventTb.Text == "" || DiagnosisTb.Text == "" || TreatmentTb.Text == "" || CostTb.Text == "" || VetNameTb.Text == "")
