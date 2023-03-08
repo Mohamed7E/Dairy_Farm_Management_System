@@ -230,7 +230,14 @@ namespace Dairy_Farm_Management_System
             PastureTb.Text = CowsList1.SelectedRows[0].Cells[7].Value.ToString();
             if(CowNameTb.Text=="")
             {
-
+                key = 0;
+                age = 0;
+            }
+            else
+            {
+                
+                    key = Convert.ToInt32(CowsList1.SelectedRows[0].Cells[0].Value.ToString());
+                    age = Convert.ToInt32(CowsList1.SelectedRows[0].Cells[0].Value.ToString());
             }
         }
     }
