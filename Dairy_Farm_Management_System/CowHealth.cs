@@ -223,7 +223,11 @@ namespace Dairy_Farm_Management_System
         int key = 0;
         private void Healthlist_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            CowIdCb.SelectedValue = Healthlist.SelectedRows[0].Cells[1].Value.ToString();
+            CowNAmeTb.Text = Healthlist.SelectedRows[0].Cells[2].Value.ToString();
+            data.Text = Healthlist.SelectedRows[0].Cells[3].Value.ToString();
 
+            
         }
     }
 }
