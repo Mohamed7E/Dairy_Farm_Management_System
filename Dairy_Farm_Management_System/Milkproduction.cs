@@ -148,6 +148,7 @@ namespace Dairy_Farm_Management_System
             Noontb.Text = "";
             PmTb.Text = "";
             TotalTb.Text = "";
+            key = 0;
         }
         private void GetCowName()
         {
@@ -262,5 +263,17 @@ namespace Dairy_Farm_Management_System
                 }
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            if (CowIdCb.SelectedIndex== -1 || Cownametb.Text == "" || Amt.Text == "" || Noontb.Text == "" || PmTb.Text == "" || TotalTb.Text == "")
+
+            {
+                MessageBox.Show("missing informatiom");
+            }
+            
+        }
+    }
     }
 }
