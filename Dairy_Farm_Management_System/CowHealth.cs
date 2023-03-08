@@ -177,6 +177,7 @@ namespace Dairy_Farm_Management_System
             TreatmentTb.Text = "";
             CostTb.Text = "";
             VetNameTb.Text = "";
+            key = 0;
         }
         private void button4_Click(object sender, EventArgs e)
         {
@@ -218,6 +219,11 @@ namespace Dairy_Farm_Management_System
         private void button3_Click(object sender, EventArgs e)
         {
             Clear();
+        }
+        int key = 0;
+        private void Healthlist_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
