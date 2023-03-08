@@ -167,7 +167,7 @@ namespace Dairy_Farm_Management_System
                     MessageBox.Show("Cow Saved successdully");
                     con.Close();
                     populate();
-
+                    Clear();
 
                 }
                 catch (Exception ex) 
@@ -175,6 +175,11 @@ namespace Dairy_Farm_Management_System
                     MessageBox.Show(ex.Message);
                 }
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Clear();
         }
     }
 }

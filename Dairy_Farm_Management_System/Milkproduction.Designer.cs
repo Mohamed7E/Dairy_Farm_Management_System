@@ -158,8 +158,9 @@ namespace Dairy_Farm_Management_System
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(216, 55);
             this.button3.TabIndex = 44;
-            this.button3.Text = "Up";
+            this.button3.Text = "Clear ";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label10
             // 
