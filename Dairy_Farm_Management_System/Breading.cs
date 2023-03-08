@@ -236,8 +236,18 @@ namespace Dairy_Farm_Management_System
             EXDate.Text = Breedlist.SelectedRows[0].Cells[6].Value.ToString();
             DateCaved.Text = Breedlist.SelectedRows[0].Cells[7].Value.ToString();
             CowAgeTb.Text = Breedlist.SelectedRows[0].Cells[8].Value.ToString();
-            
-            
+            RemarksTb.Text= Breedlist.SelectedRows[0].Cells[8].Value.ToString();
+            if (CowNametb.Text == "")
+            {
+                key = 0;
+            }
+            else
+            {
+
+                key = Convert.ToInt32(Breedlist.SelectedRows[0].Cells[0].Value.ToString());
+
+            }
+
 
         }
     }
