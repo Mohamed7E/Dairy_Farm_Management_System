@@ -203,7 +203,7 @@ namespace Dairy_Farm_Management_System
                     MessageBox.Show("Breeding Report Saved ");
                     con.Close();
                     populate();
-                   
+                    Clear();
 
                 }
                 catch (Exception ex)
