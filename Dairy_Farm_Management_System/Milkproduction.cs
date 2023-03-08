@@ -176,7 +176,7 @@ namespace Dairy_Farm_Management_System
                 try
                 {
                     con.Open();
-                    string Query = "inster into MilkSalesTbl values ( '" + CowIdCb.SelectedValue.ToString() + "','" + Cownametb.Text + "','" + Amt.Text + "','" + Noontb.Text + "','" + TotalTb.Text + "','" + PmTb.Text + "','" + data.Value.Date + "')";
+                    string Query = "inster into MilkTbl values ( '" + CowIdCb.SelectedValue.ToString() + "','" + Cownametb.Text + "','" + Amt.Text + "','" + Noontb.Text + "','" + TotalTb.Text + "','" + PmTb.Text + "','" + data.Value.Date + "')";
                     SqlCommand cmd = new SqlCommand(Query, con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Cow Saved successdully");
@@ -241,7 +241,22 @@ namespace Dairy_Farm_Management_System
             {
                 MessageBox.Show("select  Milk data ");
             }
-            
+            else
+            {
+                try
+                {
+                    con.Open();
+                    string Query = "delete from MilkTbl where MId=" + key + ";";
+                    SqlCommand cmd = new SqlCommand(Query, con);
+                    
+
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
     }
 }
