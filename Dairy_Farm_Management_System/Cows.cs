@@ -247,7 +247,26 @@ namespace Dairy_Farm_Management_System
             {
                 MessageBox.Show("select data ");
             }
-           
+            else
+            {
+                try
+                {
+                    con.Open();
+                    string Query ="delete from CowTbl where CowId="+key+";" ;
+                    SqlCommand cmd = new SqlCommand(Query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Cow Delete successdully");
+                    con.Close();
+                    populate();
+                    Clear();
+
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
     }
 }
