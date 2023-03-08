@@ -14,6 +14,7 @@ namespace Dairy_Farm_Management_System
         public Milkproduction()
         {
             InitializeComponent();
+            FillCowId();
         }
 
         private void panel4_Paint(object sender, PaintEventArgs e)
