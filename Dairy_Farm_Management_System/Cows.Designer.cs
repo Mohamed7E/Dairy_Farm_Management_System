@@ -563,6 +563,7 @@ namespace Dairy_Farm_Management_System
             this.EditBtu.TabIndex = 21;
             this.EditBtu.Text = "Edit";
             this.EditBtu.UseVisualStyleBackColor = false;
+            this.EditBtu.Click += new System.EventHandler(this.EditBtu_Click);
             // 
             // DeleteBtu
             // 

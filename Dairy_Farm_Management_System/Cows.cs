@@ -269,5 +269,14 @@ namespace Dairy_Farm_Management_System
                 }
             }
         }
+
+        private void EditBtu_Click(object sender, EventArgs e)
+        {
+            if (CowNameTb.Text == "" || EarTagTb.Text == "" || ColorTb.Text == "" || BreadTb.Text == "" || AgeTb.Text == "" || WeigtatBirthTb.Text == "" || PastureTb.Text == "")
+            {
+                MessageBox.Show("missing informatiom");
+            }
+           
+        }
     }
 }
