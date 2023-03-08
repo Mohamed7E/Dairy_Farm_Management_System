@@ -215,14 +215,23 @@ namespace Dairy_Farm_Management_System
         int key = 0;
         private void Dailylist_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            CowIdCb.Text = Dailylist.SelectedRows[0].Cells[1].Value.ToString();
-            Cownametb.Text = Dailylist.SelectedRows[0].Cells[1].Value.ToString();
-            Amt.Text = Dailylist.SelectedRows[0].Cells[1].Value.ToString();
-            Noontb.Text = Dailylist.SelectedRows[0].Cells[1].Value.ToString();
-            PmTb.Text = Dailylist.SelectedRows[0].Cells[1].Value.ToString();
-            TotalTb.Text = Dailylist.SelectedRows[0].Cells[1].Value.ToString();
-            data.Text = Dailylist.SelectedRows[0].Cells[1].Value.ToString();
-            
+            CowIdCb.SelectedValue = Dailylist.SelectedRows[0].Cells[1].Value.ToString();
+            Cownametb.Text = Dailylist.SelectedRows[0].Cells[2].Value.ToString();
+            Amt.Text = Dailylist.SelectedRows[0].Cells[3].Value.ToString();
+            Noontb.Text = Dailylist.SelectedRows[0].Cells[4].Value.ToString();
+            PmTb.Text = Dailylist.SelectedRows[0].Cells[5].Value.ToString();
+            TotalTb.Text = Dailylist.SelectedRows[0].Cells[6].Value.ToString();
+            data.Text = Dailylist.SelectedRows[0].Cells[7].Value.ToString();
+            if (Cownametb.Text == "")
+            {
+                key = 0;
+                            }
+            else
+            {
+
+                key = Convert.ToInt32(Dailylist.SelectedRows[0].Cells[0].Value.ToString());
+                
+            }
 
         }
     }
