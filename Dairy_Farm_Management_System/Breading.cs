@@ -187,7 +187,22 @@ namespace Dairy_Farm_Management_System
             {
                 MessageBox.Show("missing informatiom");
             }
-            
+            else
+            {
+                try
+                {
+                    con.Open();
+                    string Query = "inster into HealthTbl values ( '" + HealDate.Value.Date + "','" + BreedDate .Value.Date+ "','" +CowIdCb.SelectedValue.ToString()+ "','" +CowNametb.Text+ "','" + pregDate.Value.Date + "','" + EXDate.Value.Date + "','" + DateCaved.Value.Date + "'," +CowAgeTb.Text + "','" + RemarksTb.Text + "' )";
+                    SqlCommand cmd = new SqlCommand(Query, con);
+                    
+                   
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
 
         private void CowIdCb_SelectionChangeCommitted(object sender, EventArgs e)
