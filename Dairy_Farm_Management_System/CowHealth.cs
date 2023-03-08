@@ -214,5 +214,10 @@ namespace Dairy_Farm_Management_System
         {
             GetCowName();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Clear();
+        }
     }
 }
