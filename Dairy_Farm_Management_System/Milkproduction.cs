@@ -153,6 +153,9 @@ namespace Dairy_Farm_Management_System
         {
             con.Open();
             string query = "select * from CowTbl where CowId =" + CowIdCb.Selectedvalue.ToString();
+            SqlCommand cmd = new SqlCommand(query, con);
+            DateTabl dt = new DateTabl();
+            SqlDataAdapter sde = new SqlDataAdapter(cmd);
 
         }
             private void button4_Click(object sender, EventArgs e)
