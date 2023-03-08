@@ -231,7 +231,16 @@ namespace Dairy_Farm_Management_System
             TreatmentTb.Text = Healthlist.SelectedRows[0].Cells[6].Value.ToString();
             CostTb.Text = Healthlist.SelectedRows[0].Cells[6].Value.ToString();
             VetNameTb.Text = Healthlist.SelectedRows[0].Cells[6].Value.ToString();
+            if (CowNAmeTb.Text == "")
+            {
+                key = 0;
+            }
+            else
+            {
 
+                key = Convert.ToInt32(Healthlist.SelectedRows[0].Cells[0].Value.ToString());
+
+            }
 
         }
     }
