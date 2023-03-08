@@ -283,7 +283,12 @@ namespace Dairy_Farm_Management_System
                     con.Open();
                     string Query = "update CowTbl set CowName ='" + CowNameTb.Text + "',EarTag='" + EarTagTb.Text + "',Color='" + ColorTb.Text + "',Bread='" + BreadTb.Text + "',Age='" + age + "',WeigtAtBirth='" + WeigtatBirthTb.Text + "',Pasture='" + PastureTb.Text + "')";
                     SqlCommand cmd = new SqlCommand(Query, con);
-                    
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Cow Saved successdully");
+                    con.Close();
+                    populate();
+                    Clear();
+
 
                 }
                 catch (Exception ex)
