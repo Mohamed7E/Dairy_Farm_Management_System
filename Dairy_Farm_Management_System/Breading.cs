@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
@@ -132,6 +133,12 @@ namespace Dairy_Farm_Management_System
             DashBoard Ob = new DashBoard();
             Ob.Show();
             this.Hide();
+        }
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\learn\learn C#\Dairy_Farm_Management_System\data_MOHAMED_EBRAHIM.mdf;Integrated Security=True;Connect Timeout=30");
+      
+        private void button4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
