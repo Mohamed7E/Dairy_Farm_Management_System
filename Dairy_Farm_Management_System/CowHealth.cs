@@ -14,6 +14,8 @@ namespace Dairy_Farm_Management_System
         public CowHealth()
         {
             InitializeComponent();
+            populate();
+            FillCowId();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -143,7 +145,7 @@ namespace Dairy_Farm_Management_System
         private void populate()
         {
             con.Open();
-            string query = "select * from MilkSalesTbl";
+            string query = "select * from HealthTbl";
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
             SqlCommandBuilder builder = new SqlCommandBuilder(sda);
             var ds = new DataSet();
@@ -152,7 +154,21 @@ namespace Dairy_Farm_Management_System
             con.Close();
 
         }
+        private void GetCowName()
+        {
+            con.Open();
+            string query = "select * from HealthTbl where CowId =" + CowIdCb.SelectedValue.ToString();
+            SqlCommand cmd = new SqlCommand(query, con);
+            DataTable dt = new DataTable();
+            SqlDataAdapter sde = new SqlDataAdapter(cmd);
+            sde.Fill(dt);
+            foreach (DataRow dr in dt.Rows)
+            {
+                CowNAmeTb.Text = dr["CowName"].ToString();
+            }
+            con.Close();
 
+        }
         private void button4_Click(object sender, EventArgs e)
         {
 
