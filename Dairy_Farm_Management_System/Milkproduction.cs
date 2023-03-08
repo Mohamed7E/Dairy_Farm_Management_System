@@ -156,6 +156,12 @@ namespace Dairy_Farm_Management_System
             SqlCommand cmd = new SqlCommand(query, con);
             DateTabl dt = new DateTabl();
             SqlDataAdapter sde = new SqlDataAdapter(cmd);
+            sde.Fill(dt);
+            foreach(DataRow dr in dt.Rows)
+            {
+                Cownametb.Text = dr["CowName"].ToString();
+            }
+            con.Close();
 
         }
             private void button4_Click(object sender, EventArgs e)
