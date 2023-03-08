@@ -257,7 +257,27 @@ namespace Dairy_Farm_Management_System
             {
                 MessageBox.Show("select Breed Report to be  deleted");
             }
-            
-    }
+            else
+            {
+                try
+                {
+                    con.Open();
+                    string Query = "delete from BreedTbl where BrId=" + key + ";";
+                    SqlCommand cmd = new SqlCommand(Query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Breed  Delete successdully");
+                    con.Close();
+                    populate();
+                    Clear();
+
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+
+        }
     }
 }
