@@ -190,6 +190,7 @@ namespace Dairy_Farm_Management_System
                     MessageBox.Show("Cow Saved successdully");
                     con.Close();
                     populate();
+                    Clear();
 
 
                 }
@@ -210,6 +211,11 @@ namespace Dairy_Farm_Management_System
         {
             age = Convert.ToInt32((DateTime.Today.Date - DateOfBirthTb.Value.Date).Days) / 365;
             AgeTb.Text = "" + age;
+        }
+
+        private void UpdateBtu_Click(object sender, EventArgs e)
+        {
+            Clear();
         }
     }
 }

@@ -551,6 +551,7 @@ namespace Dairy_Farm_Management_System
             this.UpdateBtu.TabIndex = 19;
             this.UpdateBtu.Text = "Clear";
             this.UpdateBtu.UseVisualStyleBackColor = false;
+            this.UpdateBtu.Click += new System.EventHandler(this.UpdateBtu_Click);
             // 
             // SaveBtu
             // 
