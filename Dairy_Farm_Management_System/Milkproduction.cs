@@ -15,6 +15,8 @@ namespace Dairy_Farm_Management_System
         {
             InitializeComponent();
             FillCowId();
+            populate();
+
         }
 
         private void panel4_Paint(object sender, PaintEventArgs e)
@@ -155,7 +157,7 @@ namespace Dairy_Farm_Management_System
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Cow Saved successdully");
                     con.Close();
-                   
+                    populate();
 
 
                 }
