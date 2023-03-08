@@ -138,9 +138,21 @@ namespace Dairy_Farm_Management_System
             CowIdCb.DateSource = dt;
             con.Close();
 
+            
+        }
+        private void populate()
+        {
+            con.Open();
+            string query = "select * from MilkSalesTbl";
+            SqlDataAdapter sda = new SqlDataAdapter(query, con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            Healthlist.DataSource = ds.Tables[0];
+            con.Close();
 
         }
-       
+
         private void button4_Click(object sender, EventArgs e)
         {
 
