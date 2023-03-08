@@ -574,6 +574,7 @@ namespace Dairy_Farm_Management_System
             this.DeleteBtu.TabIndex = 22;
             this.DeleteBtu.Text = "Delete";
             this.DeleteBtu.UseVisualStyleBackColor = false;
+            this.DeleteBtu.Click += new System.EventHandler(this.DeleteBtu_Click);
             // 
             // label19
             // 
