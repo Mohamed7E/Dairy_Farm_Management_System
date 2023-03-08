@@ -140,10 +140,14 @@ namespace Dairy_Farm_Management_System
             con.Close();
 
         }
-        private void button4_Click(object sender, EventArgs e)
+        private void Clear()
+        {
+            
+        }
+            private void button4_Click(object sender, EventArgs e)
         {
 
-            if (CowIdCb.Text == "" || Cownametb.Text == "" || Amt.Text == "" || Noontb.Text == "" || PmTb.Text == "" || TotalTb.Text == "")
+            if (CowIdCb.SelectedIndex== -1 || Cownametb.Text == "" || Amt.Text == "" || Noontb.Text == "" || PmTb.Text == "" || TotalTb.Text == "")
             {
                 MessageBox.Show("missing informatiom");
             }
