@@ -51,7 +51,6 @@ namespace Dairy_Farm_Management_System
             this.TotalTb = new System.Windows.Forms.TextBox();
             this.data = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
-            this.CowIdCb = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label18 = new System.Windows.Forms.Label();
@@ -77,6 +76,7 @@ namespace Dairy_Farm_Management_System
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.CowIdCb = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.Dailylist)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -202,9 +202,8 @@ namespace Dairy_Farm_Management_System
             // Cownametb
             // 
             this.Cownametb.Location = new System.Drawing.Point(567, 151);
-            this.Cownametb.Multiline = true;
             this.Cownametb.Name = "Cownametb";
-            this.Cownametb.Size = new System.Drawing.Size(276, 40);
+            this.Cownametb.Size = new System.Drawing.Size(276, 51);
             this.Cownametb.TabIndex = 39;
             // 
             // label6
@@ -219,9 +218,8 @@ namespace Dairy_Farm_Management_System
             // Amt
             // 
             this.Amt.Location = new System.Drawing.Point(872, 151);
-            this.Amt.Multiline = true;
             this.Amt.Name = "Amt";
-            this.Amt.Size = new System.Drawing.Size(276, 40);
+            this.Amt.Size = new System.Drawing.Size(276, 51);
             this.Amt.TabIndex = 37;
             // 
             // label5
@@ -236,9 +234,8 @@ namespace Dairy_Farm_Management_System
             // Noontb
             // 
             this.Noontb.Location = new System.Drawing.Point(1171, 151);
-            this.Noontb.Multiline = true;
             this.Noontb.Name = "Noontb";
-            this.Noontb.Size = new System.Drawing.Size(276, 40);
+            this.Noontb.Size = new System.Drawing.Size(276, 51);
             this.Noontb.TabIndex = 35;
             // 
             // label4
@@ -254,9 +251,8 @@ namespace Dairy_Farm_Management_System
             // PmTb
             // 
             this.PmTb.Location = new System.Drawing.Point(809, 274);
-            this.PmTb.Multiline = true;
             this.PmTb.Name = "PmTb";
-            this.PmTb.Size = new System.Drawing.Size(276, 40);
+            this.PmTb.Size = new System.Drawing.Size(276, 51);
             this.PmTb.TabIndex = 33;
             // 
             // label3
@@ -271,9 +267,8 @@ namespace Dairy_Farm_Management_System
             // TotalTb
             // 
             this.TotalTb.Location = new System.Drawing.Point(1111, 274);
-            this.TotalTb.Multiline = true;
             this.TotalTb.Name = "TotalTb";
-            this.TotalTb.Size = new System.Drawing.Size(276, 40);
+            this.TotalTb.Size = new System.Drawing.Size(276, 51);
             this.TotalTb.TabIndex = 31;
             // 
             // data
@@ -296,14 +291,6 @@ namespace Dairy_Farm_Management_System
             this.label2.Size = new System.Drawing.Size(119, 45);
             this.label2.TabIndex = 25;
             this.label2.Text = "Cow id";
-            // 
-            // CowIdCb
-            // 
-            this.CowIdCb.Location = new System.Drawing.Point(271, 151);
-            this.CowIdCb.Multiline = true;
-            this.CowIdCb.Name = "CowIdCb";
-            this.CowIdCb.Size = new System.Drawing.Size(276, 40);
-            this.CowIdCb.TabIndex = 28;
             // 
             // panel2
             // 
@@ -569,11 +556,25 @@ namespace Dairy_Farm_Management_System
             this.label11.Text = "Cows";
             this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
+            // CowIdCb
+            // 
+            this.CowIdCb.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CowIdCb.FormattingEnabled = true;
+            this.CowIdCb.Items.AddRange(new object[] {
+            "Admin",
+            "Employee"});
+            this.CowIdCb.Location = new System.Drawing.Point(256, 157);
+            this.CowIdCb.Name = "CowIdCb";
+            this.CowIdCb.Size = new System.Drawing.Size(295, 45);
+            this.CowIdCb.TabIndex = 49;
+            this.CowIdCb.SelectionChangeCommitted += new System.EventHandler(this.CowIdCb_SelectionChangeCommitted);
+            // 
             // Milkproduction
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(18F, 45F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1476, 840);
+            this.Controls.Add(this.CowIdCb);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -594,7 +595,6 @@ namespace Dairy_Farm_Management_System
             this.Controls.Add(this.TotalTb);
             this.Controls.Add(this.data);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.CowIdCb);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -659,7 +659,6 @@ namespace Dairy_Farm_Management_System
         private System.Windows.Forms.TextBox TotalTb;
         private System.Windows.Forms.DateTimePicker data;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox CowIdCb;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label18;
@@ -685,5 +684,6 @@ namespace Dairy_Farm_Management_System
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.ComboBox CowIdCb;
     }
 }

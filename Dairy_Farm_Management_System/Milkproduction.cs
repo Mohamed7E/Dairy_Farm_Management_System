@@ -152,7 +152,7 @@ namespace Dairy_Farm_Management_System
         private void GetCowName()
         {
             con.Open();
-            string query = "select * from CowTbl where CowId =" + CowIdCb.Selectedvalue.ToString();
+            string query = "select * from CowTbl where CowId =" + CowIdCb.SelectedValue.ToString();
             SqlCommand cmd = new SqlCommand(query, con);
             DateTabl dt = new DateTabl();
             SqlDataAdapter sde = new SqlDataAdapter(cmd);
@@ -176,7 +176,7 @@ namespace Dairy_Farm_Management_System
                 try
                 {
                     con.Open();
-                    string Query = "inster into MilkSalesTbl values ( '" + CowIdCb.Selectedvalue.ToString() + "','" + Cownametb.Text + "','" + Amt.Text + "','" + Noontb.Text + "','" + TotalTb.Text + "','" + PmTb.Text + "','" + data.Value.Date + "')";
+                    string Query = "inster into MilkSalesTbl values ( '" + CowIdCb.SelectedValue.ToString() + "','" + Cownametb.Text + "','" + Amt.Text + "','" + Noontb.Text + "','" + TotalTb.Text + "','" + PmTb.Text + "','" + data.Value.Date + "')";
                     SqlCommand cmd = new SqlCommand(Query, con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Cow Saved successdully");
@@ -195,6 +195,11 @@ namespace Dairy_Farm_Management_System
         private void button3_Click(object sender, EventArgs e)
         {
             Clear();
+        }
+
+        private void CowIdCb_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            GetCowName();
         }
     }
 }
