@@ -162,6 +162,8 @@ namespace Dairy_Farm_Management_System
                     con.Open();
                     string Query = "inster into CowTbl values ( '" + CowNameTb.Text + "','" + EarTagTb.Text + "','" + ColorTb.Text + "','" + BreadTb.Text + "','" + AgeTb.Text + "','" + WeigtatBirthTb.Text + "','" + PastureTb.Text + "')";
                     SqlCommand cmd = new SqlCommand( Query,con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Cow Saved successdully");
                     con.Close();
                    
                 }catch(Exception ex)
