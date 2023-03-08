@@ -158,6 +158,8 @@ namespace Dairy_Farm_Management_System
             {
                 try
                 {
+                    con.Open();
+                    con.Close();
                    
                 }catch(Exception ex)
                 {
