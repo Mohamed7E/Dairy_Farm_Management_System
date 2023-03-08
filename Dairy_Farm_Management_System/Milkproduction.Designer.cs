@@ -30,6 +30,9 @@ namespace Dairy_Farm_Management_System
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Milkproduction));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
@@ -37,7 +40,6 @@ namespace Dairy_Farm_Management_System
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
-            this.Dailylist = new System.Windows.Forms.DataGridView();
             this.label9 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.Cownametb = new System.Windows.Forms.TextBox();
@@ -77,7 +79,7 @@ namespace Dairy_Farm_Management_System
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label11 = new System.Windows.Forms.Label();
             this.CowIdCb = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.Dailylist)).BeginInit();
+            this.Dailylist = new Guna.UI2.WinForms.Guna2DataGridView();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -95,6 +97,7 @@ namespace Dairy_Farm_Management_System
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dailylist)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -172,17 +175,6 @@ namespace Dairy_Farm_Management_System
             this.label10.Size = new System.Drawing.Size(163, 45);
             this.label10.TabIndex = 26;
             this.label10.Text = "Daily Milk";
-            // 
-            // Dailylist
-            // 
-            this.Dailylist.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Dailylist.Location = new System.Drawing.Point(271, 505);
-            this.Dailylist.Name = "Dailylist";
-            this.Dailylist.RowHeadersWidth = 51;
-            this.Dailylist.RowTemplate.Height = 29;
-            this.Dailylist.Size = new System.Drawing.Size(1176, 323);
-            this.Dailylist.TabIndex = 43;
-            this.Dailylist.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Dailylist_CellContentClick);
             // 
             // label9
             // 
@@ -575,11 +567,64 @@ namespace Dairy_Farm_Management_System
             this.CowIdCb.TabIndex = 49;
             this.CowIdCb.SelectionChangeCommitted += new System.EventHandler(this.CowIdCb_SelectionChangeCommitted);
             // 
+            // Dailylist
+            // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.Dailylist.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Dailylist.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.Dailylist.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.Dailylist.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Dailylist.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.Dailylist.Location = new System.Drawing.Point(292, 508);
+            this.Dailylist.Name = "Dailylist";
+            this.Dailylist.RowHeadersVisible = false;
+            this.Dailylist.RowHeadersWidth = 51;
+            this.Dailylist.RowTemplate.Height = 29;
+            this.Dailylist.Size = new System.Drawing.Size(1172, 293);
+            this.Dailylist.TabIndex = 50;
+            this.Dailylist.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.Dailylist.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.Dailylist.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.Dailylist.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.Dailylist.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.Dailylist.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.Dailylist.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.Dailylist.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.Dailylist.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.Dailylist.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Dailylist.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.Dailylist.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Dailylist.ThemeStyle.HeaderStyle.Height = 4;
+            this.Dailylist.ThemeStyle.ReadOnly = false;
+            this.Dailylist.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.Dailylist.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.Dailylist.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Dailylist.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.Dailylist.ThemeStyle.RowsStyle.Height = 29;
+            this.Dailylist.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.Dailylist.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.Dailylist.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Dailylist_CellContentClick_1);
+            // 
             // Milkproduction
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(18F, 45F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1476, 840);
+            this.Controls.Add(this.Dailylist);
             this.Controls.Add(this.CowIdCb);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.button2);
@@ -587,7 +632,6 @@ namespace Dairy_Farm_Management_System
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.Dailylist);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.Cownametb);
@@ -610,7 +654,6 @@ namespace Dairy_Farm_Management_System
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Milkproduction";
             this.Load += new System.EventHandler(this.Milkproduction_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.Dailylist)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -637,6 +680,7 @@ namespace Dairy_Farm_Management_System
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dailylist)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -651,7 +695,6 @@ namespace Dairy_Farm_Management_System
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.DataGridView Dailylist;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox Cownametb;
@@ -691,5 +734,6 @@ namespace Dairy_Farm_Management_System
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.ComboBox CowIdCb;
+        private Guna.UI2.WinForms.Guna2DataGridView Dailylist;
     }
 }

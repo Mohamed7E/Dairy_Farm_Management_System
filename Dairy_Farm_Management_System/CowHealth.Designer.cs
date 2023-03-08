@@ -30,16 +30,18 @@ namespace Dairy_Farm_Management_System
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CowHealth));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label12 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label9 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.CowNAmeTb = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -47,15 +49,15 @@ namespace Dairy_Farm_Management_System
             this.panel6 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.EventTb = new System.Windows.Forms.TextBox();
+            this.E = new System.Windows.Forms.Label();
+            this.DiagnosisTb = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.CostTb = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.VetNameTb = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -75,9 +77,9 @@ namespace Dairy_Farm_Management_System
             this.panel9 = new System.Windows.Forms.Panel();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.CowIdCb = new System.Windows.Forms.ComboBox();
+            this.TreatmentTb = new System.Windows.Forms.TextBox();
+            this.Healthlist = new Guna.UI2.WinForms.Guna2DataGridView();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -95,6 +97,7 @@ namespace Dairy_Farm_Management_System
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Healthlist)).BeginInit();
             this.SuspendLayout();
             // 
             // label12
@@ -161,24 +164,14 @@ namespace Dairy_Farm_Management_System
             this.label10.TabIndex = 51;
             this.label10.Text = "Health Report";
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(269, 505);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(1176, 323);
-            this.dataGridView1.TabIndex = 66;
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(452, 212);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(163, 45);
+            this.label9.Size = new System.Drawing.Size(165, 45);
             this.label9.TabIndex = 65;
-            this.label9.Text = "Vet Name";
+            this.label9.Text = "Treatment";
             this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label7
@@ -190,13 +183,13 @@ namespace Dairy_Farm_Management_System
             this.label7.TabIndex = 63;
             this.label7.Text = "Cow Name";
             // 
-            // textBox6
+            // CowNAmeTb
             // 
-            this.textBox6.Location = new System.Drawing.Point(565, 151);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(276, 40);
-            this.textBox6.TabIndex = 64;
+            this.CowNAmeTb.Location = new System.Drawing.Point(565, 151);
+            this.CowNAmeTb.Multiline = true;
+            this.CowNAmeTb.Name = "CowNAmeTb";
+            this.CowNAmeTb.Size = new System.Drawing.Size(276, 40);
+            this.CowNAmeTb.TabIndex = 64;
             // 
             // panel4
             // 
@@ -267,34 +260,34 @@ namespace Dairy_Farm_Management_System
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(1169, 93);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(173, 45);
+            this.label6.Size = new System.Drawing.Size(161, 45);
             this.label6.TabIndex = 61;
-            this.label6.Text = "Noon Milk";
+            this.label6.Text = "Diagnosis";
             // 
-            // textBox5
+            // EventTb
             // 
-            this.textBox5.Location = new System.Drawing.Point(870, 151);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(276, 40);
-            this.textBox5.TabIndex = 62;
+            this.EventTb.Location = new System.Drawing.Point(870, 151);
+            this.EventTb.Multiline = true;
+            this.EventTb.Name = "EventTb";
+            this.EventTb.Size = new System.Drawing.Size(276, 40);
+            this.EventTb.TabIndex = 62;
             // 
-            // label5
+            // E
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(870, 102);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(149, 45);
-            this.label5.TabIndex = 59;
-            this.label5.Text = " Am Milk";
+            this.E.AutoSize = true;
+            this.E.Location = new System.Drawing.Point(870, 102);
+            this.E.Name = "E";
+            this.E.Size = new System.Drawing.Size(100, 45);
+            this.E.TabIndex = 59;
+            this.E.Text = "Event";
             // 
-            // textBox4
+            // DiagnosisTb
             // 
-            this.textBox4.Location = new System.Drawing.Point(1169, 151);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(276, 40);
-            this.textBox4.TabIndex = 60;
+            this.DiagnosisTb.Location = new System.Drawing.Point(1169, 151);
+            this.DiagnosisTb.Multiline = true;
+            this.DiagnosisTb.Name = "DiagnosisTb";
+            this.DiagnosisTb.Size = new System.Drawing.Size(276, 40);
+            this.DiagnosisTb.TabIndex = 60;
             // 
             // label4
             // 
@@ -327,31 +320,31 @@ namespace Dairy_Farm_Management_System
             this.label17.Text = "Milk Sales";
             this.label17.Click += new System.EventHandler(this.label17_Click);
             // 
-            // textBox3
+            // CostTb
             // 
-            this.textBox3.Location = new System.Drawing.Point(760, 277);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(276, 40);
-            this.textBox3.TabIndex = 58;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.CostTb.Location = new System.Drawing.Point(760, 277);
+            this.CostTb.Multiline = true;
+            this.CostTb.Name = "CostTb";
+            this.CostTb.Size = new System.Drawing.Size(276, 40);
+            this.CostTb.TabIndex = 58;
+            this.CostTb.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(1109, 212);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(165, 45);
+            this.label3.Size = new System.Drawing.Size(163, 45);
             this.label3.TabIndex = 55;
-            this.label3.Text = "Treatment";
+            this.label3.Text = "Vet Name";
             // 
-            // textBox2
+            // VetNameTb
             // 
-            this.textBox2.Location = new System.Drawing.Point(1109, 274);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(276, 40);
-            this.textBox2.TabIndex = 56;
+            this.VetNameTb.Location = new System.Drawing.Point(1109, 274);
+            this.VetNameTb.Multiline = true;
+            this.VetNameTb.Name = "VetNameTb";
+            this.VetNameTb.Size = new System.Drawing.Size(276, 40);
+            this.VetNameTb.TabIndex = 56;
             // 
             // label2
             // 
@@ -550,48 +543,100 @@ namespace Dairy_Farm_Management_System
             this.label19.TabIndex = 71;
             this.label19.Text = "Health Report";
             // 
-            // comboBox1
+            // CowIdCb
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(257, 146);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(295, 45);
-            this.comboBox1.TabIndex = 72;
+            this.CowIdCb.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CowIdCb.FormattingEnabled = true;
+            this.CowIdCb.Location = new System.Drawing.Point(257, 146);
+            this.CowIdCb.Name = "CowIdCb";
+            this.CowIdCb.Size = new System.Drawing.Size(295, 45);
+            this.CowIdCb.TabIndex = 72;
             // 
-            // textBox1
+            // TreatmentTb
             // 
-            this.textBox1.Location = new System.Drawing.Point(433, 274);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(276, 40);
-            this.textBox1.TabIndex = 73;
+            this.TreatmentTb.Location = new System.Drawing.Point(433, 274);
+            this.TreatmentTb.Multiline = true;
+            this.TreatmentTb.Name = "TreatmentTb";
+            this.TreatmentTb.Size = new System.Drawing.Size(276, 40);
+            this.TreatmentTb.TabIndex = 73;
+            // 
+            // Healthlist
+            // 
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.Healthlist.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Healthlist.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.Healthlist.ColumnHeadersHeight = 4;
+            this.Healthlist.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.Healthlist.DefaultCellStyle = dataGridViewCellStyle6;
+            this.Healthlist.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.Healthlist.Location = new System.Drawing.Point(275, 534);
+            this.Healthlist.Name = "Healthlist";
+            this.Healthlist.RowHeadersVisible = false;
+            this.Healthlist.RowHeadersWidth = 51;
+            this.Healthlist.RowTemplate.Height = 29;
+            this.Healthlist.Size = new System.Drawing.Size(1189, 254);
+            this.Healthlist.TabIndex = 74;
+            this.Healthlist.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.Healthlist.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.Healthlist.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.Healthlist.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.Healthlist.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.Healthlist.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.Healthlist.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.Healthlist.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.Healthlist.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.Healthlist.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Healthlist.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.Healthlist.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.Healthlist.ThemeStyle.HeaderStyle.Height = 4;
+            this.Healthlist.ThemeStyle.ReadOnly = false;
+            this.Healthlist.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.Healthlist.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.Healthlist.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Healthlist.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.Healthlist.ThemeStyle.RowsStyle.Height = 29;
+            this.Healthlist.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.Healthlist.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
             // CowHealth
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(18F, 45F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1476, 840);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.Healthlist);
+            this.Controls.Add(this.TreatmentTb);
+            this.Controls.Add(this.CowIdCb);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.CowNAmeTb);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.EventTb);
+            this.Controls.Add(this.E);
+            this.Controls.Add(this.DiagnosisTb);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.CostTb);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.VetNameTb);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -602,7 +647,6 @@ namespace Dairy_Farm_Management_System
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CowHealth";
             this.Load += new System.EventHandler(this.CowHealth_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -629,6 +673,7 @@ namespace Dairy_Farm_Management_System
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Healthlist)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -642,10 +687,9 @@ namespace Dairy_Farm_Management_System
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox CowNAmeTb;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox4;
@@ -653,15 +697,15 @@ namespace Dairy_Farm_Management_System
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox EventTb;
+        private System.Windows.Forms.Label E;
+        private System.Windows.Forms.TextBox DiagnosisTb;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox CostTb;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox VetNameTb;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
@@ -681,7 +725,8 @@ namespace Dairy_Farm_Management_System
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox CowIdCb;
+        private System.Windows.Forms.TextBox TreatmentTb;
+        private Guna.UI2.WinForms.Guna2DataGridView Healthlist;
     }
 }

@@ -155,7 +155,7 @@ namespace Dairy_Farm_Management_System
             con.Open();
             string query = "select * from CowTbl where CowId =" + CowIdCb.SelectedValue.ToString();
             SqlCommand cmd = new SqlCommand(query, con);
-            DateTabl dt = new DateTabl();
+            DataTable dt = new DataTable();
             SqlDataAdapter sde = new SqlDataAdapter(cmd);
             sde.Fill(dt);
             foreach(DataRow dr in dt.Rows)
@@ -216,23 +216,7 @@ namespace Dairy_Farm_Management_System
         int key = 0;
         private void Dailylist_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            CowIdCb.SelectedValue = Dailylist.SelectedRows[0].Cells[1].Value.ToString();
-            Cownametb.Text = Dailylist.SelectedRows[0].Cells[2].Value.ToString();
-            Amt.Text = Dailylist.SelectedRows[0].Cells[3].Value.ToString();
-            Noontb.Text = Dailylist.SelectedRows[0].Cells[4].Value.ToString();
-            PmTb.Text = Dailylist.SelectedRows[0].Cells[5].Value.ToString();
-            TotalTb.Text = Dailylist.SelectedRows[0].Cells[6].Value.ToString();
-            data.Text = Dailylist.SelectedRows[0].Cells[7].Value.ToString();
-            if (Cownametb.Text == "")
-            {
-                key = 0;
-                            }
-            else
-            {
-
-                key = Convert.ToInt32(Dailylist.SelectedRows[0].Cells[0].Value.ToString());
-                
-            }
+           
 
         }
 
@@ -294,6 +278,27 @@ namespace Dairy_Farm_Management_System
             }
 
         }
+
+        private void Dailylist_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            CowIdCb.SelectedValue = Dailylist.SelectedRows[0].Cells[1].Value.ToString();
+            Cownametb.Text = Dailylist.SelectedRows[0].Cells[2].Value.ToString();
+            Amt.Text = Dailylist.SelectedRows[0].Cells[3].Value.ToString();
+            Noontb.Text = Dailylist.SelectedRows[0].Cells[4].Value.ToString();
+            PmTb.Text = Dailylist.SelectedRows[0].Cells[5].Value.ToString();
+            TotalTb.Text = Dailylist.SelectedRows[0].Cells[6].Value.ToString();
+            data.Text = Dailylist.SelectedRows[0].Cells[7].Value.ToString();
+            if (Cownametb.Text == "")
+            {
+                key = 0;
+            }
+            else
+            {
+
+                key = Convert.ToInt32(Dailylist.SelectedRows[0].Cells[0].Value.ToString());
+
+            }
+        }
     }
     }
-}
+

@@ -30,6 +30,9 @@ namespace Dairy_Farm_Management_System
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cows));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label18 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
@@ -78,7 +81,7 @@ namespace Dairy_Farm_Management_System
             this.EditBtu = new System.Windows.Forms.Button();
             this.DeleteBtu = new System.Windows.Forms.Button();
             this.label19 = new System.Windows.Forms.Label();
-            this.CowsList1 = new System.Windows.Forms.DataGridView();
+            this.CowsList1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panel7.SuspendLayout();
@@ -589,14 +592,55 @@ namespace Dairy_Farm_Management_System
             // 
             // CowsList1
             // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.CowsList1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.CowsList1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.CowsList1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.CowsList1.Location = new System.Drawing.Point(298, 493);
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.CowsList1.DefaultCellStyle = dataGridViewCellStyle3;
+            this.CowsList1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.CowsList1.Location = new System.Drawing.Point(275, 539);
             this.CowsList1.Name = "CowsList1";
+            this.CowsList1.RowHeadersVisible = false;
             this.CowsList1.RowHeadersWidth = 51;
             this.CowsList1.RowTemplate.Height = 29;
-            this.CowsList1.Size = new System.Drawing.Size(1153, 323);
-            this.CowsList1.TabIndex = 44;
-            this.CowsList1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.CowsList1_CellContentClick);
+            this.CowsList1.Size = new System.Drawing.Size(1189, 254);
+            this.CowsList1.TabIndex = 24;
+            this.CowsList1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.CowsList1.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.CowsList1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.CowsList1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.CowsList1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.CowsList1.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.CowsList1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.CowsList1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.CowsList1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.CowsList1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CowsList1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.CowsList1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.CowsList1.ThemeStyle.HeaderStyle.Height = 4;
+            this.CowsList1.ThemeStyle.ReadOnly = false;
+            this.CowsList1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.CowsList1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.CowsList1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CowsList1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.CowsList1.ThemeStyle.RowsStyle.Height = 29;
+            this.CowsList1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.CowsList1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.CowsList1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.CowsList1_CellContentClick_1);
             // 
             // Cows
             // 
@@ -717,6 +761,6 @@ namespace Dairy_Farm_Management_System
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.DataGridView CowsList1;
+        private Guna.UI2.WinForms.Guna2DataGridView CowsList1;
     }
 }
