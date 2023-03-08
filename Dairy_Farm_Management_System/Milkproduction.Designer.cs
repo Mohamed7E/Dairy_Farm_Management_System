@@ -40,18 +40,18 @@ namespace Dairy_Farm_Management_System
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label9 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.Cownametb = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.Amt = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.Noontb = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.PmTm = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.RotalTb = new System.Windows.Forms.TextBox();
+            this.data = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.CowIdCb = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label18 = new System.Windows.Forms.Label();
@@ -197,13 +197,13 @@ namespace Dairy_Farm_Management_System
             this.label7.TabIndex = 38;
             this.label7.Text = "Cow Name";
             // 
-            // textBox6
+            // Cownametb
             // 
-            this.textBox6.Location = new System.Drawing.Point(567, 151);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(276, 40);
-            this.textBox6.TabIndex = 39;
+            this.Cownametb.Location = new System.Drawing.Point(567, 151);
+            this.Cownametb.Multiline = true;
+            this.Cownametb.Name = "Cownametb";
+            this.Cownametb.Size = new System.Drawing.Size(276, 40);
+            this.Cownametb.TabIndex = 39;
             // 
             // label6
             // 
@@ -214,13 +214,13 @@ namespace Dairy_Farm_Management_System
             this.label6.TabIndex = 36;
             this.label6.Text = "Noon Milk";
             // 
-            // textBox5
+            // Amt
             // 
-            this.textBox5.Location = new System.Drawing.Point(872, 151);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(276, 40);
-            this.textBox5.TabIndex = 37;
+            this.Amt.Location = new System.Drawing.Point(872, 151);
+            this.Amt.Multiline = true;
+            this.Amt.Name = "Amt";
+            this.Amt.Size = new System.Drawing.Size(276, 40);
+            this.Amt.TabIndex = 37;
             // 
             // label5
             // 
@@ -231,13 +231,13 @@ namespace Dairy_Farm_Management_System
             this.label5.TabIndex = 34;
             this.label5.Text = " Am Milk";
             // 
-            // textBox4
+            // Noontb
             // 
-            this.textBox4.Location = new System.Drawing.Point(1171, 151);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(276, 40);
-            this.textBox4.TabIndex = 35;
+            this.Noontb.Location = new System.Drawing.Point(1171, 151);
+            this.Noontb.Multiline = true;
+            this.Noontb.Name = "Noontb";
+            this.Noontb.Size = new System.Drawing.Size(276, 40);
+            this.Noontb.TabIndex = 35;
             // 
             // label4
             // 
@@ -249,13 +249,13 @@ namespace Dairy_Farm_Management_System
             this.label4.Text = "Pm Milk";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // textBox3
+            // PmTm
             // 
-            this.textBox3.Location = new System.Drawing.Point(809, 274);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(276, 40);
-            this.textBox3.TabIndex = 33;
+            this.PmTm.Location = new System.Drawing.Point(809, 274);
+            this.PmTm.Multiline = true;
+            this.PmTm.Name = "PmTm";
+            this.PmTm.Size = new System.Drawing.Size(276, 40);
+            this.PmTm.TabIndex = 33;
             // 
             // label3
             // 
@@ -266,25 +266,25 @@ namespace Dairy_Farm_Management_System
             this.label3.TabIndex = 30;
             this.label3.Text = "Total Milk";
             // 
-            // textBox2
+            // RotalTb
             // 
-            this.textBox2.Location = new System.Drawing.Point(1111, 274);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(276, 40);
-            this.textBox2.TabIndex = 31;
+            this.RotalTb.Location = new System.Drawing.Point(1111, 274);
+            this.RotalTb.Multiline = true;
+            this.RotalTb.Name = "RotalTb";
+            this.RotalTb.Size = new System.Drawing.Size(276, 40);
+            this.RotalTb.TabIndex = 31;
             // 
-            // dateTimePicker1
+            // data
             // 
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePicker1.CustomFormat = "yyyy-MM-dd";
-            this.dateTimePicker1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(454, 274);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(276, 40);
-            this.dateTimePicker1.TabIndex = 29;
+            this.data.CalendarFont = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.data.CustomFormat = "yyyy-MM-dd";
+            this.data.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.data.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.data.Location = new System.Drawing.Point(454, 274);
+            this.data.Margin = new System.Windows.Forms.Padding(4);
+            this.data.Name = "data";
+            this.data.Size = new System.Drawing.Size(276, 40);
+            this.data.TabIndex = 29;
             // 
             // label2
             // 
@@ -295,13 +295,13 @@ namespace Dairy_Farm_Management_System
             this.label2.TabIndex = 25;
             this.label2.Text = "Cow id";
             // 
-            // textBox1
+            // CowIdCb
             // 
-            this.textBox1.Location = new System.Drawing.Point(271, 151);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(276, 40);
-            this.textBox1.TabIndex = 28;
+            this.CowIdCb.Location = new System.Drawing.Point(271, 151);
+            this.CowIdCb.Multiline = true;
+            this.CowIdCb.Name = "CowIdCb";
+            this.CowIdCb.Size = new System.Drawing.Size(276, 40);
+            this.CowIdCb.TabIndex = 28;
             // 
             // panel2
             // 
@@ -581,18 +581,18 @@ namespace Dairy_Farm_Management_System
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.Cownametb);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.Amt);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.Noontb);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.PmTm);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.RotalTb);
+            this.Controls.Add(this.data);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.CowIdCb);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -646,18 +646,18 @@ namespace Dairy_Farm_Management_System
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox Cownametb;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox Amt;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox Noontb;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox PmTm;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.TextBox RotalTb;
+        private System.Windows.Forms.DateTimePicker data;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox CowIdCb;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label18;
