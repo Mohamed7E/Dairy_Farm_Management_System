@@ -212,5 +212,10 @@ namespace Dairy_Farm_Management_System
                 TotalTb.Text = "" + total;
             
         }
+        int key = 0;
+        private void Dailylist_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

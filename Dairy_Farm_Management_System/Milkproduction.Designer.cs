@@ -180,6 +180,7 @@ namespace Dairy_Farm_Management_System
             this.Dailylist.RowTemplate.Height = 29;
             this.Dailylist.Size = new System.Drawing.Size(1176, 323);
             this.Dailylist.TabIndex = 43;
+            this.Dailylist.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Dailylist_CellContentClick);
             // 
             // label9
             // 
