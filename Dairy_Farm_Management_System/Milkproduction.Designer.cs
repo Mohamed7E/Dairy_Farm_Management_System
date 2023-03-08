@@ -48,7 +48,7 @@ namespace Dairy_Farm_Management_System
             this.label4 = new System.Windows.Forms.Label();
             this.PmTm = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.RotalTb = new System.Windows.Forms.TextBox();
+            this.TotalTb = new System.Windows.Forms.TextBox();
             this.data = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.CowIdCb = new System.Windows.Forms.TextBox();
@@ -267,13 +267,13 @@ namespace Dairy_Farm_Management_System
             this.label3.TabIndex = 30;
             this.label3.Text = "Total Milk";
             // 
-            // RotalTb
+            // TotalTb
             // 
-            this.RotalTb.Location = new System.Drawing.Point(1111, 274);
-            this.RotalTb.Multiline = true;
-            this.RotalTb.Name = "RotalTb";
-            this.RotalTb.Size = new System.Drawing.Size(276, 40);
-            this.RotalTb.TabIndex = 31;
+            this.TotalTb.Location = new System.Drawing.Point(1111, 274);
+            this.TotalTb.Multiline = true;
+            this.TotalTb.Name = "TotalTb";
+            this.TotalTb.Size = new System.Drawing.Size(276, 40);
+            this.TotalTb.TabIndex = 31;
             // 
             // data
             // 
@@ -590,7 +590,7 @@ namespace Dairy_Farm_Management_System
             this.Controls.Add(this.label4);
             this.Controls.Add(this.PmTm);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.RotalTb);
+            this.Controls.Add(this.TotalTb);
             this.Controls.Add(this.data);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.CowIdCb);
@@ -655,7 +655,7 @@ namespace Dairy_Farm_Management_System
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox PmTm;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox RotalTb;
+        private System.Windows.Forms.TextBox TotalTb;
         private System.Windows.Forms.DateTimePicker data;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox CowIdCb;

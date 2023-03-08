@@ -129,6 +129,11 @@ namespace Dairy_Farm_Management_System
         private void button4_Click(object sender, EventArgs e)
         {
 
+            if (CowIdCb.Text == "" || Cownametb.Text == "" || Amt.Text == "" || Noontb.Text == "" || PmTm.Text == "" || TotalTb.Text == "")
+            {
+                MessageBox.Show("missing informatiom");
+            }
+           
         }
     }
 }
