@@ -46,7 +46,7 @@ namespace Dairy_Farm_Management_System
             this.label5 = new System.Windows.Forms.Label();
             this.Noontb = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.PmTm = new System.Windows.Forms.TextBox();
+            this.PmTb = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.TotalTb = new System.Windows.Forms.TextBox();
             this.data = new System.Windows.Forms.DateTimePicker();
@@ -250,13 +250,13 @@ namespace Dairy_Farm_Management_System
             this.label4.Text = "Pm Milk";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // PmTm
+            // PmTb
             // 
-            this.PmTm.Location = new System.Drawing.Point(809, 274);
-            this.PmTm.Multiline = true;
-            this.PmTm.Name = "PmTm";
-            this.PmTm.Size = new System.Drawing.Size(276, 40);
-            this.PmTm.TabIndex = 33;
+            this.PmTb.Location = new System.Drawing.Point(809, 274);
+            this.PmTb.Multiline = true;
+            this.PmTb.Name = "PmTb";
+            this.PmTb.Size = new System.Drawing.Size(276, 40);
+            this.PmTb.TabIndex = 33;
             // 
             // label3
             // 
@@ -588,7 +588,7 @@ namespace Dairy_Farm_Management_System
             this.Controls.Add(this.label5);
             this.Controls.Add(this.Noontb);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.PmTm);
+            this.Controls.Add(this.PmTb);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.TotalTb);
             this.Controls.Add(this.data);
@@ -653,7 +653,7 @@ namespace Dairy_Farm_Management_System
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox Noontb;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox PmTm;
+        private System.Windows.Forms.TextBox PmTb;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox TotalTb;
         private System.Windows.Forms.DateTimePicker data;

@@ -129,11 +129,23 @@ namespace Dairy_Farm_Management_System
         private void button4_Click(object sender, EventArgs e)
         {
 
-            if (CowIdCb.Text == "" || Cownametb.Text == "" || Amt.Text == "" || Noontb.Text == "" || PmTm.Text == "" || TotalTb.Text == "")
+            if (CowIdCb.Text == "" || Cownametb.Text == "" || Amt.Text == "" || Noontb.Text == "" || PmTb.Text == "" || TotalTb.Text == "")
             {
                 MessageBox.Show("missing informatiom");
             }
-           
+            else
+            {
+                try
+                {
+                    con.Open();
+                    string Query = "inster into MilkSalesTbl values ( '" + CowIdCb.Selectedvalue.ToString() + "','" + Cownametb.Text + "','" + Amt.Text + "','" + Noontb.Text + "','" + TotalTb.Text + "','" + PmTb.Text + "','" + data.Value.Date + "')";
+                    
+                }
+                catch (Exception ex) 
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
     }
 }
