@@ -126,6 +126,7 @@ namespace Dairy_Farm_Management_System
             this.button2.TabIndex = 47;
             this.button2.Text = "Delete";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
