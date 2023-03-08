@@ -215,6 +215,9 @@ namespace Dairy_Farm_Management_System
         int key = 0;
         private void Dailylist_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            CowIdCb.Text = Dailylist.SelectedRows[0].Cells[1].Value.ToString();
+            Cownametb.Text = Dailylist.SelectedRows[0].Cells[1].Value.ToString();
+            Amt.Text = Dailylist.SelectedRows[0].Cells[1].Value.ToString();
 
         }
     }
