@@ -248,7 +248,11 @@ namespace Dairy_Farm_Management_System
                     con.Open();
                     string Query = "delete from MilkTbl where MId=" + key + ";";
                     SqlCommand cmd = new SqlCommand(Query, con);
-                    
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Product Delete successdully");
+                    con.Close();
+                    populate();
+                    Clear();
 
 
                 }
