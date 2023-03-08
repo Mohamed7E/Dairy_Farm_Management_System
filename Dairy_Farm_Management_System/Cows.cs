@@ -217,7 +217,7 @@ namespace Dairy_Farm_Management_System
         {
             Clear();
         }
-
+        int key = 0;
         private void CowsList1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -228,7 +228,10 @@ namespace Dairy_Farm_Management_System
             AgeTb.Text = CowsList1.SelectedRows[0].Cells[5].Value.ToString();
             WeigtatBirthTb.Text = CowsList1.SelectedRows[0].Cells[6].Value.ToString();
             PastureTb.Text = CowsList1.SelectedRows[0].Cells[7].Value.ToString();
-            
+            if(CowNameTb.Text=="")
+            {
+
+            }
         }
     }
 }
