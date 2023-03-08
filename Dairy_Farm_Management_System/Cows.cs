@@ -148,6 +148,7 @@ namespace Dairy_Farm_Management_System
             this.Hide();
         }
 
+        int age = 0;
         private void SaveBtu_Click(object sender, EventArgs e)
         {
             if(CowNameTb.Text==""|| EarTagTb.Text==""|| ColorTb.Text==""|| BreadTb.Text==""|| AgeTb.Text==""|| WeigtatBirthTb.Text==""|| PastureTb.Text=="")
@@ -159,6 +160,8 @@ namespace Dairy_Farm_Management_System
                 try
                 {
                     con.Open();
+                    string Query = "inster into CowTbl values ( '" + CowNameTb.Text + "','" + EarTagTb.Text + "','" + ColorTb.Text + "','" + BreadTb.Text + "','" + AgeTb.Text + "','" + WeigtatBirthTb.Text + "','" + PastureTb.Text + "')";
+                    SqlConnection cmd = new SqlConnection( ,con);
                     con.Close();
                    
                 }catch(Exception ex)
