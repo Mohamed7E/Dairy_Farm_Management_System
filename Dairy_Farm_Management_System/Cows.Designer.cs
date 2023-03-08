@@ -405,6 +405,7 @@ namespace Dairy_Farm_Management_System
             this.DateOfBirthTb.Name = "DateOfBirthTb";
             this.DateOfBirthTb.Size = new System.Drawing.Size(276, 40);
             this.DateOfBirthTb.TabIndex = 2;
+            this.DateOfBirthTb.ValueChanged += new System.EventHandler(this.DateOfBirthTb_ValueChanged);
             // 
             // label3
             // 
