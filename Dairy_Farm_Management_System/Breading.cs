@@ -279,5 +279,15 @@ namespace Dairy_Farm_Management_System
             }
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if(CowIdCb.SelectedIndex == -1 || CowNametb.Text == "" || RemarksTb.Text == "" || CowAgeTb.Text == "")
+
+            {
+                MessageBox.Show("missing informatiom");
+            }
+          
+        }
     }
 }
