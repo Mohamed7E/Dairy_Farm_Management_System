@@ -161,6 +161,10 @@ namespace Dairy_Farm_Management_System
             con.Close();
 
         }
+        private void Clear()
+        {
+
+        }
         int age = 0;
         private void SaveBtu_Click(object sender, EventArgs e)
         {
@@ -178,8 +182,11 @@ namespace Dairy_Farm_Management_System
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Cow Saved successdully");
                     con.Close();
-                   
-                }catch(Exception ex)
+                    populate();
+
+
+                }
+                catch(Exception ex)
                 {
                     MessageBox.Show(ex.Message);
                 }

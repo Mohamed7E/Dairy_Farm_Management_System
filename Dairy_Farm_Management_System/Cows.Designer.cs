@@ -522,18 +522,20 @@ namespace Dairy_Farm_Management_System
             // 
             // CowsList
             // 
+            this.CowsList.BackgroundColor = System.Drawing.Color.SlateGray;
             this.CowsList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.CowsList.Location = new System.Drawing.Point(275, 505);
+            this.CowsList.Location = new System.Drawing.Point(295, 522);
             this.CowsList.Name = "CowsList";
             this.CowsList.RowHeadersWidth = 51;
             this.CowsList.RowTemplate.Height = 29;
-            this.CowsList.Size = new System.Drawing.Size(1176, 323);
-            this.CowsList.TabIndex = 16;
+            this.CowsList.Size = new System.Drawing.Size(1156, 306);
+            this.CowsList.StandardTab = true;
+            this.CowsList.TabIndex = 25;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(766, 442);
+            this.label10.Location = new System.Drawing.Point(767, 456);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(155, 45);
             this.label10.TabIndex = 1;
