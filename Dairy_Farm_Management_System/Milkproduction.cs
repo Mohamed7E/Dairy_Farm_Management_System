@@ -142,7 +142,12 @@ namespace Dairy_Farm_Management_System
         }
         private void Clear()
         {
-            
+            CowIdCb.Text = "";
+            Cownametb.Text = "";
+            Amt.Text = "";
+            Noontb.Text = "";
+            PmTb.Text = "";
+            TotalTb.Text = "";
         }
             private void button4_Click(object sender, EventArgs e)
         {
