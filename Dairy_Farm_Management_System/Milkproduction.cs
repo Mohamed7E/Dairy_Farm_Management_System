@@ -139,7 +139,13 @@ namespace Dairy_Farm_Management_System
                 {
                     con.Open();
                     string Query = "inster into MilkSalesTbl values ( '" + CowIdCb.Selectedvalue.ToString() + "','" + Cownametb.Text + "','" + Amt.Text + "','" + Noontb.Text + "','" + TotalTb.Text + "','" + PmTb.Text + "','" + data.Value.Date + "')";
-                    
+                    SqlCommand cmd = new SqlCommand(Query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Cow Saved successdully");
+                    con.Close();
+                   
+
+
                 }
                 catch (Exception ex) 
                 {
