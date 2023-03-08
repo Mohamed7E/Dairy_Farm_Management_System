@@ -182,8 +182,11 @@ namespace Dairy_Farm_Management_System
                     con.Open();
                     string Query = "inster into HealthTbl values ( '" + CowIdCb.SelectedValue.ToString() + "','" + CowNAmeTb.Text + "','" + data.Value.Date + "','" + EventTb.Text + "','" + DiagnosisTb.Text + "','" + TreatmentTb.Text + "','" + CostTb.Text + "','" + VetNameTb.Text + "')";
                     SqlCommand cmd = new SqlCommand(Query, con);
-                   
-                    
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Health issue Saved ");
+                    con.Close();
+                    populate();
+
 
                 }
                 catch (Exception ex)
