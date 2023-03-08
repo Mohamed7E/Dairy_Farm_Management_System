@@ -180,7 +180,12 @@ namespace Dairy_Farm_Management_System
 
         }
 
-
+        private void Clear()
+        {
+            CowNametb.Text = "";
+            RemarksTb.Text = "";
+            CowAgeTb.Text = "";
+        }
         private void button4_Click(object sender, EventArgs e)
         {
             if (CowIdCb.SelectedIndex == -1 || CowNametb.Text == "" || RemarksTb.Text == "" || CowAgeTb.Text == "" )
