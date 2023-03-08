@@ -163,7 +163,10 @@ namespace Dairy_Farm_Management_System
         }
         private void Clear()
         {
-
+            CowNameTb.Text = "";
+            EarTagTb.Text = "";
+            ColorTb.Text = "";
+           
         }
         int age = 0;
         private void SaveBtu_Click(object sender, EventArgs e)
