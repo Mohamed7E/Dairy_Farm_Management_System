@@ -287,7 +287,27 @@ namespace Dairy_Farm_Management_System
             {
                 MessageBox.Show("missing informatiom");
             }
-          
+            else
+            {
+                try
+                {
+                    con.Open();
+                    string Query = "update BreedTbl set HeatDate=" + HealDate.Value.Date + ",BreedDate='" + BreedDate.Value.Date + "',CowId='" + CowIdCb.SelectedValue.ToString() + "'CowName='" + CowNametb.Text + "',pregDate='" + pregDate.Value.Date + "',ExpDateCalve='" + EXDate.Value.Date + "',DateCaved='" + DateCaved.Value.Date + "',CowAge='" + CowAgeTb.Text + "',Remarks='" + RemarksTb.Text + "'where BrId=" + key + ";";
+                    SqlCommand cmd = new SqlCommand(Query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Breed  Update successdully");
+                    con.Close();
+                    populate();
+                    Clear();
+
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+
         }
     }
 }
