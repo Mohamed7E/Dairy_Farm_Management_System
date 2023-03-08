@@ -14,6 +14,8 @@ namespace Dairy_Farm_Management_System
         public Breading()
         {
             InitializeComponent();
+            FillCowId();
+            populate();
         }
 
         private void panel5_Paint(object sender, PaintEventArgs e)
@@ -162,11 +164,31 @@ namespace Dairy_Farm_Management_System
             con.Close();
 
         }
+        private void GetCowName()
+        {
+            con.Open();
+            string query = "select * from CowTbl where CowId =" + CowIdCb.SelectedValue.ToString();
+            SqlCommand cmd = new SqlCommand(query, con);
+            DataTable dt = new DataTable();
+            SqlDataAdapter sde = new SqlDataAdapter(cmd);
+            sde.Fill(dt);
+            foreach (DataRow dr in dt.Rows)
+            {
+                CowNametb.Text = dr["CowName"].ToString();
+            }
+            con.Close();
+
+        }
 
 
         private void button4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void CowIdCb_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            GetCowName();
         }
     }
 }
