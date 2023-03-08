@@ -149,6 +149,12 @@ namespace Dairy_Farm_Management_System
             PmTb.Text = "";
             TotalTb.Text = "";
         }
+        private void GetCowName()
+        {
+            con.Open();
+            string query = "select * from CowTbl where CowId =" + CowIdCb.Selectedvalue.ToString();
+
+        }
             private void button4_Click(object sender, EventArgs e)
         {
 
