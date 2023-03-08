@@ -231,8 +231,13 @@ namespace Dairy_Farm_Management_System
             HealDate.Text = Breedlist.SelectedRows[0].Cells[1].Value.ToString();
             BreedDate.Text = Breedlist.SelectedRows[0].Cells[2].Value.ToString();
             CowIdCb.SelectedValue = Breedlist.SelectedRows[0].Cells[3].Value.ToString();
+            CowNametb.Text = Breedlist.SelectedRows[0].Cells[4].Value.ToString();
             pregDate.Text = Breedlist.SelectedRows[0].Cells[5].Value.ToString();
-           
+            EXDate.Text = Breedlist.SelectedRows[0].Cells[6].Value.ToString();
+            DateCaved.Text = Breedlist.SelectedRows[0].Cells[7].Value.ToString();
+            CowAgeTb.Text = Breedlist.SelectedRows[0].Cells[8].Value.ToString();
+            
+            
 
         }
     }
