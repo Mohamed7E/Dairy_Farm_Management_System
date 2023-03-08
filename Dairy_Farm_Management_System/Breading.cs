@@ -250,5 +250,14 @@ namespace Dairy_Farm_Management_System
 
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (key == 0)
+            {
+                MessageBox.Show("select Breed Report to be  deleted");
+            }
+            
+    }
     }
 }
