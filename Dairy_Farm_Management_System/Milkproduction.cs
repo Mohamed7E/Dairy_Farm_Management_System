@@ -114,6 +114,9 @@ namespace Dairy_Farm_Management_System
         {
             con.Open();
             SqlCommand cmd = new SqlCommand("select CowId from CowTbl ", con);
+            SqlDataAdapter Rdr;
+            Rdr = cmd.ExecuteReader();
+            DataTable dt = new DataTable();
 
         }
         private void button4_Click(object sender, EventArgs e)
