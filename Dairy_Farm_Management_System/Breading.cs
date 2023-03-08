@@ -150,7 +150,20 @@ namespace Dairy_Farm_Management_System
 
 
         }
-       
+        private void populate()
+        {
+            con.Open();
+            string query = "select * from BreedTbl";
+            SqlDataAdapter sda = new SqlDataAdapter(query, con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            Breedlist.DataSource = ds.Tables[0];
+            con.Close();
+
+        }
+
+
         private void button4_Click(object sender, EventArgs e)
         {
 

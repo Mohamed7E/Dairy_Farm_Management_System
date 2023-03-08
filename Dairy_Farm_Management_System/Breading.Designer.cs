@@ -83,7 +83,7 @@ namespace Dairy_Farm_Management_System
             this.CowIdCb = new System.Windows.Forms.ComboBox();
             this.label20 = new System.Windows.Forms.Label();
             this.RemarksTb = new System.Windows.Forms.TextBox();
-            this.Healthlist = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.Breedlist = new Guna.UI2.WinForms.Guna2DataGridView();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -101,7 +101,7 @@ namespace Dairy_Farm_Management_System
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Healthlist)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Breedlist)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -621,10 +621,10 @@ namespace Dairy_Farm_Management_System
             this.RemarksTb.Size = new System.Drawing.Size(276, 40);
             this.RemarksTb.TabIndex = 55;
             // 
-            // Healthlist
+            // Breedlist
             // 
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.Healthlist.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.Breedlist.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -632,9 +632,9 @@ namespace Dairy_Farm_Management_System
             dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Healthlist.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.Healthlist.ColumnHeadersHeight = 4;
-            this.Healthlist.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.Breedlist.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.Breedlist.ColumnHeadersHeight = 4;
+            this.Breedlist.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -642,43 +642,43 @@ namespace Dairy_Farm_Management_System
             dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.Healthlist.DefaultCellStyle = dataGridViewCellStyle6;
-            this.Healthlist.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.Healthlist.Location = new System.Drawing.Point(258, 595);
-            this.Healthlist.Name = "Healthlist";
-            this.Healthlist.RowHeadersVisible = false;
-            this.Healthlist.RowHeadersWidth = 51;
-            this.Healthlist.RowTemplate.Height = 29;
-            this.Healthlist.Size = new System.Drawing.Size(1189, 254);
-            this.Healthlist.TabIndex = 75;
-            this.Healthlist.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.Healthlist.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.Healthlist.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.Healthlist.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.Healthlist.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.Healthlist.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.Healthlist.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.Healthlist.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.Healthlist.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.Healthlist.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Healthlist.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.Healthlist.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.Healthlist.ThemeStyle.HeaderStyle.Height = 4;
-            this.Healthlist.ThemeStyle.ReadOnly = false;
-            this.Healthlist.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.Healthlist.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.Healthlist.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Healthlist.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.Healthlist.ThemeStyle.RowsStyle.Height = 29;
-            this.Healthlist.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.Healthlist.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.Breedlist.DefaultCellStyle = dataGridViewCellStyle6;
+            this.Breedlist.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.Breedlist.Location = new System.Drawing.Point(258, 595);
+            this.Breedlist.Name = "Breedlist";
+            this.Breedlist.RowHeadersVisible = false;
+            this.Breedlist.RowHeadersWidth = 51;
+            this.Breedlist.RowTemplate.Height = 29;
+            this.Breedlist.Size = new System.Drawing.Size(1189, 254);
+            this.Breedlist.TabIndex = 75;
+            this.Breedlist.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.Breedlist.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.Breedlist.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.Breedlist.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.Breedlist.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.Breedlist.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.Breedlist.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.Breedlist.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.Breedlist.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.Breedlist.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Breedlist.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.Breedlist.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.Breedlist.ThemeStyle.HeaderStyle.Height = 4;
+            this.Breedlist.ThemeStyle.ReadOnly = false;
+            this.Breedlist.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.Breedlist.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.Breedlist.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Breedlist.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.Breedlist.ThemeStyle.RowsStyle.Height = 29;
+            this.Breedlist.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.Breedlist.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
             // Breading
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(18F, 45F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1460, 934);
-            this.Controls.Add(this.Healthlist);
+            this.Controls.Add(this.Breedlist);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.RemarksTb);
             this.Controls.Add(this.CowIdCb);
@@ -738,7 +738,7 @@ namespace Dairy_Farm_Management_System
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Healthlist)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Breedlist)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -796,6 +796,6 @@ namespace Dairy_Farm_Management_System
         private System.Windows.Forms.ComboBox CowIdCb;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.TextBox RemarksTb;
-        private Guna.UI2.WinForms.Guna2DataGridView Healthlist;
+        private Guna.UI2.WinForms.Guna2DataGridView Breedlist;
     }
 }
