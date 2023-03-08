@@ -406,6 +406,7 @@ namespace Dairy_Farm_Management_System
             this.DateOfBirthTb.Size = new System.Drawing.Size(276, 40);
             this.DateOfBirthTb.TabIndex = 2;
             this.DateOfBirthTb.ValueChanged += new System.EventHandler(this.DateOfBirthTb_ValueChanged);
+            this.DateOfBirthTb.MouseLeave += new System.EventHandler(this.DateOfBirthTb_MouseLeave);
             // 
             // label3
             // 
@@ -435,6 +436,7 @@ namespace Dairy_Farm_Management_System
             // 
             // AgeTb
             // 
+            this.AgeTb.Enabled = false;
             this.AgeTb.Location = new System.Drawing.Point(571, 282);
             this.AgeTb.Multiline = true;
             this.AgeTb.Name = "AgeTb";

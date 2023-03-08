@@ -178,5 +178,10 @@ namespace Dairy_Farm_Management_System
             age = Convert.ToInt32((DateTime.Today.Date-DateOfBirthTb.Value.Date).Days)/365;
             MessageBox.Show("" + age);
         }
+
+        private void DateOfBirthTb_MouseLeave(object sender, EventArgs e)
+        {
+            AgeTb.Text = "" + age;
+        }
     }
 }
