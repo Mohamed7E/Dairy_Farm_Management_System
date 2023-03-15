@@ -66,7 +66,7 @@ namespace Dairy_Farm_Management_System
             this.panel10 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.dateTimePicker5 = new System.Windows.Forms.DateTimePicker();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.PurposeTb = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.AmountTb = new System.Windows.Forms.TextBox();
@@ -401,7 +401,7 @@ namespace Dairy_Farm_Management_System
             this.panel10.Controls.Add(this.ExDate);
             this.panel10.Controls.Add(this.button4);
             this.panel10.Controls.Add(this.dateTimePicker5);
-            this.panel10.Controls.Add(this.comboBox1);
+            this.panel10.Controls.Add(this.PurposeTb);
             this.panel10.Controls.Add(this.label2);
             this.panel10.Controls.Add(this.label7);
             this.panel10.Controls.Add(this.AmountTb);
@@ -425,6 +425,7 @@ namespace Dairy_Farm_Management_System
             this.button4.TabIndex = 93;
             this.button4.Text = "Save";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // dateTimePicker5
             // 
@@ -438,20 +439,20 @@ namespace Dairy_Farm_Management_System
             this.dateTimePicker5.Size = new System.Drawing.Size(276, 40);
             this.dateTimePicker5.TabIndex = 92;
             // 
-            // comboBox1
+            // PurposeTb
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.PurposeTb.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PurposeTb.FormattingEnabled = true;
+            this.PurposeTb.Items.AddRange(new object[] {
             "Mainterance",
             "Food ",
             "Salary ",
             "Tax",
             "Others"});
-            this.comboBox1.Location = new System.Drawing.Point(11, 200);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(277, 45);
-            this.comboBox1.TabIndex = 91;
+            this.PurposeTb.Location = new System.Drawing.Point(11, 200);
+            this.PurposeTb.Name = "PurposeTb";
+            this.PurposeTb.Size = new System.Drawing.Size(277, 45);
+            this.PurposeTb.TabIndex = 91;
             // 
             // label2
             // 
@@ -834,7 +835,7 @@ namespace Dairy_Farm_Management_System
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox PurposeTb;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox AmountTb;

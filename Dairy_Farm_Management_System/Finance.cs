@@ -128,5 +128,14 @@ namespace Dairy_Farm_Management_System
             Ob.Show();
             this.Hide();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (PurposeTb.SelectedIndex == -1 || AmountTb.Text == "" )
+            {
+                MessageBox.Show("missing informatiom");
+            }
+           
+        }
     }
 }
