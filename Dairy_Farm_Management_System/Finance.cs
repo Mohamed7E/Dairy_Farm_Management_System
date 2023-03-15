@@ -14,7 +14,7 @@ namespace Dairy_Farm_Management_System
         public Finance()
         {
             InitializeComponent();
-            populate();
+            populateEXp();
         }
 
         private void Finance_Load(object sender, EventArgs e)
@@ -132,7 +132,7 @@ namespace Dairy_Farm_Management_System
         }
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\learn\learn C#\Dairy_Farm_Management_System\data_MOHAMED_EBRAHIM.mdf;Integrated Security=True;Connect Timeout=30");
         
-        private void populate()
+        private void populateEXp()
         {
             con.Open();
             string query = "select * from ExpenditureTbl";
@@ -144,11 +144,51 @@ namespace Dairy_Farm_Management_System
             con.Close();
 
         }
+        private void populateInc()
+        {
+            con.Open();
+            string query = "select * from IncomeTbl";
+            SqlDataAdapter sda = new SqlDataAdapter(query, con);
+           
+
+        }
         private void ClearEXp()
         {
             AmountTb.Text = "";
         }
         private void button4_Click(object sender, EventArgs e)
+        {
+            if (PurposeTb.SelectedIndex == -1 || AmountTb.Text == "")
+            {
+                MessageBox.Show("missing informatiom");
+            }
+            else
+            {
+                try
+                {
+                    con.Open();
+                    string Query = "inster into ExpenditureTbl values (' " + date.Value.Date + "','" + PurposeTb.SelectedItem.ToString() + "','" + AmountTb.Text + "','" + EmpIdTb.Text + "')";
+                    SqlCommand cmd = new SqlCommand(Query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Expenditure Saved successdully");
+                    con.Close();
+                    populateEXp();
+                    ClearEXp();
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+        private void ClearInc()
+        {
+            IncPutCb.SelectedItem = -1;
+            IncAmount.Text = "";
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
             if (PurposeTb.SelectedIndex == -1 || AmountTb.Text == "")
             {
@@ -173,16 +213,6 @@ namespace Dairy_Farm_Management_System
                     MessageBox.Show(ex.Message);
                 }
             }
-        }
-        private void ClearInc()
-        {
-            IncPutCb.SelectedItem = -1;
-            IncAmount.Text = "";
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
         }
     }
     
