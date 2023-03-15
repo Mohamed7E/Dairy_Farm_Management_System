@@ -201,6 +201,7 @@ namespace Dairy_Farm_Management_System
                     MessageBox.Show("Milk Sold successdully");
                     con.Close();
                     populate();
+                    SaveTransaction();
                     Clear();
 
                 }
