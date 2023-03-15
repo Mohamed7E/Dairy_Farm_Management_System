@@ -15,6 +15,7 @@ namespace Dairy_Farm_Management_System
         {
             InitializeComponent();
             populateEXp();
+            populateInc();
         }
 
         private void Finance_Load(object sender, EventArgs e)
@@ -194,7 +195,7 @@ namespace Dairy_Farm_Management_System
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (PurposeTb.SelectedIndex == -1 || AmountTb.Text == "")
+            if (IncPutCb.SelectedIndex == -1 || IncAmount.Text == "")
             {
                 MessageBox.Show("missing informatiom");
             }
@@ -203,13 +204,13 @@ namespace Dairy_Farm_Management_System
                 try
                 {
                     con.Open();
-                    string Query = "inster into ExpenditureTbl values (' " + date.Value.Date + "','" + PurposeTb.SelectedItem.ToString() + "','" + AmountTb.Text + "','" + EmpIdTb.Text + "')";
+                    string Query = "inster into IncomeTbl values (' " + IncDate.Value.Date + "','" + IncPutCb.SelectedItem.ToString() + "','" + IncAmount.Text + "','" + EmpIdTb.Text + "')";
                     SqlCommand cmd = new SqlCommand(Query, con);
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Expenditure Saved successdully");
+                    MessageBox.Show("IncomeTbl Saved successdully");
                     con.Close();
-                    populate();
-                    ClearEXp();
+                    populateInc();
+                    ClearInc();
 
                 }
                 catch (Exception ex)
