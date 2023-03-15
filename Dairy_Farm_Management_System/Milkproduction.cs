@@ -131,7 +131,7 @@ namespace Dairy_Farm_Management_System
         private void populate()
         {
             con.Open();
-            string query = "select * from MilkSalesTbl";
+            string query = "select * from MilkTbl";
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
             SqlCommandBuilder builder = new SqlCommandBuilder(sda);
             var ds = new DataSet();

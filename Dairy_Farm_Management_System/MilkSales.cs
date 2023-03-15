@@ -155,7 +155,12 @@ namespace Dairy_Farm_Management_System
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            if (EmpIdCb.SelectedIndex == -1 ||NameTb.Text == "" || Price.Text == "" || PhoneTb.Text == "" || Quantity.Text == "" || Total.Text == "")
+            {
+                MessageBox.Show("missing informatiom");
+            }
+            
+           
         }
 
         private void Quantity_Leave(object sender, EventArgs e)
