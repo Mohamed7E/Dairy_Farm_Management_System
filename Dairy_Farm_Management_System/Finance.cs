@@ -231,6 +231,11 @@ namespace Dairy_Farm_Management_System
                 }
             }
         }
+
+        private void IncomeDateFilter_ValueChanged(object sender, EventArgs e)
+        {
+            FliterIncme();
+        }
     }
     
 }
