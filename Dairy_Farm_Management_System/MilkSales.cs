@@ -14,6 +14,7 @@ namespace Dairy_Farm_Management_System
         public MilkSales()
         {
             InitializeComponent();
+            FillCowId();
         }
 
         private void MilkSales_Load(object sender, EventArgs e)
@@ -130,7 +131,7 @@ namespace Dairy_Farm_Management_System
             DataTable dt = new DataTable();
             dt.Columns.Add("EmpId", typeof(int));
             //dt.Load(Rdr);
-            CowIdCb.ValueMember = "EmpId";
+            EmpIdCb.ValueMember = "EmpId";
             // CowIdCb.DateSource = dt;
             con.Close();
 
@@ -144,6 +145,13 @@ namespace Dairy_Farm_Management_System
         private void button4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Quantity_Leave(object sender, EventArgs e)
+        {
+
+            int total = Convert.ToInt32(Price.Text) *  Convert.ToInt32(Quantity.Text);
+            Total.Text = "" + total;
         }
     }
 }
