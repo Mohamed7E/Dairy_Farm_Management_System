@@ -154,7 +154,12 @@ namespace Dairy_Farm_Management_System
         }
         private void Clear()
         {
-
+                
+            NameTb.Text = "";
+            Price.Text = "";
+            PhoneTb.Text = "";
+            Quantity.Text = "";
+            Total.Text = "";
         }
 
         private void button4_Click(object sender, EventArgs e)
