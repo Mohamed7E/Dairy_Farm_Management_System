@@ -42,7 +42,11 @@ namespace Dairy_Farm_Management_System
                     con.Open();
                     string Query = "inster into EmployeeTbl values ( '" + NameTb.Text + "','" + data.Value.Date + "','" + GenderCb.SelectedItem.ToString() + "','" + PhoneTb.Text + "','" + AddressTb.Text + "')";
                     SqlCommand cmd = new SqlCommand(Query, con);
-                   
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Emplyoee Saved ");
+                    con.Close();
+                    populate();
+
 
                 }
                 catch (Exception ex)
