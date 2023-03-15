@@ -29,6 +29,10 @@ namespace Dairy_Farm_Management_System
             con.Close();
 
         }
+        private void Clear()
+        {
+
+        }
         private void button4_Click(object sender, EventArgs e)
         {
             if (NameTb.Text == "" || GenderCb.Text == "" || AddressTb.Text == "" || PhoneTb.Text == "")
