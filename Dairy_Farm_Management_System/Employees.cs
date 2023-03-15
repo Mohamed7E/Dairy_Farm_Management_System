@@ -36,6 +36,7 @@ namespace Dairy_Farm_Management_System
             GenderCb.SelectedIndex =-1 ;
             AddressTb.Text = "";
             PhoneTb.Text ="";
+            key = 0;
         }
         private void button4_Click(object sender, EventArgs e)
         {
