@@ -15,6 +15,7 @@ namespace Dairy_Farm_Management_System
         {
             InitializeComponent();
             FillCowId();
+            populate();
         }
 
         private void MilkSales_Load(object sender, EventArgs e)
