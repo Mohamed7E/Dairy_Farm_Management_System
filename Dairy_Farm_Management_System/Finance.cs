@@ -149,7 +149,11 @@ namespace Dairy_Farm_Management_System
             con.Open();
             string query = "select * from IncomeTbl";
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
-           
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            IncomeList.DataSource = ds.Tables[0];
+            con.Close();
 
         }
         private void ClearEXp()
