@@ -163,6 +163,10 @@ namespace Dairy_Farm_Management_System
             Total.Text = "";
         }
 
+        private void SaveTransaction()
+        {
+
+        }
         private void button4_Click(object sender, EventArgs e)
         {
             if (EmpIdCb.SelectedIndex == -1 || NameTb.Text == "" || Price.Text == "" || PhoneTb.Text == "" || Quantity.Text == "" || Total.Text == "")
