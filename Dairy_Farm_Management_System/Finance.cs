@@ -130,8 +130,16 @@ namespace Dairy_Farm_Management_System
             this.Hide();
         }
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\learn\learn C#\Dairy_Farm_Management_System\data_MOHAMED_EBRAHIM.mdf;Integrated Security=True;Connect Timeout=30");
-       
-       
+        
+        private void populate()
+        {
+            con.Open();
+            string query = "select * from ExpenditureTbl";
+            SqlDataAdapter sda = new SqlDataAdapter(query, con);
+           
+
+        }
+        
         private void button4_Click(object sender, EventArgs e)
         {
             if (PurposeTb.SelectedIndex == -1 || AmountTb.Text == "" )
