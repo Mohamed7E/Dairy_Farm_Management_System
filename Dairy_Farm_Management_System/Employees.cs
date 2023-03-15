@@ -14,6 +14,7 @@ namespace Dairy_Farm_Management_System
         public Employees()
         {
             InitializeComponent();
+            populate();
         }
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\learn\learn C#\Dairy_Farm_Management_System\data_MOHAMED_EBRAHIM.mdf;Integrated Security=True;Connect Timeout=30");
 
@@ -61,6 +62,12 @@ namespace Dairy_Farm_Management_System
                     MessageBox.Show(ex.Message);
                 }
             }
+        }
+
+        int key = 0;
+        private void EmployeeList_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

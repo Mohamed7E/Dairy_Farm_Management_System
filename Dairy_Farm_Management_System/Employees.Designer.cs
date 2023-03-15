@@ -29,9 +29,9 @@ namespace Dairy_Farm_Management_System
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Employees));
             this.label5 = new System.Windows.Forms.Label();
             this.data = new System.Windows.Forms.DateTimePicker();
@@ -66,7 +66,7 @@ namespace Dairy_Farm_Management_System
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(699, 220);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(100, 46);
+            this.label5.Size = new System.Drawing.Size(97, 45);
             this.label5.TabIndex = 120;
             this.label5.Text = "Date ";
             // 
@@ -84,31 +84,32 @@ namespace Dairy_Farm_Management_System
             // 
             // EmployeeList
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.EmployeeList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.EmployeeList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.EmployeeList.ColumnHeadersHeight = 27;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.EmployeeList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.EmployeeList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.EmployeeList.ColumnHeadersHeight = 40;
             this.EmployeeList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.EmployeeList.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.EmployeeList.DefaultCellStyle = dataGridViewCellStyle3;
             this.EmployeeList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.EmployeeList.Location = new System.Drawing.Point(265, 534);
             this.EmployeeList.Name = "EmployeeList";
             this.EmployeeList.RowHeadersVisible = false;
             this.EmployeeList.RowHeadersWidth = 51;
+            this.EmployeeList.RowTemplate.Height = 40;
             this.EmployeeList.Size = new System.Drawing.Size(1189, 254);
             this.EmployeeList.TabIndex = 118;
             this.EmployeeList.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -123,15 +124,16 @@ namespace Dairy_Farm_Management_System
             this.EmployeeList.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.EmployeeList.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.EmployeeList.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.EmployeeList.ThemeStyle.HeaderStyle.Height = 27;
+            this.EmployeeList.ThemeStyle.HeaderStyle.Height = 40;
             this.EmployeeList.ThemeStyle.ReadOnly = false;
             this.EmployeeList.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.EmployeeList.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.EmployeeList.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.EmployeeList.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.EmployeeList.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.EmployeeList.ThemeStyle.RowsStyle.Height = 22;
+            this.EmployeeList.ThemeStyle.RowsStyle.Height = 40;
             this.EmployeeList.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.EmployeeList.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.EmployeeList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.EmployeeList_CellContentClick);
             // 
             // GenderCb
             // 
@@ -205,7 +207,7 @@ namespace Dairy_Farm_Management_System
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(750, 442);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(225, 46);
+            this.label10.Size = new System.Drawing.Size(219, 45);
             this.label10.TabIndex = 104;
             this.label10.Text = "Employee List";
             // 
@@ -214,13 +216,12 @@ namespace Dairy_Farm_Management_System
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(555, 102);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(109, 46);
+            this.label7.Size = new System.Drawing.Size(107, 45);
             this.label7.TabIndex = 110;
             this.label7.Text = "Name";
             // 
             // NameTb
             // 
-            this.NameTb.Enabled = false;
             this.NameTb.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.NameTb.Location = new System.Drawing.Point(555, 151);
             this.NameTb.Name = "NameTb";
@@ -232,7 +233,7 @@ namespace Dairy_Farm_Management_System
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(1013, 220);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(140, 46);
+            this.label6.Size = new System.Drawing.Size(135, 45);
             this.label6.TabIndex = 108;
             this.label6.Text = "Address";
             // 
@@ -249,7 +250,7 @@ namespace Dairy_Farm_Management_System
             this.E.AutoSize = true;
             this.E.Location = new System.Drawing.Point(374, 220);
             this.E.Name = "E";
-            this.E.Size = new System.Drawing.Size(115, 46);
+            this.E.Size = new System.Drawing.Size(112, 45);
             this.E.TabIndex = 106;
             this.E.Text = "Phone";
             // 
@@ -266,7 +267,7 @@ namespace Dairy_Farm_Management_System
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(937, 102);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(139, 46);
+            this.label2.Size = new System.Drawing.Size(135, 45);
             this.label2.TabIndex = 103;
             this.label2.Text = "Gender ";
             // 
@@ -284,7 +285,7 @@ namespace Dairy_Farm_Management_System
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(605, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(110, 46);
+            this.label1.Size = new System.Drawing.Size(107, 45);
             this.label1.TabIndex = 0;
             this.label1.Text = "DFSM";
             // 
@@ -304,7 +305,7 @@ namespace Dairy_Farm_Management_System
             this.label18.AutoSize = true;
             this.label18.Location = new System.Drawing.Point(117, 77);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(110, 46);
+            this.label18.Size = new System.Drawing.Size(107, 45);
             this.label18.TabIndex = 30;
             this.label18.Text = "DFSM";
             // 
@@ -344,7 +345,7 @@ namespace Dairy_Farm_Management_System
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.Margin = new System.Windows.Forms.Padding(7);
             this.Name = "Employees";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Employees";
