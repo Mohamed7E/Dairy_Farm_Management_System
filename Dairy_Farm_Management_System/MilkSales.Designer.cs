@@ -30,6 +30,9 @@ namespace Dairy_Farm_Management_System
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MilkSales));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel8 = new System.Windows.Forms.Panel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label16 = new System.Windows.Forms.Label();
@@ -57,7 +60,6 @@ namespace Dairy_Farm_Management_System
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label9 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.Price = new System.Windows.Forms.TextBox();
@@ -75,6 +77,9 @@ namespace Dairy_Farm_Management_System
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
+            this.CowIdCb = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.SalesList = new Guna.UI2.WinForms.Guna2DataGridView();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -85,7 +90,6 @@ namespace Dairy_Farm_Management_System
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -93,6 +97,7 @@ namespace Dairy_Farm_Management_System
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SalesList)).BeginInit();
             this.SuspendLayout();
             // 
             // panel8
@@ -169,7 +174,7 @@ namespace Dairy_Farm_Management_System
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label19.Location = new System.Drawing.Point(768, 71);
+            this.label19.Location = new System.Drawing.Point(810, 71);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(116, 31);
             this.label19.TabIndex = 94;
@@ -209,7 +214,7 @@ namespace Dairy_Farm_Management_System
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(1108, 102);
+            this.label5.Location = new System.Drawing.Point(1194, 107);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(194, 45);
             this.label5.TabIndex = 82;
@@ -218,7 +223,7 @@ namespace Dairy_Farm_Management_System
             // 
             // PhoneTb
             // 
-            this.PhoneTb.Location = new System.Drawing.Point(268, 273);
+            this.PhoneTb.Location = new System.Drawing.Point(330, 274);
             this.PhoneTb.Multiline = true;
             this.PhoneTb.Name = "PhoneTb";
             this.PhoneTb.Size = new System.Drawing.Size(276, 40);
@@ -228,7 +233,7 @@ namespace Dairy_Farm_Management_System
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(689, 215);
+            this.label4.Location = new System.Drawing.Point(751, 216);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(146, 45);
             this.label4.TabIndex = 80;
@@ -269,7 +274,7 @@ namespace Dairy_Farm_Management_System
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(268, 215);
+            this.label6.Location = new System.Drawing.Point(330, 216);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(199, 45);
             this.label6.TabIndex = 84;
@@ -277,7 +282,7 @@ namespace Dairy_Farm_Management_System
             // 
             // NameTb
             // 
-            this.NameTb.Location = new System.Drawing.Point(1108, 151);
+            this.NameTb.Location = new System.Drawing.Point(1194, 156);
             this.NameTb.Multiline = true;
             this.NameTb.Name = "NameTb";
             this.NameTb.Size = new System.Drawing.Size(276, 40);
@@ -346,6 +351,7 @@ namespace Dairy_Farm_Management_System
             this.button4.TabIndex = 91;
             this.button4.Text = "Save";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -367,20 +373,10 @@ namespace Dairy_Farm_Management_System
             this.label10.TabIndex = 75;
             this.label10.Text = "Sales Report";
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(268, 505);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(1176, 323);
-            this.dataGridView1.TabIndex = 89;
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(268, 102);
+            this.label9.Location = new System.Drawing.Point(577, 93);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(88, 45);
             this.label9.TabIndex = 88;
@@ -390,7 +386,7 @@ namespace Dairy_Farm_Management_System
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(687, 102);
+            this.label7.Location = new System.Drawing.Point(886, 108);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(89, 45);
             this.label7.TabIndex = 86;
@@ -398,7 +394,7 @@ namespace Dairy_Farm_Management_System
             // 
             // Price
             // 
-            this.Price.Location = new System.Drawing.Point(689, 158);
+            this.Price.Location = new System.Drawing.Point(874, 156);
             this.Price.Multiline = true;
             this.Price.Name = "Price";
             this.Price.Size = new System.Drawing.Size(276, 40);
@@ -417,7 +413,7 @@ namespace Dairy_Farm_Management_System
             // 
             // Quantity
             // 
-            this.Quantity.Location = new System.Drawing.Point(689, 277);
+            this.Quantity.Location = new System.Drawing.Point(751, 278);
             this.Quantity.Multiline = true;
             this.Quantity.Name = "Quantity";
             this.Quantity.Size = new System.Drawing.Size(276, 40);
@@ -426,7 +422,7 @@ namespace Dairy_Farm_Management_System
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(1108, 212);
+            this.label3.Location = new System.Drawing.Point(1170, 213);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(89, 45);
             this.label3.TabIndex = 78;
@@ -434,7 +430,7 @@ namespace Dairy_Farm_Management_System
             // 
             // Total
             // 
-            this.Total.Location = new System.Drawing.Point(1108, 274);
+            this.Total.Location = new System.Drawing.Point(1170, 275);
             this.Total.Multiline = true;
             this.Total.Name = "Total";
             this.Total.Size = new System.Drawing.Size(276, 40);
@@ -446,7 +442,7 @@ namespace Dairy_Farm_Management_System
             this.date.CustomFormat = "yyyy-MM-dd";
             this.date.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.date.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.date.Location = new System.Drawing.Point(268, 164);
+            this.date.Location = new System.Drawing.Point(577, 155);
             this.date.Margin = new System.Windows.Forms.Padding(4);
             this.date.Name = "date";
             this.date.Size = new System.Drawing.Size(276, 40);
@@ -552,11 +548,84 @@ namespace Dairy_Farm_Management_System
             this.label12.Text = "Milk Production";
             this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
+            // CowIdCb
+            // 
+            this.CowIdCb.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CowIdCb.FormattingEnabled = true;
+            this.CowIdCb.Location = new System.Drawing.Point(256, 152);
+            this.CowIdCb.Name = "CowIdCb";
+            this.CowIdCb.Size = new System.Drawing.Size(295, 45);
+            this.CowIdCb.TabIndex = 96;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(268, 93);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(119, 45);
+            this.label2.TabIndex = 95;
+            this.label2.Text = "Cow id";
+            // 
+            // SalesList
+            // 
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.SalesList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.SalesList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.SalesList.ColumnHeadersHeight = 40;
+            this.SalesList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.SalesList.DefaultCellStyle = dataGridViewCellStyle6;
+            this.SalesList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.SalesList.Location = new System.Drawing.Point(275, 536);
+            this.SalesList.Name = "SalesList";
+            this.SalesList.RowHeadersVisible = false;
+            this.SalesList.RowHeadersWidth = 51;
+            this.SalesList.RowTemplate.Height = 40;
+            this.SalesList.Size = new System.Drawing.Size(1189, 292);
+            this.SalesList.TabIndex = 119;
+            this.SalesList.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.SalesList.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.SalesList.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.SalesList.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.SalesList.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.SalesList.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.SalesList.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.SalesList.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.SalesList.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.SalesList.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SalesList.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.SalesList.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.SalesList.ThemeStyle.HeaderStyle.Height = 40;
+            this.SalesList.ThemeStyle.ReadOnly = false;
+            this.SalesList.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.SalesList.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.SalesList.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SalesList.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.SalesList.ThemeStyle.RowsStyle.Height = 40;
+            this.SalesList.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.SalesList.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
             // MilkSales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(18F, 45F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1476, 840);
+            this.Controls.Add(this.SalesList);
+            this.Controls.Add(this.CowIdCb);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.PhoneTb);
@@ -568,7 +637,6 @@ namespace Dairy_Farm_Management_System
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.Price);
@@ -599,7 +667,6 @@ namespace Dairy_Farm_Management_System
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -612,6 +679,7 @@ namespace Dairy_Farm_Management_System
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SalesList)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -646,7 +714,6 @@ namespace Dairy_Farm_Management_System
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox Price;
@@ -664,5 +731,8 @@ namespace Dairy_Farm_Management_System
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.ComboBox CowIdCb;
+        private System.Windows.Forms.Label label2;
+        private Guna.UI2.WinForms.Guna2DataGridView SalesList;
     }
 }
