@@ -16,6 +16,18 @@ namespace Dairy_Farm_Management_System
             InitializeComponent();
         }
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\learn\learn C#\Dairy_Farm_Management_System\data_MOHAMED_EBRAHIM.mdf;Integrated Security=True;Connect Timeout=30");
+        private void populate()
+        {
+            con.Open();
+            string query = "select * from EmployeeTbl";
+            SqlDataAdapter sda = new SqlDataAdapter(query, con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            EmployeeList.DataSource = ds.Tables[0];
+            con.Close();
+
+        }
         private void Employee_Load(object sender, EventArgs e)
         {
 
@@ -42,6 +54,11 @@ namespace Dairy_Farm_Management_System
         }
 
         private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Healthlist_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
