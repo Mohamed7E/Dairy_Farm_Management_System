@@ -39,7 +39,7 @@ namespace Dairy_Farm_Management_System
 
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
-           
+
         }
 
         private void label12_Click(object sender, EventArgs e)
@@ -51,32 +51,32 @@ namespace Dairy_Farm_Management_System
 
         private void panel4_Paint(object sender, PaintEventArgs e)
         {
-           
+
         }
 
         private void panel6_Paint(object sender, PaintEventArgs e)
         {
-           
+
         }
 
         private void panel5_Paint(object sender, PaintEventArgs e)
         {
-           
+
         }
 
         private void panel9_Paint(object sender, PaintEventArgs e)
         {
-           
+
         }
 
         private void panel8_Paint(object sender, PaintEventArgs e)
         {
-           
+
         }
 
         private void panel7_Paint(object sender, PaintEventArgs e)
         {
-            
+
         }
 
         private void label11_Click(object sender, EventArgs e)
@@ -148,26 +148,42 @@ namespace Dairy_Farm_Management_System
             SalesList.DataSource = ds.Tables[0];
             con.Close();
         }
-            private void textBox4_TextChanged(object sender, EventArgs e)
+        private void textBox4_TextChanged(object sender, EventArgs e)
         {
 
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if (EmpIdCb.SelectedIndex == -1 ||NameTb.Text == "" || Price.Text == "" || PhoneTb.Text == "" || Quantity.Text == "" || Total.Text == "")
+            if (EmpIdCb.SelectedIndex == -1 || NameTb.Text == "" || Price.Text == "" || PhoneTb.Text == "" || Quantity.Text == "" || Total.Text == "")
             {
                 MessageBox.Show("missing informatiom");
             }
-            
-           
+            else
+            {
+                try
+                {
+                    con.Open();
+                    string Query = "inster into MilkSalesTbl values ( '" + date.Value.Date + "'," + Price.Text + ",'" + NameTb.Text + "','" + PhoneTb.Text + "','" + EmpIdCb.SelectedItem.ToString()+ "','" + Quantity.Text + "','" + Total.Text + "')";
+                    SqlCommand cmd = new SqlCommand(Query, con);
+                    
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+
+            }
         }
 
-        private void Quantity_Leave(object sender, EventArgs e)
-        {
+            private void Quantity_Leave(object sender, EventArgs e)
+            {
 
-            int total = Convert.ToInt32(Price.Text) *  Convert.ToInt32(Quantity.Text);
-            Total.Text = "" + total;
+                int total = Convert.ToInt32(Price.Text) * Convert.ToInt32(Quantity.Text);
+                Total.Text = "" + total;
+            }
         }
+
+      
     }
-}
