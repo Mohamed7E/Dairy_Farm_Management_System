@@ -236,6 +236,12 @@ namespace Dairy_Farm_Management_System
         {
             FliterIncme();
         }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            populateInc();
+
+        }
     }
     
 }
