@@ -67,7 +67,13 @@ namespace Dairy_Farm_Management_System
         int key = 0;
         private void EmployeeList_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            NameTb.Text = EmployeeList.SelectedRows[0].Cells[1].Value.ToString();
+            data.Text = EmployeeList.SelectedRows[0].Cells[2].Value.ToString();
+            GenderCb.Text = EmployeeList.SelectedRows[0].Cells[3].Value.ToString();
+            PhoneTb.Text = EmployeeList.SelectedRows[0].Cells[4].Value.ToString();
+            AddressTb.Text = EmployeeList.SelectedRows[0].Cells[5].Value.ToString();
+            
+            
         }
     }
 }

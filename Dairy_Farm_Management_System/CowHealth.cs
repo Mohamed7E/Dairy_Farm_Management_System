@@ -226,11 +226,11 @@ namespace Dairy_Farm_Management_System
             CowIdCb.SelectedValue = Healthlist.SelectedRows[0].Cells[1].Value.ToString();
             CowNAmeTb.Text = Healthlist.SelectedRows[0].Cells[2].Value.ToString();
             data.Text = Healthlist.SelectedRows[0].Cells[3].Value.ToString();
-            EventTb.Text = Healthlist.SelectedRows[0].Cells[5].Value.ToString();
-            DiagnosisTb.Text = Healthlist.SelectedRows[0].Cells[4].Value.ToString();
+            EventTb.Text = Healthlist.SelectedRows[0].Cells[4].Value.ToString();
+            DiagnosisTb.Text = Healthlist.SelectedRows[0].Cells[5].Value.ToString();
             TreatmentTb.Text = Healthlist.SelectedRows[0].Cells[6].Value.ToString();
-            CostTb.Text = Healthlist.SelectedRows[0].Cells[6].Value.ToString();
-            VetNameTb.Text = Healthlist.SelectedRows[0].Cells[6].Value.ToString();
+            CostTb.Text = Healthlist.SelectedRows[0].Cells[7].Value.ToString();
+            VetNameTb.Text = Healthlist.SelectedRows[0].Cells[8].Value.ToString();
             if (CowNAmeTb.Text == "")
             {
                 key = 0;
