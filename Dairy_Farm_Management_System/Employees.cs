@@ -72,8 +72,18 @@ namespace Dairy_Farm_Management_System
             GenderCb.Text = EmployeeList.SelectedRows[0].Cells[3].Value.ToString();
             PhoneTb.Text = EmployeeList.SelectedRows[0].Cells[4].Value.ToString();
             AddressTb.Text = EmployeeList.SelectedRows[0].Cells[5].Value.ToString();
-            
-            
+            if (NameTb.Text == "")
+            {
+                key = 0;
+
+            }
+            else
+            {
+
+                key = Convert.ToInt32(EmployeeList.SelectedRows[0].Cells[0].Value.ToString());
+
+            }
+
         }
     }
 }
