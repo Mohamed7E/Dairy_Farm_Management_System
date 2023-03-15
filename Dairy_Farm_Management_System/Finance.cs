@@ -169,6 +169,18 @@ namespace Dairy_Farm_Management_System
             con.Close();
 
         }
+        private void FliterExp()
+        {
+            con.Open();
+            string query = "select * from ExpenditureTbl Where ExpDate='" +ExDateRFilter.Value.Date + "'";
+            SqlDataAdapter sda = new SqlDataAdapter(query, con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            IncomeList.DataSource = ds.Tables[0];
+            con.Close();
+
+        }
         private void ClearEXp()
         {
             AmountTb.Text = "";
@@ -240,6 +252,11 @@ namespace Dairy_Farm_Management_System
         private void pictureBox9_Click(object sender, EventArgs e)
         {
             populateInc();
+
+        }
+
+        private void ExDateRFilter_ValueChanged(object sender, EventArgs e)
+        {
 
         }
     }
