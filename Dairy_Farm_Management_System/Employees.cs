@@ -9,14 +9,14 @@ using System.Windows.Forms;
 
 namespace Dairy_Farm_Management_System
 {
-    public partial class Employee : Form
+    public partial class Employees : Form
     {
-        public Employee()
+        public Employees()
         {
             InitializeComponent();
-            populate();
         }
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\learn\learn C#\Dairy_Farm_Management_System\data_MOHAMED_EBRAHIM.mdf;Integrated Security=True;Connect Timeout=30");
+
         private void populate()
         {
             con.Open();
@@ -29,39 +29,27 @@ namespace Dairy_Farm_Management_System
             con.Close();
 
         }
-        private void Employee_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void EventTb_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void CowIdCb_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void data_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button4_Click(object sender, EventArgs e)
         {
+            if (NameTb.Text == "" || GenderCb.Text == "" || AddressTb.Text == "" || PhoneTb.Text == "")
+            {
+                MessageBox.Show("missing informatiom");
+            }
+            else
+            {
+                try
+                {
+                    con.Open();
+                    string Query = "inster into EmployeeTbl values ( '" + NameTb.Text + "','" + data.Value.Date + "','" + GenderCb.SelectedItem.ToString() + "','" + PhoneTb.Text + "','" + AddressTb.Text + "')";
+                    SqlCommand cmd = new SqlCommand(Query, con);
+                   
 
-        }
-
-        private void Healthlist_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
     }
 }
