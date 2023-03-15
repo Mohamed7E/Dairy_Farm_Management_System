@@ -159,7 +159,12 @@ namespace Dairy_Farm_Management_System
                 con.Open();
                 string Query = "inster into ExpenditureTbl values (' " + date.Value.Date + "','" + PurposeTb.SelectedItem.ToString() + "','" + AmountTb.Text + "','" + EmpIdTb.Text + ")";
                 SqlCommand cmd = new SqlCommand(Query, con);
-                
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Expenditure Saved successdully");
+                con.Close();
+                populate();
+                ClearEXp();
+
             }
             catch (Exception ex)
             {
