@@ -150,28 +150,40 @@ namespace Dairy_Farm_Management_System
         }
         private void button4_Click(object sender, EventArgs e)
         {
-            if (PurposeTb.SelectedIndex == -1 || AmountTb.Text == "" )
+            if (PurposeTb.SelectedIndex == -1 || AmountTb.Text == "")
             {
                 MessageBox.Show("missing informatiom");
             }
-            try
+            else
             {
-                con.Open();
-                string Query = "inster into ExpenditureTbl values (' " + date.Value.Date + "','" + PurposeTb.SelectedItem.ToString() + "','" + AmountTb.Text + "','" + EmpIdTb.Text + ")";
-                SqlCommand cmd = new SqlCommand(Query, con);
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Expenditure Saved successdully");
-                con.Close();
-                populate();
-                ClearEXp();
+                try
+                {
+                    con.Open();
+                    string Query = "inster into ExpenditureTbl values (' " + date.Value.Date + "','" + PurposeTb.SelectedItem.ToString() + "','" + AmountTb.Text + "','" + EmpIdTb.Text + "')";
+                    SqlCommand cmd = new SqlCommand(Query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Expenditure Saved successdully");
+                    con.Close();
+                    populate();
+                    ClearEXp();
 
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
         }
+        private void ClearInc()
+        {
+            IncPutCb.SelectedItem = -1;
+            IncAmount.Text = "";
+        }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
-    }
+    
 }
