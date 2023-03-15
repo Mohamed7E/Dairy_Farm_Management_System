@@ -136,7 +136,11 @@ namespace Dairy_Farm_Management_System
             con.Open();
             string query = "select * from ExpenditureTbl";
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
-           
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            ExDate.DataSource = ds.Tables[0];
+            con.Close();
 
         }
         
