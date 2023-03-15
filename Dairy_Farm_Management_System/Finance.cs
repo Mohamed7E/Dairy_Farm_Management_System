@@ -16,6 +16,7 @@ namespace Dairy_Farm_Management_System
             InitializeComponent();
             populateEXp();
             populateInc();
+            FillCowId();
         }
 
         private void Finance_Load(object sender, EventArgs e)
@@ -177,7 +178,7 @@ namespace Dairy_Farm_Management_System
             SqlCommandBuilder builder = new SqlCommandBuilder(sda);
             var ds = new DataSet();
             sda.Fill(ds);
-            IncomeList.DataSource = ds.Tables[0];
+            ExDate.DataSource = ds.Tables[0];
             con.Close();
 
         }
@@ -196,7 +197,7 @@ namespace Dairy_Farm_Management_System
                 try
                 {
                     con.Open();
-                    string Query = "inster into ExpenditureTbl values (' " + date.Value.Date + "','" + PurposeTb.SelectedItem.ToString() + "','" + AmountTb.Text + "','" + EmpIdTb.Text + "')";
+                    string Query = "inster into ExpenditureTbl values (' " + date.Value.Date + "','" + PurposeTb.SelectedItem.ToString() + "','" + AmountTb.Text + "','" + EmpIdCb.SelectedValue.ToString() + "')";
                     SqlCommand cmd = new SqlCommand(Query, con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Expenditure Saved successdully");
@@ -210,6 +211,21 @@ namespace Dairy_Farm_Management_System
                     MessageBox.Show(ex.Message);
                 }
             }
+        }
+        private void FillCowId()
+        {
+            con.Open();
+            SqlCommand cmd = new SqlCommand("select EmpId from EmployeeTbl ", con);
+            SqlDataAdapter Rdr;
+            //Rdr = cmd.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Columns.Add("EmpId", typeof(int));
+            //dt.Load(Rdr);
+            EmpIdCb.ValueMember = "EmpId";
+            // CowIdCb.DateSource = dt;
+            con.Close();
+
+
         }
         private void ClearInc()
         {
@@ -228,7 +244,7 @@ namespace Dairy_Farm_Management_System
                 try
                 {
                     con.Open();
-                    string Query = "inster into IncomeTbl values (' " + IncDate.Value.Date + "','" + IncPutCb.SelectedItem.ToString() + "','" + IncAmount.Text + "','" + EmpIdTb.Text + "')";
+                    string Query = "inster into IncomeTbl values (' " + IncDate.Value.Date + "','" + IncPutCb.SelectedItem.ToString() + "','" + IncAmount.Text + "','" + EmpIdCb.SelectedValue.ToString() + "')";
                     SqlCommand cmd = new SqlCommand(Query, con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("IncomeTbl Saved successdully");
