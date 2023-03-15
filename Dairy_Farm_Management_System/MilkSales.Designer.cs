@@ -42,13 +42,13 @@ namespace Dairy_Farm_Management_System
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.PhoneTb = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.NameTb = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
@@ -60,12 +60,12 @@ namespace Dairy_Farm_Management_System
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label9 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.Price = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.Quantity = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.Total = new System.Windows.Forms.TextBox();
+            this.date = new System.Windows.Forms.DateTimePicker();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -216,13 +216,14 @@ namespace Dairy_Farm_Management_System
             this.label5.Text = "client Name";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // textBox4
+            // PhoneTb
             // 
-            this.textBox4.Location = new System.Drawing.Point(268, 273);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(276, 40);
-            this.textBox4.TabIndex = 83;
+            this.PhoneTb.Location = new System.Drawing.Point(268, 273);
+            this.PhoneTb.Multiline = true;
+            this.PhoneTb.Name = "PhoneTb";
+            this.PhoneTb.Size = new System.Drawing.Size(276, 40);
+            this.PhoneTb.TabIndex = 83;
+            this.PhoneTb.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // label4
             // 
@@ -274,13 +275,13 @@ namespace Dairy_Farm_Management_System
             this.label6.TabIndex = 84;
             this.label6.Text = "client Phone";
             // 
-            // textBox5
+            // NameTb
             // 
-            this.textBox5.Location = new System.Drawing.Point(1108, 151);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(276, 40);
-            this.textBox5.TabIndex = 85;
+            this.NameTb.Location = new System.Drawing.Point(1108, 151);
+            this.NameTb.Multiline = true;
+            this.NameTb.Name = "NameTb";
+            this.NameTb.Size = new System.Drawing.Size(276, 40);
+            this.NameTb.TabIndex = 85;
             // 
             // panel5
             // 
@@ -354,7 +355,7 @@ namespace Dairy_Farm_Management_System
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(216, 55);
             this.button3.TabIndex = 90;
-            this.button3.Text = "Up";
+            this.button3.Text = "Clear";
             this.button3.UseVisualStyleBackColor = false;
             // 
             // label10
@@ -395,13 +396,13 @@ namespace Dairy_Farm_Management_System
             this.label7.TabIndex = 86;
             this.label7.Text = "Price";
             // 
-            // textBox6
+            // Price
             // 
-            this.textBox6.Location = new System.Drawing.Point(689, 158);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(276, 40);
-            this.textBox6.TabIndex = 87;
+            this.Price.Location = new System.Drawing.Point(689, 158);
+            this.Price.Multiline = true;
+            this.Price.Name = "Price";
+            this.Price.Size = new System.Drawing.Size(276, 40);
+            this.Price.TabIndex = 87;
             // 
             // panel3
             // 
@@ -414,13 +415,13 @@ namespace Dairy_Farm_Management_System
             this.panel3.TabIndex = 0;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
-            // textBox3
+            // Quantity
             // 
-            this.textBox3.Location = new System.Drawing.Point(689, 277);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(276, 40);
-            this.textBox3.TabIndex = 81;
+            this.Quantity.Location = new System.Drawing.Point(689, 277);
+            this.Quantity.Multiline = true;
+            this.Quantity.Name = "Quantity";
+            this.Quantity.Size = new System.Drawing.Size(276, 40);
+            this.Quantity.TabIndex = 81;
             // 
             // label3
             // 
@@ -431,25 +432,25 @@ namespace Dairy_Farm_Management_System
             this.label3.TabIndex = 78;
             this.label3.Text = "Total";
             // 
-            // textBox2
+            // Total
             // 
-            this.textBox2.Location = new System.Drawing.Point(1108, 274);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(276, 40);
-            this.textBox2.TabIndex = 79;
+            this.Total.Location = new System.Drawing.Point(1108, 274);
+            this.Total.Multiline = true;
+            this.Total.Name = "Total";
+            this.Total.Size = new System.Drawing.Size(276, 40);
+            this.Total.TabIndex = 79;
             // 
-            // dateTimePicker1
+            // date
             // 
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePicker1.CustomFormat = "yyyy-MM-dd";
-            this.dateTimePicker1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(268, 164);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(276, 40);
-            this.dateTimePicker1.TabIndex = 77;
+            this.date.CalendarFont = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.date.CustomFormat = "yyyy-MM-dd";
+            this.date.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.date.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.date.Location = new System.Drawing.Point(268, 164);
+            this.date.Margin = new System.Windows.Forms.Padding(4);
+            this.date.Name = "date";
+            this.date.Size = new System.Drawing.Size(276, 40);
+            this.date.TabIndex = 77;
             // 
             // panel2
             // 
@@ -558,10 +559,10 @@ namespace Dairy_Farm_Management_System
             this.ClientSize = new System.Drawing.Size(1476, 840);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.PhoneTb);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.NameTb);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button4);
@@ -570,11 +571,11 @@ namespace Dairy_Farm_Management_System
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.Price);
+            this.Controls.Add(this.Quantity);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.Total);
+            this.Controls.Add(this.date);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -630,13 +631,13 @@ namespace Dairy_Farm_Management_System
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox PhoneTb;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox NameTb;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label13;
@@ -648,12 +649,12 @@ namespace Dairy_Farm_Management_System
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox Price;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox Quantity;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.TextBox Total;
+        private System.Windows.Forms.DateTimePicker date;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
