@@ -14,6 +14,7 @@ namespace Dairy_Farm_Management_System
         public Employee()
         {
             InitializeComponent();
+            populate();
         }
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\learn\learn C#\Dairy_Farm_Management_System\data_MOHAMED_EBRAHIM.mdf;Integrated Security=True;Connect Timeout=30");
         private void populate()
