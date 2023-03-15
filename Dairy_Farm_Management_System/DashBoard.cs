@@ -100,5 +100,10 @@ namespace Dairy_Farm_Management_System
             Ob.Show();
             this.Hide();
         }
+
+        private void DashBoard_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

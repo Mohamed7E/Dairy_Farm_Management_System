@@ -486,9 +486,8 @@ namespace Dairy_Farm_Management_System
             // textBox7
             // 
             this.textBox7.Location = new System.Drawing.Point(1169, 237);
-            this.textBox7.Multiline = true;
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(276, 40);
+            this.textBox7.Size = new System.Drawing.Size(276, 51);
             this.textBox7.TabIndex = 68;
             // 
             // label7
@@ -512,9 +511,8 @@ namespace Dairy_Farm_Management_System
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(1169, 106);
-            this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(276, 40);
+            this.textBox4.Size = new System.Drawing.Size(276, 51);
             this.textBox4.TabIndex = 64;
             // 
             // label4
@@ -661,6 +659,7 @@ namespace Dairy_Farm_Management_System
             this.Name = "DashBoard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DashBoard";
+            this.Load += new System.EventHandler(this.DashBoard_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.panel9.ResumeLayout(false);

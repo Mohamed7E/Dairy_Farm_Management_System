@@ -142,12 +142,12 @@ namespace Dairy_Farm_Management_System
             con.Open();
             SqlCommand cmd = new SqlCommand("select CowId from BreedTbl ", con);
             SqlDataAdapter Rdr;
-            Rdr = cmd.ExecuteReader();
+           // Rdr = cmd.ExecuteReader();
             DataTable dt = new DataTable();
             dt.Columns.Add("CowId", typeof(int));
-            dt.Load(Rdr);
+           /// dt.Load(Rdr);
             CowIdCb.ValueMember = "CowId";
-            CowIdCb.DateSource = dt;
+           // CowIdCb.DateSource = dt;
             con.Close();
 
 

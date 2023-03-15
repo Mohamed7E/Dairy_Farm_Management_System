@@ -15,6 +15,7 @@ namespace Dairy_Farm_Management_System
         public Cows()
         {
             InitializeComponent();
+     
             populate();
         }
 
