@@ -257,7 +257,13 @@ namespace Dairy_Farm_Management_System
 
         private void ExDateRFilter_ValueChanged(object sender, EventArgs e)
         {
+            FliterExp();
 
+        }
+
+        private void pictureBox10_Click(object sender, EventArgs e)
+        {
+            populateEXp();
         }
     }
     
