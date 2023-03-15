@@ -14,6 +14,7 @@ namespace Dairy_Farm_Management_System
         public Finance()
         {
             InitializeComponent();
+            populate();
         }
 
         private void Finance_Load(object sender, EventArgs e)
@@ -143,7 +144,10 @@ namespace Dairy_Farm_Management_System
             con.Close();
 
         }
-        
+        private void ClearEXp()
+        {
+            AmountTb.Text = "";
+        }
         private void button4_Click(object sender, EventArgs e)
         {
             if (PurposeTb.SelectedIndex == -1 || AmountTb.Text == "" )
