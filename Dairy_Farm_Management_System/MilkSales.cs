@@ -165,7 +165,24 @@ namespace Dairy_Farm_Management_System
 
         private void SaveTransaction()
         {
+            
+                try
+                {
+                string Sales = "Sales";
+                    con.Open();
+                    string Query = "inster into IncomeTbl values (' " + date.Value.Date + "','" + Sales + "','" + Total.Text + "','" + EmpIdCb.SelectedItem.ToString() + "')";
+                    SqlCommand cmd = new SqlCommand(Query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("IncomeTbl Saved successdully");
+                    con.Close();
+                    
 
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            
         }
         private void button4_Click(object sender, EventArgs e)
         {
