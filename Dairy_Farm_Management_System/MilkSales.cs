@@ -126,7 +126,13 @@ namespace Dairy_Farm_Management_System
             con.Open();
             SqlCommand cmd = new SqlCommand("select EmpId from EmployeeTbl ", con);
             SqlDataAdapter Rdr;
-            
+            //Rdr = cmd.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Columns.Add("EmpId", typeof(int));
+            //dt.Load(Rdr);
+            CowIdCb.ValueMember = "EmpId";
+            // CowIdCb.DateSource = dt;
+            con.Close();
 
 
         }
