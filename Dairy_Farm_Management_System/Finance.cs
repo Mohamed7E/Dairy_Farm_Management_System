@@ -157,6 +157,18 @@ namespace Dairy_Farm_Management_System
             con.Close();
 
         }
+        private void FliterIncme()
+        {
+            con.Open();
+            string query = "select * from IncomeTbl Where IncDate='" + IncomeDateFilter.Value.Date + "'";
+            SqlDataAdapter sda = new SqlDataAdapter(query, con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            IncomeList.DataSource = ds.Tables[0];
+            con.Close();
+
+        }
         private void ClearEXp()
         {
             AmountTb.Text = "";
