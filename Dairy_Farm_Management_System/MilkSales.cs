@@ -121,7 +121,15 @@ namespace Dairy_Farm_Management_System
         }
 
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\learn\learn C#\Dairy_Farm_Management_System\data_MOHAMED_EBRAHIM.mdf;Integrated Security=True;Connect Timeout=30");
-        
+        private void FillCowId()
+        {
+            con.Open();
+            SqlCommand cmd = new SqlCommand("select EmpId from EmployeeTbl ", con);
+            SqlDataAdapter Rdr;
+            
+
+
+        }
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
 
