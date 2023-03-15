@@ -119,5 +119,15 @@ namespace Dairy_Farm_Management_System
                 }
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (NameTb.Text == "" || GenderCb.SelectedIndex == -1 || AddressTb.Text == "" || PhoneTb.Text == "")
+
+            {
+                MessageBox.Show("missing informatiom");
+            }
+           
+        }
     }
 }
