@@ -105,7 +105,11 @@ namespace Dairy_Farm_Management_System
                     con.Open();
                     string Query = "delete from EmployeeTbl where EmpId=" + key + ";";
                     SqlCommand cmd = new SqlCommand(Query, con);
-                    
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Employee Delete successdully");
+                    con.Close();
+                    populate();
+                    Clear();
 
 
                 }
