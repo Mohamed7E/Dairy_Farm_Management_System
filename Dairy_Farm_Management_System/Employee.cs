@@ -19,5 +19,25 @@ namespace Dairy_Farm_Management_System
         {
 
         }
+
+        private void EventTb_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CowIdCb_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void data_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
