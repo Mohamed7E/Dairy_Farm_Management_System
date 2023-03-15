@@ -188,7 +188,7 @@ namespace Dairy_Farm_Management_System
         }
         private void button4_Click(object sender, EventArgs e)
         {
-            if (PurposeTb.SelectedIndex == -1 || AmountTb.Text == "")
+            if (PurposeTb.SelectedIndex == -1 || AmountTb.Text == ""|| EmpIdCb.SelectedIndex==-1)
             {
                 MessageBox.Show("missing informatiom");
             }
@@ -235,7 +235,7 @@ namespace Dairy_Farm_Management_System
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (IncPutCb.SelectedIndex == -1 || IncAmount.Text == "")
+            if (IncPutCb.SelectedIndex == -1 || IncAmount.Text == ""|| EmpIdCb.SelectedIndex==-1)
             {
                 MessageBox.Show("missing informatiom");
             }
