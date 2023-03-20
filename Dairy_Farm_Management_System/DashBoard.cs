@@ -84,12 +84,13 @@ namespace Dairy_Farm_Management_System
             int inc, exp;
             double bal;
             inc = Convert.ToInt32(dt.Rows[0][0].ToString());
-            Inclabe.Text = dt.Rows[0][0].ToString();
+            Inclabe.Text = "Rs" + dt.Rows[0][0].ToString();
             DataTable dt1 = new DataTable();
             sda.Fill(dt1);
             exp = Convert.ToInt32(dt.Rows[0][0].ToString());
             bal = inc - exp;
-            Explbl.Text = dt1.Rows[0][0].ToString();
+            Explbl.Text = "Rs" +dt1.Rows[0][0].ToString();
+            ballabl.Text = "Rs" + bal;
             con.Close();
         }
 
