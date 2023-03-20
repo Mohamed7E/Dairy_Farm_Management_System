@@ -98,8 +98,11 @@ namespace Dairy_Farm_Management_System
             con.Open();
             SqlDataAdapter sda = new SqlDataAdapter("select Count(*) from CoweTbl", con);
            
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            
            
-          
+            
            
             con.Close();
         }
