@@ -78,8 +78,8 @@ namespace Dairy_Farm_Management_System
             con.Open();
             SqlDataAdapter sda = new SqlDataAdapter("select sum(IncAmt) from Incometbl",con);
             DataTable dt = new DataTable();
-            
-
+            sda.Fill(dt);
+            Inclabe.Text = dt.Rows[0][0].ToString();
             con.Close();
         }
 
