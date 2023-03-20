@@ -197,7 +197,7 @@ namespace Dairy_Farm_Management_System
                 try
                 {
                     con.Open();
-                    string Query = "inster into ExpenditureTbl values (' " + date.Value.Date + "','" + PurposeTb.SelectedItem.ToString() + "','" + AmountTb.Text + "','" + EmpIdCb.SelectedValue.ToString() + "')";
+                    string Query = "insert into ExpenditureTbl values (' " + date.Value.Date + "','" + PurposeTb.SelectedItem.ToString() + "','" + AmountTb.Text + "','" + EmpIdCb.SelectedValue.ToString() + "')";
                     SqlCommand cmd = new SqlCommand(Query, con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Expenditure Saved successdully");
@@ -244,7 +244,7 @@ namespace Dairy_Farm_Management_System
                 try
                 {
                     con.Open();
-                    string Query = "inster into IncomeTbl values (' " + IncDate.Value.Date + "','" + IncPutCb.SelectedItem.ToString() + "','" + IncAmount.Text + "','" + EmpIdCb.SelectedValue.ToString() + "')";
+                    string Query = "insert into IncomeTbl values (' " + IncDate.Value.Date + "','" + IncPutCb.SelectedItem.ToString() + "','" + IncAmount.Text + "','" + EmpIdCb.SelectedValue.ToString() + "')";
                     SqlCommand cmd = new SqlCommand(Query, con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("IncomeTbl Saved successdully");

@@ -177,7 +177,7 @@ namespace Dairy_Farm_Management_System
                 try
                 {
                     con.Open();
-                    string Query = "inster into MilkTbl values ( '" + CowIdCb.SelectedValue.ToString() + "','" + Cownametb.Text + "','" + Amt.Text + "','" + Noontb.Text + "','" + TotalTb.Text + "','" + PmTb.Text + "','" + data.Value.Date + "')";
+                    string Query = "insert into MilkTbl values ( '" + CowIdCb.SelectedValue.ToString() + "','" + Cownametb.Text + "','" + Amt.Text + "','" + Noontb.Text + "','" + TotalTb.Text + "','" + PmTb.Text + "','" + data.Value.Date + "')";
                     SqlCommand cmd = new SqlCommand(Query, con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Cow Saved successdully");

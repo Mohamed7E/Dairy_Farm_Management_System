@@ -195,7 +195,7 @@ namespace Dairy_Farm_Management_System
                 try
                 {
                     con.Open();
-                    string Query = "inster into MilkSalesTbl values ( '" + date.Value.Date + "'," + Price.Text + ",'" + NameTb.Text + "','" + PhoneTb.Text + "','" + EmpIdCb.SelectedItem.ToString()+ "','" + Quantity.Text + "','" + Total.Text + "')";
+                    string Query = "insert into MilkSalesTbl values ( '" + date.Value.Date + "'," + Price.Text + ",'" + NameTb.Text + "','" + PhoneTb.Text + "','" + EmpIdCb.SelectedItem.ToString()+ "','" + Quantity.Text + "','" + Total.Text + "')";
                     SqlCommand cmd = new SqlCommand(Query, con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Milk Sold successdully");

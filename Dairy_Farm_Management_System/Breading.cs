@@ -199,7 +199,7 @@ namespace Dairy_Farm_Management_System
                 try
                 {
                     con.Open();
-                    string Query = "inster into BreedTbl values ( '" + HealDate.Value.Date + "','" + BreedDate .Value.Date+ "','" +CowIdCb.SelectedValue.ToString()+ "','" +CowNametb.Text+ "','" + pregDate.Value.Date + "','" + EXDate.Value.Date + "','" + DateCaved.Value.Date + "'," +CowAgeTb.Text + "','" + RemarksTb.Text + "' )";
+                    string Query = "insert into BreedTbl values ( '" + HealDate.Value.Date + "','" + BreedDate .Value.Date+ "','" +CowIdCb.SelectedValue.ToString()+ "','" +CowNametb.Text+ "','" + pregDate.Value.Date + "','" + EXDate.Value.Date + "','" + DateCaved.Value.Date + "'," +CowAgeTb.Text + "','" + RemarksTb.Text + "' )";
                     SqlCommand cmd = new SqlCommand(Query, con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Breeding Report Saved ");
