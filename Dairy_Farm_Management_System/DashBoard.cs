@@ -99,6 +99,7 @@ namespace Dairy_Farm_Management_System
             con.Open();
             SqlDataAdapter sda = new SqlDataAdapter("select Count(*) from CoweTbl", con);
             SqlDataAdapter sda1 = new SqlDataAdapter("select sum(Totalmilk) from  MilkTbl", con);
+            SqlDataAdapter sda2 = new SqlDataAdapter("select sum(Totalmilk) from  MilkTbl", con);
 
             DataTable dt = new DataTable();
             sda.Fill(dt);
@@ -158,6 +159,11 @@ namespace Dairy_Farm_Management_System
         }
 
         private void Inclabe_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
         {
 
         }
