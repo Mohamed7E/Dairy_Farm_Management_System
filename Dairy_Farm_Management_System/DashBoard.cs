@@ -97,13 +97,10 @@ namespace Dairy_Farm_Management_System
         {
             con.Open();
             SqlDataAdapter sda = new SqlDataAdapter("select Count(*) from CoweTbl", con);
-           
             DataTable dt = new DataTable();
             sda.Fill(dt);
-            
-           
-            
-           
+            Inclabe.Text = "Rs" + dt.Rows[0][0].ToString();
+            DataTable dt1 = new DataTable();
             con.Close();
         }
         private void panel9_Paint(object sender, PaintEventArgs e)
