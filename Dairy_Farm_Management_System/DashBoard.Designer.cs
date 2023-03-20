@@ -629,8 +629,8 @@ namespace Dairy_Farm_Management_System
             this.guna2GradientPanel7.Controls.Add(this.label21);
             this.guna2GradientPanel7.Controls.Add(this.label20);
             this.guna2GradientPanel7.CustomizableEdges = customizableEdges13;
-            this.guna2GradientPanel7.FillColor = System.Drawing.Color.Maroon;
-            this.guna2GradientPanel7.FillColor2 = System.Drawing.Color.MediumVioletRed;
+            this.guna2GradientPanel7.FillColor = System.Drawing.Color.MediumSlateBlue;
+            this.guna2GradientPanel7.FillColor2 = System.Drawing.Color.MediumSlateBlue;
             this.guna2GradientPanel7.Location = new System.Drawing.Point(352, 654);
             this.guna2GradientPanel7.Name = "guna2GradientPanel7";
             this.guna2GradientPanel7.ShadowDecoration.CustomizableEdges = customizableEdges14;
