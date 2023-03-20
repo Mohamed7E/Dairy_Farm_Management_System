@@ -93,7 +93,16 @@ namespace Dairy_Farm_Management_System
             ballabl.Text = "Rs" + bal;
             con.Close();
         }
-
+        private void Logistic()
+        {
+            con.Open();
+            SqlDataAdapter sda = new SqlDataAdapter("select Count(*) from CoweTbl", con);
+           
+           
+          
+           
+            con.Close();
+        }
         private void panel9_Paint(object sender, PaintEventArgs e)
         {
             
