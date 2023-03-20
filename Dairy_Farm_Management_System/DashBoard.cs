@@ -102,8 +102,10 @@ namespace Dairy_Farm_Management_System
 
             DataTable dt = new DataTable();
             sda.Fill(dt);
-            cowsnumlabl.Text = "Rs" + dt.Rows[0][0].ToString();
+            cowsnumlabl.Text =  dt.Rows[0][0].ToString();
             DataTable dt1 = new DataTable();
+            sda.Fill(dt1);
+            milknumlabl.Text =   dt.Rows[0][0].ToString()+"liters";
             con.Close();
         }
         private void panel9_Paint(object sender, PaintEventArgs e)
