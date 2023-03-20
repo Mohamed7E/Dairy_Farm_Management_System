@@ -15,6 +15,7 @@ namespace Dairy_Farm_Management_System
         {
             InitializeComponent();
             finance();
+            Logistic();
         }
 
         private void label11_Click(object sender, EventArgs e)
@@ -97,9 +98,11 @@ namespace Dairy_Farm_Management_System
         {
             con.Open();
             SqlDataAdapter sda = new SqlDataAdapter("select Count(*) from CoweTbl", con);
+            SqlDataAdapter sda1 = new SqlDataAdapter("select sum(Totalmilk) from  MilkTbl", con);
+
             DataTable dt = new DataTable();
             sda.Fill(dt);
-            Inclabe.Text = "Rs" + dt.Rows[0][0].ToString();
+            cowsnumlabl.Text = "Rs" + dt.Rows[0][0].ToString();
             DataTable dt1 = new DataTable();
             con.Close();
         }
