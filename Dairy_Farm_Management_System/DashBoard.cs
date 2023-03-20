@@ -76,6 +76,9 @@ namespace Dairy_Farm_Management_System
         private void finance()
         {
             con.Open();
+            SqlDataAdapter sda = new SqlDataAdapter("select sum(IncAmt) from Incometbl",con);
+           
+
             con.Close();
         }
 
