@@ -14,6 +14,7 @@ namespace Dairy_Farm_Management_System
         public DashBoard()
         {
             InitializeComponent();
+            finance();
         }
 
         private void label11_Click(object sender, EventArgs e)
