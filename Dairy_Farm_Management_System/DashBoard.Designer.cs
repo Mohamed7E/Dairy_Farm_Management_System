@@ -525,8 +525,8 @@ namespace Dairy_Farm_Management_System
             this.guna2GradientPanel4.BorderRadius = 15;
             this.guna2GradientPanel4.Controls.Add(this.label7);
             this.guna2GradientPanel4.CustomizableEdges = customizableEdges7;
-            this.guna2GradientPanel4.FillColor = System.Drawing.Color.Lime;
-            this.guna2GradientPanel4.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.guna2GradientPanel4.FillColor = System.Drawing.Color.MediumBlue;
+            this.guna2GradientPanel4.FillColor2 = System.Drawing.Color.CornflowerBlue;
             this.guna2GradientPanel4.Location = new System.Drawing.Point(295, 52);
             this.guna2GradientPanel4.Name = "guna2GradientPanel4";
             this.guna2GradientPanel4.ShadowDecoration.CustomizableEdges = customizableEdges8;
@@ -575,8 +575,8 @@ namespace Dairy_Farm_Management_System
             this.guna2GradientPanel6.BorderRadius = 15;
             this.guna2GradientPanel6.Controls.Add(this.label9);
             this.guna2GradientPanel6.CustomizableEdges = customizableEdges11;
-            this.guna2GradientPanel6.FillColor = System.Drawing.Color.Lime;
-            this.guna2GradientPanel6.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.guna2GradientPanel6.FillColor = System.Drawing.Color.LightSkyBlue;
+            this.guna2GradientPanel6.FillColor2 = System.Drawing.Color.DodgerBlue;
             this.guna2GradientPanel6.Location = new System.Drawing.Point(29, 52);
             this.guna2GradientPanel6.Name = "guna2GradientPanel6";
             this.guna2GradientPanel6.ShadowDecoration.CustomizableEdges = customizableEdges12;
