@@ -83,7 +83,8 @@ namespace Dairy_Farm_Management_System
             sda.Fill(dt);
             Inclabe.Text = dt.Rows[0][0].ToString();
             DataTable dt1 = new DataTable();
-            
+            sda.Fill(dt1);
+            Explbl.Text = dt1.Rows[0][0].ToString();
             con.Close();
         }
 
