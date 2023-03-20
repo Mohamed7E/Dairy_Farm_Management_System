@@ -77,10 +77,10 @@ namespace Dairy_Farm_Management_System
         private void finance()
         {
             con.Open();
-            SqlDataAdapter sda = new SqlDataAdapter("select sum(IncAmt) from Incometbl",con);
+            SqlDataAdapter sda = new SqlDataAdapter("select sum(IncAmt) from Incometbl", con);
+            SqlDataAdapter sda1 = new SqlDataAdapter("select sum(ExAmount) from  ExpenditureTbl", con);
             DataTable dt = new DataTable();
             sda.Fill(dt);
-            Inclabe.Text = dt.Rows[0][0].ToString();
             con.Close();
         }
 
@@ -129,6 +129,11 @@ namespace Dairy_Farm_Management_System
         }
 
         private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Inclabe_Click(object sender, EventArgs e)
         {
 
         }
