@@ -30,22 +30,22 @@ namespace Dairy_Farm_Management_System
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashBoard));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges27 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges28 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges29 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges30 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges31 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges32 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label16 = new System.Windows.Forms.Label();
@@ -437,7 +437,7 @@ namespace Dairy_Farm_Management_System
             this.panel10.Controls.Add(this.label4);
             this.panel10.Location = new System.Drawing.Point(253, 141);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(551, 403);
+            this.panel10.Size = new System.Drawing.Size(633, 403);
             this.panel10.TabIndex = 77;
             this.panel10.Paint += new System.Windows.Forms.PaintEventHandler(this.panel10_Paint);
             // 
@@ -458,13 +458,13 @@ namespace Dairy_Farm_Management_System
             this.guna2GradientPanel1.BorderRadius = 15;
             this.guna2GradientPanel1.Controls.Add(this.Inclabe);
             this.guna2GradientPanel1.Controls.Add(this.label3);
-            this.guna2GradientPanel1.CustomizableEdges = customizableEdges17;
+            this.guna2GradientPanel1.CustomizableEdges = customizableEdges5;
             this.guna2GradientPanel1.FillColor = System.Drawing.Color.Lime;
             this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.guna2GradientPanel1.Location = new System.Drawing.Point(29, 52);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
-            this.guna2GradientPanel1.ShadowDecoration.CustomizableEdges = customizableEdges18;
-            this.guna2GradientPanel1.Size = new System.Drawing.Size(192, 165);
+            this.guna2GradientPanel1.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            this.guna2GradientPanel1.Size = new System.Drawing.Size(249, 165);
             this.guna2GradientPanel1.TabIndex = 78;
             this.guna2GradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2GradientPanel1_Paint);
             // 
@@ -474,7 +474,7 @@ namespace Dairy_Farm_Management_System
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label3.Location = new System.Drawing.Point(26, 0);
+            this.label3.Location = new System.Drawing.Point(70, 10);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(110, 38);
             this.label3.TabIndex = 76;
@@ -486,13 +486,13 @@ namespace Dairy_Farm_Management_System
             this.guna2GradientPanel2.BorderRadius = 15;
             this.guna2GradientPanel2.Controls.Add(this.label27);
             this.guna2GradientPanel2.Controls.Add(this.label5);
-            this.guna2GradientPanel2.CustomizableEdges = customizableEdges19;
+            this.guna2GradientPanel2.CustomizableEdges = customizableEdges1;
             this.guna2GradientPanel2.FillColor = System.Drawing.Color.Maroon;
             this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.Orchid;
             this.guna2GradientPanel2.Location = new System.Drawing.Point(335, 52);
             this.guna2GradientPanel2.Name = "guna2GradientPanel2";
-            this.guna2GradientPanel2.ShadowDecoration.CustomizableEdges = customizableEdges20;
-            this.guna2GradientPanel2.Size = new System.Drawing.Size(184, 165);
+            this.guna2GradientPanel2.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            this.guna2GradientPanel2.Size = new System.Drawing.Size(248, 165);
             this.guna2GradientPanel2.TabIndex = 80;
             // 
             // label5
@@ -501,7 +501,7 @@ namespace Dairy_Farm_Management_System
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label5.Location = new System.Drawing.Point(5, 26);
+            this.label5.Location = new System.Drawing.Point(48, 10);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(169, 38);
             this.label5.TabIndex = 76;
@@ -512,13 +512,13 @@ namespace Dairy_Farm_Management_System
             this.guna2GradientPanel3.BorderRadius = 15;
             this.guna2GradientPanel3.Controls.Add(this.label28);
             this.guna2GradientPanel3.Controls.Add(this.label6);
-            this.guna2GradientPanel3.CustomizableEdges = customizableEdges21;
+            this.guna2GradientPanel3.CustomizableEdges = customizableEdges3;
             this.guna2GradientPanel3.FillColor = System.Drawing.Color.Maroon;
             this.guna2GradientPanel3.FillColor2 = System.Drawing.Color.MediumVioletRed;
             this.guna2GradientPanel3.Location = new System.Drawing.Point(204, 233);
             this.guna2GradientPanel3.Name = "guna2GradientPanel3";
-            this.guna2GradientPanel3.ShadowDecoration.CustomizableEdges = customizableEdges22;
-            this.guna2GradientPanel3.Size = new System.Drawing.Size(170, 143);
+            this.guna2GradientPanel3.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            this.guna2GradientPanel3.Size = new System.Drawing.Size(269, 151);
             this.guna2GradientPanel3.TabIndex = 81;
             // 
             // label6
@@ -527,7 +527,7 @@ namespace Dairy_Farm_Management_System
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label6.Location = new System.Drawing.Point(28, 31);
+            this.label6.Location = new System.Drawing.Point(64, 15);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(123, 38);
             this.label6.TabIndex = 76;
@@ -539,7 +539,7 @@ namespace Dairy_Farm_Management_System
             this.panel11.Controls.Add(this.guna2GradientPanel5);
             this.panel11.Controls.Add(this.guna2GradientPanel6);
             this.panel11.Controls.Add(this.label10);
-            this.panel11.Location = new System.Drawing.Point(850, 151);
+            this.panel11.Location = new System.Drawing.Point(915, 151);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(551, 393);
             this.panel11.TabIndex = 78;
@@ -549,12 +549,12 @@ namespace Dairy_Farm_Management_System
             this.guna2GradientPanel4.BorderRadius = 15;
             this.guna2GradientPanel4.Controls.Add(this.label30);
             this.guna2GradientPanel4.Controls.Add(this.label7);
-            this.guna2GradientPanel4.CustomizableEdges = customizableEdges23;
+            this.guna2GradientPanel4.CustomizableEdges = customizableEdges7;
             this.guna2GradientPanel4.FillColor = System.Drawing.Color.MediumBlue;
             this.guna2GradientPanel4.FillColor2 = System.Drawing.Color.CornflowerBlue;
             this.guna2GradientPanel4.Location = new System.Drawing.Point(295, 52);
             this.guna2GradientPanel4.Name = "guna2GradientPanel4";
-            this.guna2GradientPanel4.ShadowDecoration.CustomizableEdges = customizableEdges24;
+            this.guna2GradientPanel4.ShadowDecoration.CustomizableEdges = customizableEdges8;
             this.guna2GradientPanel4.Size = new System.Drawing.Size(224, 155);
             this.guna2GradientPanel4.TabIndex = 80;
             // 
@@ -575,12 +575,12 @@ namespace Dairy_Farm_Management_System
             this.guna2GradientPanel5.BorderRadius = 15;
             this.guna2GradientPanel5.Controls.Add(this.label31);
             this.guna2GradientPanel5.Controls.Add(this.label8);
-            this.guna2GradientPanel5.CustomizableEdges = customizableEdges25;
+            this.guna2GradientPanel5.CustomizableEdges = customizableEdges9;
             this.guna2GradientPanel5.FillColor = System.Drawing.Color.Lime;
             this.guna2GradientPanel5.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.guna2GradientPanel5.Location = new System.Drawing.Point(193, 238);
             this.guna2GradientPanel5.Name = "guna2GradientPanel5";
-            this.guna2GradientPanel5.ShadowDecoration.CustomizableEdges = customizableEdges26;
+            this.guna2GradientPanel5.ShadowDecoration.CustomizableEdges = customizableEdges10;
             this.guna2GradientPanel5.Size = new System.Drawing.Size(204, 128);
             this.guna2GradientPanel5.TabIndex = 81;
             // 
@@ -601,12 +601,12 @@ namespace Dairy_Farm_Management_System
             this.guna2GradientPanel6.BorderRadius = 15;
             this.guna2GradientPanel6.Controls.Add(this.label29);
             this.guna2GradientPanel6.Controls.Add(this.label9);
-            this.guna2GradientPanel6.CustomizableEdges = customizableEdges27;
+            this.guna2GradientPanel6.CustomizableEdges = customizableEdges11;
             this.guna2GradientPanel6.FillColor = System.Drawing.Color.LightSkyBlue;
             this.guna2GradientPanel6.FillColor2 = System.Drawing.Color.DodgerBlue;
             this.guna2GradientPanel6.Location = new System.Drawing.Point(29, 52);
             this.guna2GradientPanel6.Name = "guna2GradientPanel6";
-            this.guna2GradientPanel6.ShadowDecoration.CustomizableEdges = customizableEdges28;
+            this.guna2GradientPanel6.ShadowDecoration.CustomizableEdges = customizableEdges12;
             this.guna2GradientPanel6.Size = new System.Drawing.Size(213, 155);
             this.guna2GradientPanel6.TabIndex = 78;
             // 
@@ -640,12 +640,12 @@ namespace Dairy_Farm_Management_System
             this.guna2GradientPanel7.Controls.Add(this.label22);
             this.guna2GradientPanel7.Controls.Add(this.label21);
             this.guna2GradientPanel7.Controls.Add(this.label20);
-            this.guna2GradientPanel7.CustomizableEdges = customizableEdges29;
+            this.guna2GradientPanel7.CustomizableEdges = customizableEdges13;
             this.guna2GradientPanel7.FillColor = System.Drawing.Color.MediumSlateBlue;
             this.guna2GradientPanel7.FillColor2 = System.Drawing.Color.MediumSlateBlue;
             this.guna2GradientPanel7.Location = new System.Drawing.Point(352, 654);
             this.guna2GradientPanel7.Name = "guna2GradientPanel7";
-            this.guna2GradientPanel7.ShadowDecoration.CustomizableEdges = customizableEdges30;
+            this.guna2GradientPanel7.ShadowDecoration.CustomizableEdges = customizableEdges14;
             this.guna2GradientPanel7.Size = new System.Drawing.Size(374, 179);
             this.guna2GradientPanel7.TabIndex = 82;
             // 
@@ -691,12 +691,12 @@ namespace Dairy_Farm_Management_System
             this.guna2GradientPanel8.Controls.Add(this.label23);
             this.guna2GradientPanel8.Controls.Add(this.label24);
             this.guna2GradientPanel8.Controls.Add(this.label25);
-            this.guna2GradientPanel8.CustomizableEdges = customizableEdges31;
+            this.guna2GradientPanel8.CustomizableEdges = customizableEdges15;
             this.guna2GradientPanel8.FillColor = System.Drawing.Color.Maroon;
             this.guna2GradientPanel8.FillColor2 = System.Drawing.Color.MediumVioletRed;
             this.guna2GradientPanel8.Location = new System.Drawing.Point(892, 651);
             this.guna2GradientPanel8.Name = "guna2GradientPanel8";
-            this.guna2GradientPanel8.ShadowDecoration.CustomizableEdges = customizableEdges32;
+            this.guna2GradientPanel8.ShadowDecoration.CustomizableEdges = customizableEdges16;
             this.guna2GradientPanel8.Size = new System.Drawing.Size(374, 179);
             this.guna2GradientPanel8.TabIndex = 83;
             // 
@@ -742,7 +742,7 @@ namespace Dairy_Farm_Management_System
             this.Inclabe.BackColor = System.Drawing.Color.Transparent;
             this.Inclabe.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Inclabe.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Inclabe.Location = new System.Drawing.Point(57, 65);
+            this.Inclabe.Location = new System.Drawing.Point(32, 65);
             this.Inclabe.Name = "Inclabe";
             this.Inclabe.Size = new System.Drawing.Size(46, 38);
             this.Inclabe.TabIndex = 78;
@@ -754,7 +754,7 @@ namespace Dairy_Farm_Management_System
             this.label27.BackColor = System.Drawing.Color.Transparent;
             this.label27.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label27.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label27.Location = new System.Drawing.Point(70, 86);
+            this.label27.Location = new System.Drawing.Point(32, 65);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(46, 38);
             this.label27.TabIndex = 78;
@@ -766,7 +766,7 @@ namespace Dairy_Farm_Management_System
             this.label28.BackColor = System.Drawing.Color.Transparent;
             this.label28.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label28.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label28.Location = new System.Drawing.Point(64, 70);
+            this.label28.Location = new System.Drawing.Point(28, 58);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(46, 38);
             this.label28.TabIndex = 78;
