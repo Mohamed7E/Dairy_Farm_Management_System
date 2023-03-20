@@ -73,6 +73,11 @@ namespace Dairy_Farm_Management_System
            
         }
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\learn\learn C#\Dairy_Farm_Management_System\data_MOHAMED_EBRAHIM.mdf;Integrated Security=True;Connect Timeout=30");
+        private void finance()
+        {
+            con.Open();
+            SqlDataAdapter sda = new SqlDataAdapter("");
+        }
 
         private void panel9_Paint(object sender, PaintEventArgs e)
         {
