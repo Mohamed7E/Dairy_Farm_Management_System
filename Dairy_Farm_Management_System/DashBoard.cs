@@ -76,7 +76,7 @@ namespace Dairy_Farm_Management_System
         private void finance()
         {
             con.Open();
-            SqlDataAdapter sda = new SqlDataAdapter("");
+            con.Close();
         }
 
         private void panel9_Paint(object sender, PaintEventArgs e)
