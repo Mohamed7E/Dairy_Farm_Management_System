@@ -81,6 +81,9 @@ namespace Dairy_Farm_Management_System
             SqlDataAdapter sda1 = new SqlDataAdapter("select sum(ExAmount) from  ExpenditureTbl", con);
             DataTable dt = new DataTable();
             sda.Fill(dt);
+            Inclabe.Text = dt.Rows[0][0].ToString();
+            DataTable dt1 = new DataTable();
+            
             con.Close();
         }
 
