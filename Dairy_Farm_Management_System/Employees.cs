@@ -37,10 +37,11 @@ namespace Dairy_Farm_Management_System
             AddressTb.Text = "";
             PhoneTb.Text ="";
             key = 0;
+            PasswordTb.Text = "";
         }
         private void button4_Click(object sender, EventArgs e)
         {
-            if (NameTb.Text == "" || GenderCb.SelectedIndex == -1 || AddressTb.Text == "" || PhoneTb.Text == "")
+            if (NameTb.Text == "" || GenderCb.SelectedIndex == -1 || AddressTb.Text == "" || PhoneTb.Text == "" || PasswordTb.Text == "")
             {
                 MessageBox.Show("missing informatiom");
             }
@@ -49,7 +50,7 @@ namespace Dairy_Farm_Management_System
                 try
                 {
                     con.Open();
-                    string Query = "insert into EmployeeTbl values ( '" + NameTb.Text + "','" + data.Value.Date + "','" + GenderCb.SelectedItem.ToString() + "','" + PhoneTb.Text + "','" + AddressTb.Text + "')";
+                    string Query = "insert into EmployeeTbl values ( '" + NameTb.Text + "','" + data.Value.Date + "','" + GenderCb.SelectedItem.ToString() + "','" + PhoneTb.Text + "','" + AddressTb.Text + "','" + PasswordTb.Text + "')";
                     SqlCommand cmd = new SqlCommand(Query, con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Emplyoee Saved ");
