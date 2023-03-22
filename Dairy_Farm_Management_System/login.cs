@@ -39,43 +39,61 @@ namespace Dairy_Farm_Management_System
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (RoleCp.SelectedIndex == -1)
-            {
-                MessageBox.Show("Select Role");
-            }
+           
             if(UserName.Text==""||Password.Text=="")
             {
                 MessageBox.Show("Enter username And password");
 
             }
-            if (RoleCp.SelectedItem.ToString() == "Admin")
-            {
-                Employees emp = new Employees();
-                emp.Show();
-                this.Hide();
-            }
             else
             {
-                MessageBox.Show("Worng Admin name or password");
-
-            }
-            if (RoleCp.SelectedItem.ToString() == "Employee")
-            {
-                con.Open();
-                SqlDataAdapter sda = new SqlDataAdapter("select Cont(*) from EmployeeTbl where EmpName '"+UserName.Text+"' and Emppass'"+Password.Text+"'", con);
-                DataTable dt = new DataTable();
-                if (dt.Rows[0][0].ToString() == "1")
+                if (RoleCp.SelectedIndex > -1)
                 {
-                    Cows cow = new Cows();
-                    cow.Show();
-                    this.Hide();
-                    con.Close();
+                    if (RoleCp.SelectedItem.ToString() == "Admin")
+                    {
+                        if (UserName.Text == "Admin" && Password.Text == "Admin")
+                        {
+                            Employees emp = new Employees();
+                            emp.Show();
+                            this.Hide();
+                        }
+                        else
+                        {
+                            MessageBox.Show("If you are the Admin,Enter The Correct Id and Password ");
+
+                        }
+
+                    }
+                    else
+                    {
+                        con.Open();
+                        SqlDataAdapter sda = new SqlDataAdapter("select Cont(*) from EmployeeTbl where EmpName '" + UserName.Text + "' and Emppass'" + Password.Text + "'", con);
+                        DataTable dt = new DataTable();
+                        if (dt.Rows[0][0].ToString() == "1")
+                        {
+                            Cows cow = new Cows();
+                            cow.Show();
+                            this.Hide();
+                            con.Close();
+                        }
+                        else
+                        {
+                            MessageBox.Show("worng UserName or password");
+                        }
+                        con.Close();
+                       
+
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("worng UserName or password");
+                    MessageBox.Show("Worng Admin name or password");
                 }
-                con.Close();
+            }
+            
+            if (RoleCp.SelectedItem.ToString() == "Employee")
+            {
+                
             }
 
 
