@@ -152,9 +152,9 @@ namespace Dairy_Farm_Management_System
             this.Password.Location = new System.Drawing.Point(352, 500);
             this.Password.Multiline = true;
             this.Password.Name = "Password";
+            this.Password.PasswordChar = '*';
             this.Password.Size = new System.Drawing.Size(357, 46);
             this.Password.TabIndex = 8;
-            this.Password.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // RoleCp
             // 

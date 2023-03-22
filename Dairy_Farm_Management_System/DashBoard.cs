@@ -83,7 +83,7 @@ namespace Dairy_Farm_Management_System
             SqlDataAdapter sda1 = new SqlDataAdapter("select sum(ExAmount) from  ExpenditureTbl", con);
             DataTable dt = new DataTable();
             sda.Fill(dt);
-            int inc, exp;
+            int inc , exp;
             double bal;
             inc = Convert.ToInt32(dt.Rows[0][0].ToString());
             Inclabe.Text = "Rs" + dt.Rows[0][0].ToString();

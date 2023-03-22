@@ -145,9 +145,9 @@ namespace Dairy_Farm_Management_System
            // Rdr = cmd.ExecuteReader();
             DataTable dt = new DataTable();
             dt.Columns.Add("CowId", typeof(int));
-           /// dt.Load(Rdr);
+           // dt.Load(Rdr);
             CowIdCb.ValueMember = "CowId";
-           // CowIdCb.DateSource = dt;
+           CowIdCb.DataSource = dt;
             con.Close();
 
 

@@ -22,11 +22,6 @@ namespace Dairy_Farm_Management_System
 
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void login_Load(object sender, EventArgs e)
         {
 
@@ -67,7 +62,7 @@ namespace Dairy_Farm_Management_System
                     else
                     {
                         con.Open();
-                        SqlDataAdapter sda = new SqlDataAdapter("Select cont(*) from EmployeeTbl where EmpName= '" + UserName.Text + "' and Emppass='" + Password.Text + "'", con);
+                        SqlDataAdapter sda = new SqlDataAdapter("select count(*) from EmployeeTbl where EmpName= '" + UserName.Text + "' and Emppass='" + Password.Text + "'", con);
                         DataTable dt = new DataTable();
                         sda.Fill(dt);
                         if (dt.Rows[0][0].ToString() == "1")
