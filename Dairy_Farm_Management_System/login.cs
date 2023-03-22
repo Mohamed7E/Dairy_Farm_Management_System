@@ -41,7 +41,12 @@ namespace Dairy_Farm_Management_System
             {
                 MessageBox.Show("Select Role");
             }
-            
+            if(UserName.Text==""||Password.Text=="")
+            {
+                MessageBox.Show("Enter username And password");
+
+            }
+           
 
         }
 
