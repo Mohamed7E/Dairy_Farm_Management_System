@@ -67,8 +67,9 @@ namespace Dairy_Farm_Management_System
                     else
                     {
                         con.Open();
-                        SqlDataAdapter sda = new SqlDataAdapter("select Cont(*) from EmployeeTbl where EmpName '" + UserName.Text + "' and Emppass'" + Password.Text + "'", con);
+                        SqlDataAdapter sda = new SqlDataAdapter("Select cont(*) from EmployeeTbl where EmpName= '" + UserName.Text + "' and Emppass='" + Password.Text + "'", con);
                         DataTable dt = new DataTable();
+                        sda.Fill(dt);
                         if (dt.Rows[0][0].ToString() == "1")
                         {
                             Cows cow = new Cows();
@@ -87,14 +88,11 @@ namespace Dairy_Farm_Management_System
                 }
                 else
                 {
-                    MessageBox.Show("Worng Admin name or password");
+                    MessageBox.Show("Select A Role");
                 }
             }
             
-            if (RoleCp.SelectedItem.ToString() == "Employee")
-            {
-                
-            }
+           
 
 
         }
