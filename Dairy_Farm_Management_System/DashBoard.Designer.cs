@@ -103,7 +103,7 @@ namespace Dairy_Farm_Management_System
             this.label20 = new System.Windows.Forms.Label();
             this.guna2GradientPanel8 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
+            this.RsExlabel = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -763,7 +763,7 @@ namespace Dairy_Farm_Management_System
             // 
             this.guna2GradientPanel8.BorderRadius = 15;
             this.guna2GradientPanel8.Controls.Add(this.label23);
-            this.guna2GradientPanel8.Controls.Add(this.label24);
+            this.guna2GradientPanel8.Controls.Add(this.RsExlabel);
             this.guna2GradientPanel8.Controls.Add(this.label25);
             this.guna2GradientPanel8.CustomizableEdges = customizableEdges31;
             this.guna2GradientPanel8.FillColor = System.Drawing.Color.Maroon;
@@ -786,17 +786,17 @@ namespace Dairy_Farm_Management_System
             this.label23.TabIndex = 78;
             this.label23.Text = "Sake Date";
             // 
-            // label24
+            // RsExlabel
             // 
-            this.label24.AutoSize = true;
-            this.label24.BackColor = System.Drawing.Color.Transparent;
-            this.label24.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label24.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label24.Location = new System.Drawing.Point(56, 62);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(46, 38);
-            this.label24.TabIndex = 77;
-            this.label24.Text = "Rs";
+            this.RsExlabel.AutoSize = true;
+            this.RsExlabel.BackColor = System.Drawing.Color.Transparent;
+            this.RsExlabel.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.RsExlabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.RsExlabel.Location = new System.Drawing.Point(56, 62);
+            this.RsExlabel.Name = "RsExlabel";
+            this.RsExlabel.Size = new System.Drawing.Size(46, 38);
+            this.RsExlabel.TabIndex = 77;
+            this.RsExlabel.Text = "Rs";
             // 
             // label25
             // 
@@ -935,7 +935,7 @@ namespace Dairy_Farm_Management_System
         private System.Windows.Forms.Label label20;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel8;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label RsExlabel;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label Explbl;
         private System.Windows.Forms.Label ballabl;

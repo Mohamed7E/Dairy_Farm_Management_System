@@ -115,7 +115,9 @@ namespace Dairy_Farm_Management_System
         }
         private void GetMax()
         {
-            SqlDataAdapter sda = new SqlDataAdapter("select Max(IncAmt) from Incometbl", con);
+            SqlDataAdapter sda = new SqlDataAdapter("select Max(IncAmt) from Incometbl ", con);
+            SqlDataAdapter sda1 = new SqlDataAdapter("select Max(ExAmount) from  ExpenditureTbl", con);
+
             DataTable dt = new DataTable();
             sda.Fill(dt);
 
