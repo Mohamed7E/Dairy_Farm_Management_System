@@ -29,10 +29,12 @@ namespace Dairy_Farm_Management_System
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Splash));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.label1 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,6 +54,7 @@ namespace Dairy_Farm_Management_System
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(800, 15);
             this.progressBar1.TabIndex = 1;
+            this.progressBar1.Click += new System.EventHandler(this.progressBar1_Click);
             // 
             // label1
             // 
@@ -76,6 +79,7 @@ namespace Dairy_Farm_Management_System
             this.Name = "Splash";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Splash_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -87,6 +91,7 @@ namespace Dairy_Farm_Management_System
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
