@@ -63,7 +63,15 @@ namespace Dairy_Farm_Management_System
             {
                 con.Open();
                 SqlDataAdapter sda = new SqlDataAdapter("select Cont(*) from EmployeeTbl where EmpName '"+UserName.Text+"' and Emppass'"+Password.Text+"'", con);
-
+                DataTable dt = new DataTable();
+                if (dt.Rows[0][0].ToString() == "1")
+                {
+                    Cows cow = new Cows();
+                    cow.Show();
+                    this.Hide();
+                    con.Close();
+                }
+               
                 con.Close();
             }
 
