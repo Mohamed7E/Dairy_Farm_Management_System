@@ -114,7 +114,8 @@ namespace Dairy_Farm_Management_System
         }
         private void GetMax()
         {
-          
+            SqlDataAdapter sda = new SqlDataAdapter("select Max(IncAmt) from Incometbl", con);
+            
         }
         private void panel9_Paint(object sender, PaintEventArgs e)
         {
