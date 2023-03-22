@@ -125,6 +125,7 @@ namespace Dairy_Farm_Management_System
 
 
             Rslabel.Text = "Rs" + dt.Rows[0][0].ToString();
+            RsExlabel.Text = "Rs" + dt1.Rows[0][0].ToString();
         }
         private void panel9_Paint(object sender, PaintEventArgs e)
         {
