@@ -59,6 +59,12 @@ namespace Dairy_Farm_Management_System
                 MessageBox.Show("Worng Admin name or password");
 
             }
+            if (RoleCp.SelectedItem.ToString() == "Employee")
+            {
+                con.Open();
+                con.Close();
+            }
+
 
         }
 
