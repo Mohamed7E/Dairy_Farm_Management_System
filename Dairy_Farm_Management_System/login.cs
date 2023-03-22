@@ -71,7 +71,10 @@ namespace Dairy_Farm_Management_System
                     this.Hide();
                     con.Close();
                 }
-               
+                else
+                {
+                    MessageBox.Show("worng UserName or password");
+                }
                 con.Close();
             }
 
