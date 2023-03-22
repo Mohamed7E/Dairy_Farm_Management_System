@@ -109,8 +109,12 @@ namespace Dairy_Farm_Management_System
             milknumlabl.Text =   dt.Rows[0][0].ToString()+"liters";
             DataTable dt2 = new DataTable();
             sda.Fill(dt2);
-            EmpNumlabl.Text = dt.Rows[0][0].ToString() + "liters";
+            EmpNumlabl.Text = dt.Rows[0][0].ToString() ;
             con.Close();
+        }
+        private void GetMax()
+        {
+            
         }
         private void panel9_Paint(object sender, PaintEventArgs e)
         {

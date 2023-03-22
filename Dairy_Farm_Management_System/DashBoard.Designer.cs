@@ -639,7 +639,7 @@ namespace Dairy_Farm_Management_System
             this.EmpNumlabl.BackColor = System.Drawing.Color.Transparent;
             this.EmpNumlabl.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.EmpNumlabl.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.EmpNumlabl.Location = new System.Drawing.Point(24, 55);
+            this.EmpNumlabl.Location = new System.Drawing.Point(57, 55);
             this.EmpNumlabl.Name = "EmpNumlabl";
             this.EmpNumlabl.Size = new System.Drawing.Size(136, 38);
             this.EmpNumlabl.TabIndex = 79;
