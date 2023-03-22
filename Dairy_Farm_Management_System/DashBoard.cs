@@ -16,6 +16,7 @@ namespace Dairy_Farm_Management_System
             InitializeComponent();
             finance();
             Logistic();
+            GetMax();
         }
 
         private void label11_Click(object sender, EventArgs e)
