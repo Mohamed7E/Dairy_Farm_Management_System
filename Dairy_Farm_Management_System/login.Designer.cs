@@ -40,7 +40,7 @@ namespace Dairy_Farm_Management_System
             this.label3 = new System.Windows.Forms.Label();
             this.UserName = new System.Windows.Forms.TextBox();
             this.Password = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.RoleCp = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -156,19 +156,19 @@ namespace Dairy_Farm_Management_System
             this.Password.TabIndex = 8;
             this.Password.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // comboBox1
+            // RoleCp
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.RoleCp.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.RoleCp.FormattingEnabled = true;
+            this.RoleCp.Items.AddRange(new object[] {
             "Admin",
             "Employee"});
-            this.comboBox1.Location = new System.Drawing.Point(404, 264);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(295, 45);
-            this.comboBox1.TabIndex = 9;
-            this.comboBox1.Text = "Select Role";
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.RoleCp.Location = new System.Drawing.Point(404, 264);
+            this.RoleCp.Name = "RoleCp";
+            this.RoleCp.Size = new System.Drawing.Size(295, 45);
+            this.RoleCp.TabIndex = 9;
+            this.RoleCp.Text = "Select Role";
+            this.RoleCp.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // button1
             // 
@@ -202,7 +202,7 @@ namespace Dairy_Farm_Management_System
             this.ClientSize = new System.Drawing.Size(797, 781);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.RoleCp);
             this.Controls.Add(this.Password);
             this.Controls.Add(this.UserName);
             this.Controls.Add(this.label3);
@@ -234,7 +234,7 @@ namespace Dairy_Farm_Management_System
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox UserName;
         private System.Windows.Forms.TextBox Password;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox RoleCp;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label5;

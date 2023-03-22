@@ -37,22 +37,11 @@ namespace Dairy_Farm_Management_System
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(UserName.Text=="" || Password.Text=="")
+            if (RoleCp.SelectedIndex == -1)
             {
-                MessageBox.Show("missing Date");
-
+                MessageBox.Show("Select Role");
             }
-            else if(UserName.Text =="mohamed" && Password.Text == "712")
-            {
-                Cows Ob = new Cows();
-                Ob.Show();
-                this.Hide();
-            }
-            else
-            {
-                MessageBox.Show("UserName or password is wrong");
-
-            }
+            
 
         }
 

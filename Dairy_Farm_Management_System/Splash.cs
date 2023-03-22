@@ -29,10 +29,11 @@ namespace Dairy_Farm_Management_System
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            Stratpoint += 1;
-            if (Stratpoint == 50)
+            Stratpoint += 2;
+            progressBar1.Value = Stratpoint;
+            if (progressBar1.Value == 100)
             {
-                Stratpoint = 0;
+                progressBar1.Value = 0;
                 timer1.Stop();
                 login Ob = new login();
                 Ob.Show();

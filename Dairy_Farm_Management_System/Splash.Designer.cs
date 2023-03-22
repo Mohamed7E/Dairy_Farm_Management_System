@@ -51,7 +51,7 @@ namespace Dairy_Farm_Management_System
             // 
             // progressBar1
             // 
-            this.progressBar1.BackColor = System.Drawing.Color.DimGray;
+            this.progressBar1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.progressBar1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.progressBar1.Location = new System.Drawing.Point(-1, 452);
             this.progressBar1.Name = "progressBar1";
