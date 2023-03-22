@@ -35,6 +35,7 @@ namespace Dairy_Farm_Management_System
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,6 +67,10 @@ namespace Dairy_Farm_Management_System
             this.label1.TabIndex = 2;
             this.label1.Text = "Dairy Farm Managmant";
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Splash
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -92,6 +97,7 @@ namespace Dairy_Farm_Management_System
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer timer1;
+        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
     }
 }
 
