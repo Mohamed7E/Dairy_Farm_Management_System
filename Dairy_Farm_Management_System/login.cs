@@ -62,7 +62,7 @@ namespace Dairy_Farm_Management_System
             if (RoleCp.SelectedItem.ToString() == "Employee")
             {
                 con.Open();
-                SqlDataAdapter sda = new SqlDataAdapter("select Cont(*) from EmployeeTbl where EmpName '"+UserName.Text+"' and Empass'"+Password.Text+"'", con);
+                SqlDataAdapter sda = new SqlDataAdapter("select Cont(*) from EmployeeTbl where EmpName '"+UserName.Text+"' and Emppass'"+Password.Text+"'", con);
 
                 con.Close();
             }
