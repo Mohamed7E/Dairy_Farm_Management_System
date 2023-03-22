@@ -120,6 +120,9 @@ namespace Dairy_Farm_Management_System
 
             DataTable dt = new DataTable();
             sda.Fill(dt);
+            DataTable dt1 = new DataTable();
+            sda.Fill(dt1);
+
 
             Rslabel.Text = "Rs" + dt.Rows[0][0].ToString();
         }
