@@ -29,9 +29,9 @@ namespace Dairy_Farm_Management_System
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Employees));
             this.label5 = new System.Windows.Forms.Label();
             this.data = new System.Windows.Forms.DateTimePicker();
@@ -55,6 +55,8 @@ namespace Dairy_Farm_Management_System
             this.panel1 = new System.Windows.Forms.Panel();
             this.label18 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.PasswordTb = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.EmployeeList)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -64,7 +66,7 @@ namespace Dairy_Farm_Management_System
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(699, 220);
+            this.label5.Location = new System.Drawing.Point(1013, 103);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(97, 45);
             this.label5.TabIndex = 120;
@@ -76,7 +78,7 @@ namespace Dairy_Farm_Management_System
             this.data.CustomFormat = "yyyy-MM-dd";
             this.data.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.data.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.data.Location = new System.Drawing.Point(699, 279);
+            this.data.Location = new System.Drawing.Point(1013, 162);
             this.data.Margin = new System.Windows.Forms.Padding(4);
             this.data.Name = "data";
             this.data.Size = new System.Drawing.Size(276, 40);
@@ -84,26 +86,26 @@ namespace Dairy_Farm_Management_System
             // 
             // EmployeeList
             // 
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            this.EmployeeList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.EmployeeList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.EmployeeList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.EmployeeList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.EmployeeList.ColumnHeadersHeight = 40;
             this.EmployeeList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.EmployeeList.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.EmployeeList.DefaultCellStyle = dataGridViewCellStyle3;
             this.EmployeeList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.EmployeeList.Location = new System.Drawing.Point(265, 534);
             this.EmployeeList.Name = "EmployeeList";
@@ -142,7 +144,7 @@ namespace Dairy_Farm_Management_System
             this.GenderCb.Items.AddRange(new object[] {
             "Male ",
             "Female"});
-            this.GenderCb.Location = new System.Drawing.Point(910, 150);
+            this.GenderCb.Location = new System.Drawing.Point(683, 160);
             this.GenderCb.Name = "GenderCb";
             this.GenderCb.Size = new System.Drawing.Size(286, 39);
             this.GenderCb.TabIndex = 117;
@@ -217,7 +219,7 @@ namespace Dairy_Farm_Management_System
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(555, 102);
+            this.label7.Location = new System.Drawing.Point(328, 113);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(107, 45);
             this.label7.TabIndex = 110;
@@ -226,7 +228,7 @@ namespace Dairy_Farm_Management_System
             // NameTb
             // 
             this.NameTb.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.NameTb.Location = new System.Drawing.Point(555, 151);
+            this.NameTb.Location = new System.Drawing.Point(328, 161);
             this.NameTb.Name = "NameTb";
             this.NameTb.Size = new System.Drawing.Size(276, 38);
             this.NameTb.TabIndex = 111;
@@ -234,7 +236,7 @@ namespace Dairy_Farm_Management_System
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(1013, 220);
+            this.label6.Location = new System.Drawing.Point(683, 229);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(135, 45);
             this.label6.TabIndex = 108;
@@ -243,7 +245,7 @@ namespace Dairy_Farm_Management_System
             // PhoneTb
             // 
             this.PhoneTb.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.PhoneTb.Location = new System.Drawing.Point(374, 281);
+            this.PhoneTb.Location = new System.Drawing.Point(328, 281);
             this.PhoneTb.Name = "PhoneTb";
             this.PhoneTb.Size = new System.Drawing.Size(276, 38);
             this.PhoneTb.TabIndex = 109;
@@ -251,7 +253,7 @@ namespace Dairy_Farm_Management_System
             // E
             // 
             this.E.AutoSize = true;
-            this.E.Location = new System.Drawing.Point(374, 220);
+            this.E.Location = new System.Drawing.Point(328, 220);
             this.E.Name = "E";
             this.E.Size = new System.Drawing.Size(112, 45);
             this.E.TabIndex = 106;
@@ -260,7 +262,7 @@ namespace Dairy_Farm_Management_System
             // AddressTb
             // 
             this.AddressTb.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.AddressTb.Location = new System.Drawing.Point(1013, 278);
+            this.AddressTb.Location = new System.Drawing.Point(683, 287);
             this.AddressTb.Name = "AddressTb";
             this.AddressTb.Size = new System.Drawing.Size(276, 38);
             this.AddressTb.TabIndex = 107;
@@ -268,7 +270,7 @@ namespace Dairy_Farm_Management_System
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(937, 102);
+            this.label2.Location = new System.Drawing.Point(710, 112);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(135, 45);
             this.label2.TabIndex = 103;
@@ -322,11 +324,30 @@ namespace Dairy_Farm_Management_System
             this.pictureBox8.TabIndex = 29;
             this.pictureBox8.TabStop = false;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(1013, 229);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(155, 45);
+            this.label3.TabIndex = 122;
+            this.label3.Text = "Password";
+            // 
+            // PasswordTb
+            // 
+            this.PasswordTb.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PasswordTb.Location = new System.Drawing.Point(1013, 287);
+            this.PasswordTb.Name = "PasswordTb";
+            this.PasswordTb.Size = new System.Drawing.Size(276, 38);
+            this.PasswordTb.TabIndex = 121;
+            // 
             // Employees
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(18F, 45F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1458, 793);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.PasswordTb);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.data);
             this.Controls.Add(this.EmployeeList);
@@ -387,5 +408,7 @@ namespace Dairy_Farm_Management_System
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox PasswordTb;
     }
 }
