@@ -304,5 +304,10 @@ namespace Dairy_Farm_Management_System
                 age = Convert.ToInt32(CowsList1.SelectedRows[0].Cells[0].Value.ToString());
             }
         }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

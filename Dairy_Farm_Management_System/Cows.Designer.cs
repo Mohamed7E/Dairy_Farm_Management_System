@@ -82,6 +82,7 @@ namespace Dairy_Farm_Management_System
             this.DeleteBtu = new System.Windows.Forms.Button();
             this.label19 = new System.Windows.Forms.Label();
             this.CowsList1 = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panel7.SuspendLayout();
@@ -100,6 +101,7 @@ namespace Dairy_Farm_Management_System
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CowsList1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -128,7 +130,7 @@ namespace Dairy_Farm_Management_System
             this.label18.Location = new System.Drawing.Point(118, 77);
             this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(110, 46);
+            this.label18.Size = new System.Drawing.Size(107, 45);
             this.label18.TabIndex = 30;
             this.label18.Text = "DFSM";
             // 
@@ -378,7 +380,7 @@ namespace Dairy_Farm_Management_System
             this.label11.Location = new System.Drawing.Point(107, 0);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(100, 46);
+            this.label11.Size = new System.Drawing.Size(97, 45);
             this.label11.TabIndex = 1;
             this.label11.Text = "Cows";
             this.label11.Click += new System.EventHandler(this.label11_Click);
@@ -386,6 +388,7 @@ namespace Dairy_Farm_Management_System
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel2.Controls.Add(this.pictureBox9);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(239, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
@@ -400,7 +403,7 @@ namespace Dairy_Farm_Management_System
             this.label1.Location = new System.Drawing.Point(605, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(110, 46);
+            this.label1.Size = new System.Drawing.Size(107, 45);
             this.label1.TabIndex = 0;
             this.label1.Text = "DFSM";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -419,7 +422,7 @@ namespace Dairy_Farm_Management_System
             this.label2.Location = new System.Drawing.Point(275, 102);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(184, 46);
+            this.label2.Size = new System.Drawing.Size(179, 45);
             this.label2.TabIndex = 1;
             this.label2.Text = "Cow Name";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -444,7 +447,7 @@ namespace Dairy_Farm_Management_System
             this.label3.Location = new System.Drawing.Point(876, 220);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(226, 46);
+            this.label3.Size = new System.Drawing.Size(219, 45);
             this.label3.TabIndex = 3;
             this.label3.Text = "Weigt at Birth";
             // 
@@ -462,7 +465,7 @@ namespace Dairy_Farm_Management_System
             this.label4.Location = new System.Drawing.Point(571, 220);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 46);
+            this.label4.Size = new System.Drawing.Size(77, 45);
             this.label4.TabIndex = 5;
             this.label4.Text = "Age";
             // 
@@ -481,7 +484,7 @@ namespace Dairy_Farm_Management_System
             this.label5.Location = new System.Drawing.Point(876, 102);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(101, 46);
+            this.label5.Size = new System.Drawing.Size(97, 45);
             this.label5.TabIndex = 7;
             this.label5.Text = "Color";
             // 
@@ -499,7 +502,7 @@ namespace Dairy_Farm_Management_System
             this.label6.Location = new System.Drawing.Point(1175, 92);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(106, 46);
+            this.label6.Size = new System.Drawing.Size(103, 45);
             this.label6.TabIndex = 9;
             this.label6.Text = "Bread";
             // 
@@ -517,7 +520,7 @@ namespace Dairy_Farm_Management_System
             this.label7.Location = new System.Drawing.Point(571, 102);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(126, 46);
+            this.label7.Size = new System.Drawing.Size(123, 45);
             this.label7.TabIndex = 11;
             this.label7.Text = "Ear Tag";
             // 
@@ -535,7 +538,7 @@ namespace Dairy_Farm_Management_System
             this.label8.Location = new System.Drawing.Point(1175, 220);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(130, 46);
+            this.label8.Size = new System.Drawing.Size(126, 45);
             this.label8.TabIndex = 13;
             this.label8.Text = "Pasture";
             // 
@@ -553,7 +556,7 @@ namespace Dairy_Farm_Management_System
             this.label9.Location = new System.Drawing.Point(275, 220);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(216, 46);
+            this.label9.Size = new System.Drawing.Size(209, 45);
             this.label9.TabIndex = 15;
             this.label9.Text = "Date Of Birth";
             // 
@@ -563,7 +566,7 @@ namespace Dairy_Farm_Management_System
             this.label10.Location = new System.Drawing.Point(770, 427);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(159, 46);
+            this.label10.Size = new System.Drawing.Size(155, 45);
             this.label10.TabIndex = 1;
             this.label10.Text = "Cows List";
             // 
@@ -684,6 +687,17 @@ namespace Dairy_Farm_Management_System
             this.CowsList1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.CowsList1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.CowsList1_CellContentClick_1);
             // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
+            this.pictureBox9.Location = new System.Drawing.Point(1181, 0);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(62, 52);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 77;
+            this.pictureBox9.TabStop = false;
+            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
+            // 
             // Cows
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(18F, 45F);
@@ -748,6 +762,7 @@ namespace Dairy_Farm_Management_System
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CowsList1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -804,5 +819,6 @@ namespace Dairy_Farm_Management_System
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
         private Guna.UI2.WinForms.Guna2DataGridView CowsList1;
+        private System.Windows.Forms.PictureBox pictureBox9;
     }
 }

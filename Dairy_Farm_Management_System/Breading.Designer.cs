@@ -29,10 +29,10 @@ namespace Dairy_Farm_Management_System
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Breading));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Breading));
             this.label1 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
@@ -84,6 +84,7 @@ namespace Dairy_Farm_Management_System
             this.label20 = new System.Windows.Forms.Label();
             this.RemarksTb = new System.Windows.Forms.TextBox();
             this.Breedlist = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -102,6 +103,7 @@ namespace Dairy_Farm_Management_System
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Breedlist)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -289,6 +291,7 @@ namespace Dairy_Farm_Management_System
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel2.Controls.Add(this.pictureBox9);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(235, 0);
             this.panel2.Name = "panel2";
@@ -679,6 +682,17 @@ namespace Dairy_Farm_Management_System
             this.Breedlist.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.Breedlist.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Breedlist_CellContentClick);
             // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
+            this.pictureBox9.Location = new System.Drawing.Point(1165, 0);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(62, 52);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 76;
+            this.pictureBox9.TabStop = false;
+            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
+            // 
             // Breading
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(18F, 45F);
@@ -745,6 +759,7 @@ namespace Dairy_Farm_Management_System
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Breedlist)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -803,5 +818,6 @@ namespace Dairy_Farm_Management_System
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.TextBox RemarksTb;
         private Guna.UI2.WinForms.Guna2DataGridView Breedlist;
+        private System.Windows.Forms.PictureBox pictureBox9;
     }
 }

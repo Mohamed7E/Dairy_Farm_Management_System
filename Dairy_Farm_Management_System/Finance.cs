@@ -281,6 +281,11 @@ namespace Dairy_Farm_Management_System
         {
             populateEXp();
         }
+
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
     
 }

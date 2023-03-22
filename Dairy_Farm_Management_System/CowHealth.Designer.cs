@@ -82,6 +82,7 @@ namespace Dairy_Farm_Management_System
             this.Healthlist = new Guna.UI2.WinForms.Guna2DataGridView();
             this.label5 = new System.Windows.Forms.Label();
             this.data = new System.Windows.Forms.DateTimePicker();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -100,6 +101,7 @@ namespace Dairy_Farm_Management_System
             this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Healthlist)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
             // label12
@@ -360,6 +362,7 @@ namespace Dairy_Farm_Management_System
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel2.Controls.Add(this.pictureBox9);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(233, 0);
             this.panel2.Name = "panel2";
@@ -636,6 +639,17 @@ namespace Dairy_Farm_Management_System
             this.data.Size = new System.Drawing.Size(276, 40);
             this.data.TabIndex = 75;
             // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
+            this.pictureBox9.Location = new System.Drawing.Point(1183, 0);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(62, 52);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 77;
+            this.pictureBox9.TabStop = false;
+            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
+            // 
             // CowHealth
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(18F, 45F);
@@ -700,6 +714,7 @@ namespace Dairy_Farm_Management_System
             this.panel9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Healthlist)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -756,5 +771,6 @@ namespace Dairy_Farm_Management_System
         private Guna.UI2.WinForms.Guna2DataGridView Healthlist;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DateTimePicker data;
+        private System.Windows.Forms.PictureBox pictureBox9;
     }
 }
