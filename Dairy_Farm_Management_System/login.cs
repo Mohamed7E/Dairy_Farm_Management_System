@@ -46,8 +46,13 @@ namespace Dairy_Farm_Management_System
                 MessageBox.Show("Enter username And password");
 
             }
-           
-
+            if (RoleCp.SelectedItem.ToString() == "Admin")
+            {
+                Employees emp = new Employees();
+                emp.Show();
+                this.Hide();
+            }
+            
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
