@@ -52,7 +52,12 @@ namespace Dairy_Farm_Management_System
                 emp.Show();
                 this.Hide();
             }
-            
+            else
+            {
+                MessageBox.Show("Worng Admin name or password");
+
+            }
+
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
